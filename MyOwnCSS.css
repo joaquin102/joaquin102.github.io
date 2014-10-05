@@ -58,16 +58,80 @@
 	.sectionOne p
 	{
 		
-		margin-left: 20px;
+		margin-left: 70px;
+		font-size: 20px;
+		font-family: 'EB Garamond', serif;
 	}
 
 	/*Carousel First Section*/
 
 	.containerCFirstRow
 	{
-		margin: 0	;
+		margin: 0;
 		width: 500px;
 		height: 300px;
+		position: relative;
+	}
+
+	.containerCFirstRow .carousel
+	{
+		height: 100%;
+	}
+
+	.containerCFirstRow .carousel-inner
+	{
+		height: 100%;
+		margin: 0 auto;
+		width: 75%;
+	}
+
+	.containerCFirstRow .carousel-inner .item
+	{
+		height: 100%;
+		background-color: transparent;
+
+	}
+
+	.containerCFirstRow .carousel-inner .item .carousel-caption
+	{
+		position: relative;
+		margin: 0px;
+		padding: 0px;
+		top: 10px;
+		left: 10px;
+
+	}
+
+	.containerCFirstRow .carousel-inner .item .carousel-caption h1
+	{
+		font-size: 20px;
+		margin: 0px;
+		padding-bottom: 5px;
+		text-align: left;
+		color: gray;
+
+	}
+
+	.containerCFirstRow .carousel-inner .item .carousel-caption p
+	{
+		font-size: 10px;
+		margin: 0px;
+		padding-left: 2px;
+		text-align: left;
+		color: black;
+
+	}
+
+	.containerCFirstRow .carousel-inner .item img
+	{
+		height: 80%;
+	}
+
+	.containerCFirstRow .carousel-control.left
+	{
+		position: absolute;
+		left: 0px;
+		top: 0px;
 	}
 
 	

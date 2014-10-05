@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
 
     <title>Carousel Template for Bootstrap</title>
 
@@ -27,8 +28,6 @@
     <link href="css/carousel.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="MyOwnCSS.css">
   </head>
-<!-- NAVBAR
-================================================== -->
   <body>
 
 
@@ -50,85 +49,13 @@
   <div class="breakinFlow"></div>
     
 
-    <!-- Carousel
-    ================================================== -->
+    <!-- Carousel================================ -->
 
      <div class="containerCMain">
 
         <div id="mainCarousel" class="carousel slide" data-ride="carousel">
 
-       
-
-        <div class="carousel-inner">
-
-          <!-- Slide One -->
-          <div class="item active">
-            <img src="Images/1.jpg" alt="First slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Summer</h1>
-                <p>El burgillo - Spain</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide two -->
-          <div class="item">
-            <img src="Images/2.jpg" alt="Second slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide three -->
-          <div class="item">
-            <img src="Images/3.jpg" alt="Third slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>One more for good measure.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              </div>
-            </div>
-
-          </div>
-
-            <!-- Indicators (dots) -->
-          <ol class="carousel-indicators">
-            <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#mainCarousel" data-slide-to="1"></li>
-            <li data-target="#mainCarousel" data-slide-to="2"></li>
-          </ol>
-
-        </div>
-
-
-        <!-- Arrows at corners -->
-        <a class="left carousel-control" href="#mainCarousel" role="button" data-slide="prev"><img id ="Arrow" src="Images/leftArrow.png"></a>
-
-        <a class="right carousel-control" href="#mainCarousel" role="button" data-slide="next"><img id ="Arrow" src="Images/rightArrow.png"></a>
-      </div><!-- /.carousel -->
-
-
-    </div>
-    
-
-    <hr />
-
-    <div class="sectionOneContainer">
-
-      <div class="sectionOne">
-
-        <p>Fashion</p>
-
-<!-- Carousel========================= -->
-        <div class="containerCFirstRow">
-
-          <div id="cFirstRow" class="carousel slide" data-ride="carousel">
-
-            <div class="carousel-inner">
+            <div class="carousel-inner"> <!-- Inside carousel-->
 
               <!-- Slide One -->
               <div class="item active">
@@ -165,33 +92,87 @@
                     <h1>One more for good measure.</h1>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                   </div>
-
                 </div>
-
               </div>
 
             </div>
 
+            <!-- Indicators (dots) -->
+          <ol class="carousel-indicators">
+            <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#mainCarousel" data-slide-to="1"></li>
+            <li data-target="#mainCarousel" data-slide-to="2"></li>
+          </ol>
+
 
             <!-- Arrows at corners -->
-            <a class="left carousel-control" href="#cFirstRow" role="button" data-slide="prev"><img id ="Arrow" src="Images/leftArrow.png"></a>
+            <a class="left carousel-control" href="#mainCarousel" role="button" data-slide="prev"><img id ="Arrow" src="Images/leftArrow.png"></a>
 
-            <a class="right carousel-control" href="#cFirstRow" role="button" data-slide="next"><img id ="Arrow" src="Images/rightArrow.png"></a>
+            <a class="right carousel-control" href="#mainCarousel" role="button" data-slide="next"><img id ="Arrow" src="Images/rightArrow.png"></a>
 
           </div><!-- /.carousel -->
 
-                
+    </div>
+
+
+
+    <hr />
+
+
+
+    <div class="sectionOneContainer">
+
+      <div class="sectionOne">
+
+        <p>Fashion</p>
+
+<!-- Carousel========================= -->
+        <div class="containerCFirstRow">
+
+          <div id="cFirstRow" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+
+              <!-- Slide One -->
+              <div class="item active">
+                <img src="Images/1.jpg" alt="First slide">
+                <div class="carousel-caption">
+                    <h1>Title One</h1>
+                    <p>El burgillo - Spain</p>
+                </div>
+              </div>
+
+              <!-- Slide two -->
+              <div class="item">
+                <img src="Images/2.jpg" alt="Second slide">
+                  <div class="carousel-caption">
+                    <h1>Title two.</h1>
+                    <p>Example of fashion 2</p>
+                  </div>
+              </div>
+
+              <!-- Slide three -->
+              <div class="item">
+                <img src="Images/3.jpg" alt="Third slide">
+                  <div class="carousel-caption">
+                    <h1>Title three.</h1>
+                    <p>Cras justo odio,</p>
+                  </div>
+              </div>
+
+            </div>
+
+          </div>
+
+                <!-- Arrows at corners -->
+            <a class="left carousel-control" href="#cFirstRow" role="button" data-slide="prev"><img id ="Arrow" src="Images/leftBlackArrow.png"></a>
+
+            <a class="right carousel-control" href="#cFirstRow" role="button" data-slide="next"><img id ="Arrow" src="Images/rightBlackArrow.png"></a>
           
 
-        </div>
-
-             
-
-
+        </div><!-- /.carousel -->
 
       </div>
-
-      
 
     </div>
 
