@@ -46,79 +46,58 @@ background-color: transparent;
 
 /* carousel */
 
-.containerCMain
+#myCarousel
 {
-	height: 600px;
+
+	margin-top: 80px;
+	height: 650px;
+	margin-bottom: 0px;
+
 }
 
-.carousel {
-  margin-bottom: 40px;
-  height: 100%;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 100%;
-  background-color: #777;
-}
-
-.carousel-inner
+#myCarousel img
 {
-	height: 100%;
+	width: auto;
+	height: auto;
 }
 
-.carousel-inner .item  img {
-	margin: 0 auto;
-  	width: auto;
-}
-
-.carousel-control
+.carousel .item
 {
-	width: 8%;
+	height: 650px;
 }
+
+.carousel-inner > .item > img {
+position: absolute;
+top: 0;
+left: 0;
+min-width: 100%;
+height: 650px;
+}
+
+.carousel-control.left 
+{
+background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%); */
+background-image: -o-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+/* background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001))); */
+/* background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%); */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+background-repeat: repeat-x;
+}
+
+.carousel-control.right 
+{
+background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%); */
+background-image: -o-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+/* background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001))); */
+/* background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%); */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+background-repeat: repeat-x;
+}
+
 
 .carousel-caption
 {
-	position: absolute;
-	margin: auto;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	bottom: 0px;
-	text-shadow: none;
-	width: 50%;
-	height: 50%;
-}
-
-.carousel-caption p
-{
-	font-family: 'HelveticaNeue-Light';
-	font-size: 15px;
-}
-
-.carousel-control.right {
-right: 0;
-left: auto;
-background-image: none;
-background-image: none;
-background-image: none;
-background-image: none;
-height: 100%;
-
-}
-
-.carousel-control.left {
-left: 0;
-right: auto;
-background-image: none;
-background-image: none;
-background-image: none;
-background-image: none;
-height: 100%;
+	padding-bottom: 250px;
 }
 
 .first-divider

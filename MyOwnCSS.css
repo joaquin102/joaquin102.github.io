@@ -1,0 +1,160 @@
+	.barContainer
+	{
+		width: 100%;
+		height: 40px;
+		margin-bottom: 15px;
+	}
+	
+	.topBar
+	{
+		margin: 0 auto;
+		width:1000px;
+		
+	}
+
+	.topBar ul
+	{
+
+		padding-left: 90px;
+	}
+	
+	.topBar li
+	{
+		list-style: none;
+		float: left;
+		font-size: 15px;
+		font-family: 'HelveticaNeue-Light';
+		padding-right: 55px;
+		margin-top: 10px;
+	}
+	
+	.topBar img
+	{
+		width: 230px;
+		float: left;
+		padding-right: 55px;
+	}
+	
+	.breakingFlow
+	{
+		float: none;
+	}
+
+
+	/*First Section*/
+
+	.sectionOneContainer
+	{
+		width: 100%;
+	}
+
+	.sectionOne
+	{
+		margin: 0 auto;
+		width: 960px;
+
+	}
+
+	.sectionOne p
+	{
+		
+		margin-left: 20px;
+	}
+
+	/*Carousel First Section*/
+
+	.containerCFirstRow
+	{
+		margin: 0	;
+		width: 500px;
+		height: 300px;
+	}
+
+	
+
+
+	/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+
+.containerCMain
+{
+	height: 600px;
+}
+
+.carousel {
+  margin-bottom: 40px;
+  height: 100%;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 100%;
+  background-color: #777;
+}
+
+.carousel-inner
+{
+	height: 100%;
+}
+
+.carousel-inner .item  img {
+	margin: 0 auto;
+  	width: auto;
+}
+
+.carousel-control
+{
+	width: 8%;
+}
+
+.carousel-caption
+{
+	position: absolute;
+	margin: auto;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	text-shadow: none;
+	width: 50%;
+	height: 50%;
+}
+
+.carousel-caption p
+{
+	font-family: 'HelveticaNeue-Light';
+	font-size: 15px;
+}
+
+.carousel-control.right {
+right: 0;
+left: auto;
+background-image: none;
+background-image: none;
+background-image: none;
+background-image: none;
+height: 100%;
+
+}
+
+.carousel-control.left {
+left: 0;
+right: auto;
+background-image: none;
+background-image: none;
+background-image: none;
+background-image: none;
+height: 100%;
+}
+
+#Arrow
+{
+	width:20px;
+	padding-top: 200%;
+}
