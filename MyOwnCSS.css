@@ -126,6 +126,18 @@
 	height: 50%;
 }
 
+.carousel-captions
+{	
+	position: absolute;
+	top: 220px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	text-shadow: none;
+	width: 50%;
+	height: 50%;
+}
+
 .carousel-caption p
 {
 	font-family: 'HelveticaNeue-Light';
@@ -158,3 +170,5 @@ height: 100%;
 	width:20px;
 	padding-top: 200%;
 }
+
+/
