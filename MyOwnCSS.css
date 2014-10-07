@@ -43,19 +43,19 @@
 
 	/*First Section*/
 
-	.sectionOneContainer
+	.Container
 	{
 		width: 100%;
 	}
 
-	.sectionOne
+	.sectionOneContainer
 	{
+		width: 1100px;
 		margin: 0 auto;
-		width: 960px;
-
 	}
 
-	.sectionOne p
+
+	.sectionOneContainer p
 	{
 		
 		margin-left: 70px;
@@ -63,9 +63,17 @@
 		font-family: 'EB Garamond', serif;
 	}
 
-	/*Carousel First Section*/
+	.sectionOneLeft
+	{
+		margin: 0 auto;
+		width: 500px;
+		float: left;
 
-	.containerCFirstRow
+	}
+
+	/*Carousel left First Section*/
+
+	.containerFirstCarLeft
 	{
 		margin: 0;
 		width: 500px;
@@ -73,36 +81,36 @@
 		position: relative;
 	}
 
-	.containerCFirstRow .carousel
+	.containerFirstCarLeft .carousel
 	{
 		height: 100%;
 	}
 
-	.containerCFirstRow .carousel-inner
+	.containerFirstCarLeft .carousel-inner
 	{
 		height: 100%;
 		margin: 0 auto;
-		width: 75%;
+		width: 100%;
 	}
 
-	.containerCFirstRow .carousel-inner .item
+	.containerFirstCarLeft .carousel-inner .item
 	{
 		height: 100%;
 		background-color: transparent;
 
 	}
 
-	.containerCFirstRow .carousel-inner .item .carousel-caption
+	.containerFirstCarLeft .carousel-inner .item .carousel-caption
 	{
 		position: relative;
 		margin: 0px;
 		padding: 0px;
 		top: 10px;
-		left: 10px;
+		left: 70px;
 
 	}
 
-	.containerCFirstRow .carousel-inner .item .carousel-caption h1
+	.containerFirstCarLeft .carousel-inner .item .carousel-caption h1
 	{
 		font-size: 20px;
 		margin: 0px;
@@ -112,7 +120,7 @@
 
 	}
 
-	.containerCFirstRow .carousel-inner .item .carousel-caption p
+	.containerFirstCarLeft .carousel-inner .item .carousel-caption p
 	{
 		font-size: 10px;
 		margin: 0px;
@@ -122,18 +130,122 @@
 
 	}
 
-	.containerCFirstRow .carousel-inner .item img
+	.containerFirstCarLeft .carousel-inner .item img
 	{
 		height: 80%;
 	}
 
-	.containerCFirstRow .carousel-control.left
+	.containerFirstCarLeft .carousel-control.left
 	{
 		position: absolute;
 		left: 0px;
 		top: 0px;
 	}
 
+
+	/*Carousel right First Section*/
+
+	.containerFirstCarRight
+	{
+		margin: 0;
+		width: 500px;
+		height: 500px;
+		position: relative;
+	}
+
+	.containerFirstCarRight .carousel
+	{
+		height: 100%;
+	}
+
+	.containerFirstCarRight .carousel-inner
+	{
+		height: 100%;
+		margin: 0 auto;
+		width: 350px;
+	}
+
+	.containerFirstCarRight .carousel-inner .item
+	{
+		height: 100%;
+		background-color: transparent;
+
+	}
+
+	.containerFirstCarRight .carousel-inner .item .carousel-caption
+	{
+		position: relative;
+		margin: 0px;
+		padding: 0px;
+		top: 10px;
+		left: 40px;
+
+	}
+
+	.containerFirstCarRight .carousel-inner .item .carousel-caption h1
+	{
+		font-size: 20px;
+		margin: 0px;
+		padding-bottom: 5px;
+		text-align: left;
+		color: gray;
+
+	}
+
+	.containerFirstCarRight .carousel-inner .item .carousel-caption p
+	{
+		font-size: 10px;
+		margin: 0px;
+		padding-left: 2px;
+		text-align: left;
+		color: black;
+
+	}
+
+	.containerFirstCarRight .carousel-inner .item img
+	{
+		height: 80%;
+	}
+
+	.containerFirstCarRight .carousel-control.left
+	{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+	}
+
+	.sectionOneRight
+	{
+		float: right;
+	}
+
+	.Description
+	{
+		width: 400px;
+		float: left;
+		margin-left: 140px;
+	}
+
+	.Description p
+	{
+		text-align: center;
+		font-size: 30px;
+		font-family: 'EB Garamond', serif;
+
+	}
+
+	.Description hr
+	{
+		border-top: 2px solid black;
+	}
+
+
+	/* Footer */
+
+	.Footer
+	{
+		float: none;
+	}
 	
 
 
