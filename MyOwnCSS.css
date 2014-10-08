@@ -43,7 +43,7 @@
 
 	/*First Section*/
 
-	.Container
+	#FashionContainer
 	{
 		width: 100%;
 	}
@@ -100,6 +100,11 @@
 
 	}
 
+	.containerFirstCarLeft .carousel-inner .item img
+	{
+		height: 80%;
+	}
+
 	.containerFirstCarLeft .carousel-inner .item .carousel-caption
 	{
 		position: relative;
@@ -130,15 +135,19 @@
 
 	}
 
-	.containerFirstCarLeft .carousel-inner .item img
-	{
-		height: 80%;
-	}
+
 
 	.containerFirstCarLeft .carousel-control.left
 	{
 		position: absolute;
 		left: 0px;
+		top: 0px;
+	}
+
+	.containerFirstCarLeft .carousel-control.right
+	{
+		position: absolute;
+		right: 0px;
 		top: 0px;
 	}
 
@@ -211,6 +220,13 @@
 	{
 		position: absolute;
 		left: 0px;
+		top: 0px;
+	}
+
+	.containerFirstCarRight .carousel-control.right
+	{
+		position: absolute;
+		right: 0px;
 		top: 0px;
 	}
 
