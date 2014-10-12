@@ -18,7 +18,7 @@ $(".navbar-collapse ul li a[href^='#']").on('click', function(e) {
 
 });
 
-$(".LogoContainer a[href^='#']").on('click', function(e) {
+$("#Fashion a[href^='#']").on('click', function(e) {
 
    // prevent default anchor click behavior
    e.preventDefault();
