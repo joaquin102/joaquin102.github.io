@@ -53,22 +53,49 @@
 
 	.btn:hover, .btn:focus 
 	{
+		font-family: "brandon-grotesque";
+		text-transform: uppercase;
+		letter-spacing: 1px;
+
 		color: white;
 		text-decoration: none;
 		background-color: #787777;
 		border-color: #787777;
-		font-family: 'HelveticaNeue-Light';
 	}
 
 	.btn-lg
 	{
+		font-family: "brandon-grotesque";
+		text-transform: uppercase;
+		letter-spacing: 1px;
+
 		background-color: transparent;
 		border-color: black;
-		border-radius: 2px;
-		font-family: 'HelveticaNeue-Light'; 
+		border-radius: 2px; 
 		font-size: 18px; 
 	
 	}
+
+	.btn-lg.dark
+	{
+		background-color: transparent;
+		border-color: #787777;
+	}
+
+	.btn.dark:hover, .btn:focus 
+	{
+		font-family: "brandon-grotesque";
+		text-transform: uppercase;
+		letter-spacing: 1px;
+
+		color: white;
+		text-decoration: none;
+		background-color: #787777;
+		border-color: #787777;
+	}
+
+
+
 
 
 
@@ -104,7 +131,7 @@
 	.topBar ul
 	{
 
-		padding-left: 90px;
+		padding-left: 70px;
 	}
 	
 	.topBar li
@@ -132,6 +159,12 @@
 
 	/*Fashion Section*/
 
+
+	.sectionContainer.fashion
+	{
+		height: 940px;
+	}
+
 	#Fashion
 	{
 		width: 1100px;
@@ -140,56 +173,64 @@
 
 	
 
-	/*Fashion Carousel Vertical*/
-
-	.containerFirstCarVLeft
+	.FashionVCarouselContainer
 	{
-		height: 700px;
+		margin: 0;
+		width: 600px;
+		height: 820px;
 		position: relative;
 		float: left;
-		margin-left: 50px;
 	}
 
-	.containerFirstCarVLeft .carousel
+	.FashionVCarouselContainer .carousel
 	{
 		height: 100%;
 	}
 
-	.containerFirstCarVLeft .carousel-inner
+	.FashionVCarouselContainer .carousel-inner
 	{
 		height: 100%;
 		margin: 0 auto;
-		width: 550px;
+		width: 85%;
 	}
 
-	.containerFirstCarVLeft .carousel-inner .item
+	.FashionVCarouselContainer .carousel-inner .item
 	{
 		height: 100%;
 		background-color: transparent;
 
 	}
 
-	.containerFirstCarVLeft .carousel-inner .item .carousel-caption
+	.FashionVCarouselContainer .carousel-inner .item .carousel-caption
 	{
 		position: relative;
 		margin: 0px;
 		padding: 0px;
 		top: 10px;
-		left: 40px;
+		left: 0px;
 
 	}
 
-	.containerFirstCarVLeft .carousel-inner .item .carousel-caption h1
+	.FashionVCarouselContainer .carousel-inner .item .carousel-caption h1
 	{
+
+	font-family: "GaramondPremier";
+
+		line-height: 1.2em;
+
 		font-size: 20px;
 		margin: 0px;
 		padding-bottom: 5px;
 		text-align: left;
-		color: gray;
+		color: #8c7c3d;
+
+		text-transform: none;
+		letter-spacing: 1px;
+		font-weight: 500;
 
 	}
 
-	.containerFirstCarVLeft .carousel-inner .item .carousel-caption p
+	.FashionVCarouselContainer .carousel-inner .item .carousel-caption p
 	{
 		font-size: 10px;
 		margin: 0px;
@@ -199,29 +240,19 @@
 
 	}
 
-	.containerFirstCarVLeft .carousel-inner .item img
-	{
-		height: 100%;
-	}
 
-	.containerFirstCarVLeft .carousel-control.left
+	.FashionVCarouselContainer .carousel-control.left
 	{
 		position: absolute;
 		left: -10px;
-		top: 0px;
+		top: 180px;
 	}
 
-	.containerFirstCarVLeft .carousel-control.right
+	.FashionVCarouselContainer .carousel-control.right
 	{
 		position: absolute;
 		right: -10px;
-		top: 0px;
-	}
-
-	#ArrowV
-	{
-		width:20px;
-		padding-top: 350px;
+		top: 180px;
 	}
 
 	#fashionButtom
@@ -231,31 +262,60 @@
 
 	/*Fashion Description*/
 
-
-	.Description
+	.fashionImagesRight
 	{
-		width: 400px;
-		float: left;
-		margin-left: 70px;
-		margin-top: 100px;
+		float: right;
+		width: 285px;
 		position: relative;
+		right: 65px;
 	}
 
-	.Description p
+	.fashionImagesRight img
 	{
+		max-width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.fashionImagesRight p
+	{
+		font-family: "brandon_grotesque_regularRg";
+		letter-spacing: .4px;
+		font-weight: 400;
+		font-style: normal;
+		opacity: .7;
+		font-size: 13px;
+		line-height: 1.4em;
+		margin-bottom: 20px;
+	}
+
+
+	.fashionDescription
+	{
+		float: right;
+		position: relative;
+		right: 80px;
+		top: 105px
+	}
+
+	.fashionDescription p
+	{
+
+		width: 250px;
+
+		padding: 10px;
+		border-top:1px solid #787777;
+		border-bottom:1px solid #787777;
 		text-align: center;
 		font-size: 30px;
 		font-family: 'brandon_grotesque_regularRg';
-		border:none;
 		color: #777575;
-		width: 250px;
 
 	}
 
-	#Fashion .btn-lg
+	.fashionDescription .btn-lg
 	{
 		position: absolute;
-		left: 50px;
+		right: 55px;
 		top: 120px;
 	}
 
@@ -326,16 +386,16 @@
 		margin-top: 50px;
 	}
 
-	.description
+	.description.cities
 	{
-		width: 410px;
+		width: 1000px;
 		float: left;
-		margin-left: 70px;
-		margin-top: 100px;
+		margin: 0 auto;
 		position: relative;
+		top: 70px;
 	}
 
-	.description p
+	.description.cities p
 	{
 		text-align: center;
 		font-size: 30px;
@@ -344,76 +404,61 @@
 		color: #777575;
 	}
 
-	.description .btn:hover, .btn:focus 
-	{
-		color: white;
-		text-decoration: none;
-		background-color: #787777;
-		border-color: #787777;
-		font-family: 'HelveticaNeue-Light';
-
-	}
 
 	.description .btn-lg
 	{
-		background-color: transparent;
-		border-color: black;
-		border-radius: 2px;
-		font-family: 'HelveticaNeue-Light'; 
-		font-size: 18px; 
-
 		position: absolute;
-		left: 0px;
+		right: 427px;
 		top: 60px;	
 	}
 
 
 
-	/* Arty */
+	/* Conceptual section */
 
-	.sectionContainer.cArt
+	.sectionContainer.conceptual
 	{
 		background-color: white;	
-		height: 720px;	
+		height: 920px;	
 	}
 
-	.art
+	.conceptual
 	{
 		width: 1000px;
 		margin: 0 auto;
 	}
 
-	/*Art Carousel*/
+	/*Conceptual Carousel*/
 
-	.ArtCarouselContainer
+	.ConceptCarouselContainer
 	{
 		margin: 0;
-		width: 640px;
-		height: 400px;
+		width: 1000px;
+		height: 600px;
 		position: relative;
 		float: left;
 	}
 
-	.ArtCarouselContainer .carousel
+	.ConceptCarouselContainer .carousel
 	{
 		height: 100%;
 	}
 
-	.ArtCarouselContainer .carousel-inner
+	.ConceptCarouselContainer .carousel-inner
 	{
 		height: 100%;
 		margin: 0 auto;
 		width: 85%;
 	}
 
-	.ArtCarouselContainer .carousel-inner .item
+	.ConceptCarouselContainer .carousel-inner .item
 	{
 		height: 100%;
 		background-color: transparent;
 
 	}
 
-	.ArtCarouselContainer .carousel-inner .item .carousel-caption
+	.ConceptCarouselContainer .carousel-inner .item .carousel-caption
 	{
 		position: relative;
 		margin: 0px;
@@ -423,7 +468,7 @@
 
 	}
 
-	.ArtCarouselContainer .carousel-inner .item .carousel-caption h1
+	.ConceptCarouselContainer .carousel-inner .item .carousel-caption h1
 	{
 
 	font-family: "GaramondPremier";
@@ -442,7 +487,7 @@
 
 	}
 
-	.ArtCarouselContainer .carousel-inner .item .carousel-caption p
+	.ConceptCarouselContainer .carousel-inner .item .carousel-caption p
 	{
 		font-size: 10px;
 		margin: 0px;
@@ -453,59 +498,41 @@
 	}
 
 
-	.ArtCarouselContainer .carousel-control.left
+	.ConceptCarouselContainer .carousel-control.left
 	{
 		position: absolute;
 		left: 0px;
 		top: 0px;
 	}
 
-	.ArtCarouselContainer .carousel-control.right
+	.ConceptCarouselContainer .carousel-control.right
 	{
 		position: absolute;
 		right: 0px;
 		top: 0px;
 	}
 
-	.artImagesRight
+	.conceptualDescription
 	{
-		float: right;
-		width: 285px;
+		width: 370px;
+		float: left;
+		margin-top: 85px;
+		margin-left: 10px;
+
 	}
 
-	.artImagesRight img
-	{
-		max-width: 100%;
-		margin-bottom: 10px;
-	}
-
-	.artImagesRight p
-	{
-		font-family: "brandon_grotesque_regularRg";
-		letter-spacing: .4px;
-		font-weight: 400;
-		font-style: normal;
-		opacity: .7;
-		font-size: 13px;
-		line-height: 1.4em;
-		margin-bottom: 20px;
-	}
-
-	.description.art
-	{
-		position: relative;
-		margin-top: 30px;
-	}
-
-	.description.art p
+	.conceptualDescription p
 	{
 		padding: 10px;
-		width: 370px;
 		border-top:1px solid #787777;
 		border-bottom:1px solid #787777;
+		text-align: center;
+		font-size: 30px;
+		font-family: 'brandon_grotesque_regularRg';
+		color: #777575;
 	}
 
-	.description.art .btn-lg
+	.conceptualDescription .btn-lg
 	{
 		left: 75%;
 		top: 45px;

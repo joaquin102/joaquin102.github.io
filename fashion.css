@@ -2,6 +2,19 @@
 /*Fonts*/
 
 @font-face {
+    font-family: 'brandon_grotesque_regularRg';
+    src: url('Fonts/brandon_reg-webfont.eot');
+    src: url('Fonts/brandon_reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/brandon_reg-webfont.woff2') format('woff2'),
+         url('Fonts/brandon_reg-webfont.woff') format('woff'),
+         url('Fonts/brandon_reg-webfont.ttf') format('truetype'),
+         url('font-style/brandon_reg-webfont.svg#brandon_grotesque_regularRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
   font-family: 'GaramondPremier';
   src: url('Fonts/Garamond-Premier-Pro-Italic-Display.ttf');
 }
@@ -27,7 +40,7 @@
 
 		font-size: 30px;
 		margin: 0px;
-		margin-left: 130px;
+		margin-left: 30px;
 		padding-bottom: 5px;
 		text-align: left;
 		color: #8c7c3d;
@@ -49,17 +62,8 @@
 
 		/*Other settings coming from main*/
 		position: absolute;
-		right: 0px;
-		bottom: 90px;
-	}
-
-	.btn:hover, .btn:focus 
-	{
-		color: white;
-		text-decoration: none;
-		background-color: #787777;
-		border-color: #787777;
-		font-family: 'HelveticaNeue-Light';
+		right: 190px;
+		top: 360px;
 	}
 
 
@@ -67,7 +71,7 @@
 	{
 		width: 100%;
 		margin-top: 50px;
-		padding-top: 15px;
+		padding-top: 25px;
 	}
 
 	.photoshoot
@@ -83,123 +87,89 @@
 	{
 		background-color: #F5F5F5;
 		margin:0px;
+		padding-top: 25px;
 	}
 
-/*Fashion Carousel Vertical*/
-
-	.containerFirstCarVLeft
+	.comments
 	{
-		height: 580px;
-		position: relative;
-		margin-left: 50px;
+		width: 370px;
+		float: left;
+		position: absolute;
+		right: 75px;
+		top: 210px;
+
 	}
 
-	.containerFirstCarVLeft .carousel
+	.comments p
 	{
-		height: 100%;
+		padding: 10px;
+		border-top:1px solid #787777;
+		border-bottom:1px solid #787777;
+		text-align: center;
+		font-size: 30px;
+		font-family: 'brandon_grotesque_regularRg';
+		color: #777575;
 	}
 
-	.containerFirstCarVLeft .carousel-inner
+	.commentsH
 	{
-		height: 100%;
+		width: 370px;
+		float: left;
+		position: absolute;
+		right: 75px;
+		top: 210px;
+
+	}
+
+	.commentsH p
+	{
+		padding: 10px;
+		border-top:1px solid #787777;
+		border-bottom:1px solid #787777;
+		text-align: center;
+		font-size: 30px;
+		font-family: 'brandon_grotesque_regularRg';
+		color: #777575;
+	}
+
+	.image
+	{
+		width: 920px;
 		margin: 0 auto;
-		width: 550px;
-	}
-
-	.containerFirstCarVLeft .carousel-inner .item
-	{
-		height: 100%;
-		background-color: transparent;
-
-	}
-
-	.containerFirstCarVLeft .carousel-inner .item .carousel-caption
-	{
-		position: relative;
-		margin: 0px;
-		padding: 0px;
-		top: 10px;
-		left: 40px;
-
-	}
-
-	.containerFirstCarVLeft .carousel-inner .item .carousel-caption h1
-	{
-		font-size: 20px;
-		margin: 0px;
-		padding-bottom: 5px;
-		text-align: left;
-		color: gray;
-
-	}
-
-	.containerFirstCarVLeft .carousel-inner .item .carousel-caption p
-	{
-		font-size: 10px;
-		margin: 0px;
-		padding-left: 2px;
-		text-align: left;
-		color: black;
-
-	}
-
-	.containerFirstCarVLeft .carousel-inner .item img
-	{
-		height: 100%;
-	}
-
-	.containerFirstCarVLeft .carousel-control.left
-	{
-		position: absolute;
-		left: -10px;
-		top: 0px;
-	}
-
-	.containerFirstCarVLeft .carousel-control.right
-	{
-		position: absolute;
-		right: -10px;
-		top: 0px;
-	}
-
-	#ArrowV
-	{
-		width:20px;
-		padding-top: 250px;
 	}
 
 
-/*Art Carousel*/
+/*Vertical Carousel*/
 
-	.ArtCarouselContainer
+	.FashionVCarouselContainer
 	{
 		margin: 0;
-		width: 640px;
-		height: 400px;
+		width: 400px;
+		height: 570px;
 		position: relative;
 		float: left;
 	}
 
-	.ArtCarouselContainer .carousel
+	.FashionVCarouselContainer .carousel
 	{
 		height: 100%;
 	}
 
-	.ArtCarouselContainer .carousel-inner
+	.FashionVCarouselContainer .carousel-inner
 	{
 		height: 100%;
 		margin: 0 auto;
 		width: 85%;
 	}
 
-	.ArtCarouselContainer .carousel-inner .item
+	.FashionVCarouselContainer .carousel-inner .item
 	{
 		height: 100%;
 		background-color: transparent;
 
 	}
 
-	.ArtCarouselContainer .carousel-inner .item .carousel-caption
+	.FashionVCarouselContainer .carousel-inner .item .carousel-caption
 	{
 		position: relative;
 		margin: 0px;
@@ -209,7 +179,7 @@
 
 	}
 
-	.ArtCarouselContainer .carousel-inner .item .carousel-caption h1
+	.FashionVCarouselContainer .carousel-inner .item .carousel-caption h1
 	{
 
 	font-family: "GaramondPremier";
@@ -228,7 +198,7 @@
 
 	}
 
-	.ArtCarouselContainer .carousel-inner .item .carousel-caption p
+	.FashionVCarouselContainer .carousel-inner .item .carousel-caption p
 	{
 		font-size: 10px;
 		margin: 0px;
@@ -239,23 +209,112 @@
 	}
 
 
-	.ArtCarouselContainer .carousel-control.left
+	.FashionVCarouselContainer .carousel-control.left
 	{
 		position: absolute;
+		left: -10px;
+		top: 180px;
+	}
+
+	.FashionVCarouselContainer .carousel-control.right
+	{
+		position: absolute;
+		right: -10px;
+		top: 180px;
+	}
+
+/*Horizontal Carousel*/
+
+	.FashionHCarouselContainer
+	{
+		margin: 0 auto;
+		width: 920px;
+		height: 570px;
+		position: relative;
+	}
+
+	.FashionHCarouselContainer .carousel
+	{
+		height: 100%;
+	}
+
+	.FashionHCarouselContainer .carousel-inner
+	{
+		height: 100%;
+		margin: 0 auto;
+		width: 85%;
+	}
+
+	.FashionHCarouselContainer .carousel-inner .item
+	{
+		height: 100%;
+		background-color: transparent;
+
+	}
+
+	.FashionHCarouselContainer .carousel-inner .item .carousel-caption
+	{
+		position: relative;
+		margin: 0px;
+		padding: 0px;
+		top: 10px;
 		left: 0px;
-		top: 0px;
+
 	}
 
-	.ArtCarouselContainer .carousel-control.right
+	.FashionHCarouselContainer .carousel-inner .item .carousel-caption h1
+	{
+
+	font-family: "GaramondPremier";
+
+		line-height: 1.2em;
+
+		font-size: 20px;
+		margin: 0px;
+		padding-bottom: 5px;
+		text-align: left;
+		color: #8c7c3d;
+
+		text-transform: none;
+		letter-spacing: 1px;
+		font-weight: 500;
+
+	}
+
+	.FashionHCarouselContainer .carousel-inner .item .carousel-caption p
+	{
+		font-size: 10px;
+		margin: 0px;
+		padding-left: 2px;
+		text-align: left;
+		color: black;
+
+	}
+
+
+	.FashionHCarouselContainer .carousel-control.left
 	{
 		position: absolute;
-		right: 0px;
-		top: 0px;
+		left: -10px;
+		top: 180px;
+	}
+
+	.FashionHCarouselContainer .carousel-control.right
+	{
+		position: absolute;
+		right: -10px;
+		top: 180px;
 	}
 
 
+/* Park */
 
-	
+.sectionTiltle.park
+{
+	margin-left: 80px;
+}
+
+
 
 
 /* CUSTOMIZE THE CAROUSEL
