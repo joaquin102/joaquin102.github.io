@@ -1,0 +1,289 @@
+html,body
+{
+    
+    margin: 0;
+    padding: 0;
+    
+}
+
+.body
+{
+    margin: 0 auto;
+    clear: both;
+    margin:0;
+    padding:0;
+    height:100%;
+    
+}
+
+h2
+{
+    margin: 0;
+    padding: 0;
+}
+
+.breakingflow
+{
+    clear: both;
+}
+
+.topBarContainer
+{
+    width: 100%;
+}
+
+.topBarOver
+{
+    width: 100%;
+    background-color: #232323;
+    padding-bottom: 10px;
+    
+}
+
+.topBarOver p
+{
+    font-family: "Source Sans Pro","Helvetica Neue",sans-serif;
+    margin-left: 15px;
+    line-height: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+.topBarOver img
+{
+    width: 140px;
+    display: block;
+    margin: auto;
+}
+
+
+
+.middleContainer
+{
+    width: 100%;
+}
+
+.progressBarContainer
+{
+    width: 100%;
+    padding-top: 30px;
+}
+
+.progressBar
+{
+    width: 50%;
+    height: 50px;
+    margin: 0 auto;
+    border: 3px solid #7d7d7d;
+    position: relative;
+}
+
+.percentage p
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    margin-right: 50%;
+    font-family: "HelveticaNeue-Light";
+    top: 25%;
+    color: white;
+}
+
+
+.progressBarInside
+{
+    width: 0%;
+    height: 50px;
+    background-color:#82ca9c;
+    float: left;
+}
+
+.progressBarContainer img
+{
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#uploadFiles
+{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#uploadPicturesButton
+{
+    width: 127px;
+    height: 41px;
+    border: 2px solid #4cb6cb;
+    border-radius: 8px;
+    background-color: #28d781;
+    font-family: "helveticaNeue-light";
+    font-size: 13px;
+    color: white;
+    display: block;
+    margin: 10px auto;
+}
+
+#uploadPicturesButton:hover
+{
+    background-color: #4cb6cb;
+    border: 2px solid #28d781;
+}
+
+#uploadPicturesButton:focus
+{
+    outline: none;
+}
+
+#uploadPicturesButton:active
+{
+    font-size: 12px;
+}
+
+
+
+
+.centerPanel
+{   
+    width: 90%;
+    margin: 0 auto;
+}
+
+.gallery
+{
+    padding-top: 20px;
+    width: 100%;
+
+}
+
+#galleryTitle
+{
+    text-align: center;
+    margin-top: 0px;
+    font-weight: 300;
+    font-size: 30px;
+    color: #788188;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.40;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.image
+{
+    width: 30%;
+    float: left;
+    margin-left: 3%;
+    padding-bottom: 20px;
+
+}
+
+.image img
+{
+    width: 70%;
+    float: left;
+    -webkit-border-radius: 5px;
+
+}
+
+.tools
+{
+    float: left;
+    margin-left: 10%;
+}
+
+.tools ul
+{
+    padding: 0;
+}
+
+.tools li
+{
+    list-style: none;
+    padding-bottom: 50px;
+}
+
+.tools li img
+{
+    width: 25px;
+}
+
+#lastList
+{
+    padding-top: 55px;
+    padding-bottom: 0px;
+
+}
+
+.description
+{
+    padding-top: 10px;
+    text-align: left;
+}
+
+.inputText
+{
+    border:none;
+    border-bottom: 1px solid #dcdcdc ;
+    font-family: "HelveticaNeue-Ultralight";
+    font-size: 25px;
+    line-height: 1.40;
+    color: gray; 
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+#inputText:focus
+{
+    outline: none;
+}
+
+.descrText
+{
+    font-family: "HelveticaNeue-Ultralight";
+    font-size: 14px;
+    line-height: 1.40;
+    border:none;
+    border-bottom: 1px solid #dcdcdc ;
+    color: #cecece;
+    width: 70%;
+}
+
+.descrText:focus
+{
+    outline: none;
+}
+
+/* WebKit browsers */
+
+::-webkit-input-placeholder { 
+    color:#d9d7d7;
+}
+
+
+@media only screen and (max-width: 1144px)
+{
+    .image
+    {
+        width: 25%;
+
+
+    } 
+}
+
+@media only screen and (max-width: 715px)
+{
+    .image
+    {
+        width: 38%;
+
+
+    } 
+}
+
