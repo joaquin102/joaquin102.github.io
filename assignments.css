@@ -58,6 +58,11 @@ p
 	background-color: #212121;
 }
 
+.htmlContainer.gray
+{
+	background-color: #333;
+}
+
 .html
 {
 	width: 660px;
@@ -68,7 +73,7 @@ p
 
 .html img
 {
-	width: 350px;
+	width: 40%;
 }
 
 .html .btn
