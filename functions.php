@@ -15,8 +15,8 @@ function send_contact_email() {
         $return["status"] = false;
         return $return;
     }
-    $to = 'support@darwinthemes.com'; // emails where the email goes
-    $subject = 'Contact form submission';
+    $to = 'info@vennerapp.com'; // emails where the email goes
+    $subject = 'new message!';
     $eol = PHP_EOL;
 
     $separator = md5(time());
