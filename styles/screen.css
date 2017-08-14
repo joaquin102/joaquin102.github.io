@@ -942,7 +942,7 @@ svg:not(:root) { overflow: hidden; }
 @media only screen and (max-width: 47.5em) { 
 #root #nav > ul > li > a, #root #clone nav > ul > li > a, .theme-e #root #nav > ul > li > ul li a:hover, .theme-e #root #nav > ul > li > ul li.active { color: #f1435e; }
 #root #nav > ul > li > a:hover, #root #clone nav > ul > li > a:hover, #root #nav > ul > li.active > a, #root #clone nav > ul > li.active > a { background-color: #f1435e; color: #fff; }
-#root .list-b li[class^="mobile"] { width: auto; height: auto; margin: 0 0 40px; padding: 0; background: none; text-align: center; }
+#root .list-b li[class^="mobile"] { width: auto; height: auto; margin: 0 auto; padding: 0; background: none; text-align: center; }
 }
 
 
@@ -2023,6 +2023,6 @@ h6 { font-size: 2.4em; }
 
 #root [class^="mobile"], #root .list-b li[class^="mobile"] { width: auto; height: auto; padding: 0; background: none; }
 #root #welcome [class*="mobile"] { padding: 0 12px; }
-#root [class*="mobile"], #welcome > figure, #root #content .list-b li.mobile-b { transform: none; -moz-transform: none; -webkit-transform: none; -o-transform: none; -ms-transform: none; visibility: hidden;}
+#root [class*="mobile"], #welcome > figure, #root #content .list-b li.mobile-b { transform: none; -moz-transform: none; -webkit-transform: none; -o-transform: none; -ms-transform: none;}
 }
 
