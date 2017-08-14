@@ -530,7 +530,7 @@ img[src*="maps.gstatic.com"], img[src*="googleapis.com"], img[src*="google"] { m
 	[data-carousel-3d]:before { padding-top: 40%; display: block; content: ''; }
 	[data-carousel-3d] [data-children-wrapper] { position: absolute; top: 0; bottom: 0; right: 26%; left: 26%; }
 
-.slider-ba { list-style: none; margin: 0 0 60px; padding: 0 0 64px; background: #000; }
+.slider-ba { list-style: none; margin: 0 0 60px; padding: 0 0 64px; background: white; }
 	.slider-ba img { display: block; width: 100% !important; }
 		.slider-ba .bx-prev { left: 0; transform-origin: left center; -moz-transform-origin: left center; -webkit-transform-origin: left center; -o-transform-origin: left center; -ms-transform-origin: left center; }
 		.slider-ba .bx-next { right: 0; transform-origin: right center; -moz-transform-origin: right center; -webkit-transform-origin: right center; -o-transform-origin: right center; -ms-transform-origin: right center; }
@@ -1526,7 +1526,7 @@ svg:not(:root) { overflow: hidden; }
 .icon-basic-postcard-multiple:before { content: "|"; }
 .icon-basic-printer:before { content: "}"; }
 .icon-basic-question:before { content: "~"; }
-.icon-basic-rss:before { content: "\\"; }
+.icon-basic-rss:before { content: "\\/"; }
 .icon-basic-server:before { content: "\e000"; }
 .icon-basic-server2:before { content: "\e001"; }
 .icon-basic-server-cloud:before { content: "\e002"; }
@@ -2022,6 +2022,6 @@ h6 { font-size: 2.4em; }
 
 #root [class^="mobile"], #root .list-b li[class^="mobile"] { width: auto; height: auto; padding: 0; background: none; }
 #root #welcome [class*="mobile"] { padding: 0 12px; }
-#root [class*="mobile"], #welcome > figure, #root #content .list-b li.mobile-b { transform: none; -moz-transform: none; -webkit-transform: none; -o-transform: none; -ms-transform: none; }
+#root [class*="mobile"], #welcome > figure, #root #content .list-b li.mobile-b { transform: none; -moz-transform: none; -webkit-transform: none; -o-transform: none; -ms-transform: none;}
 }
 
