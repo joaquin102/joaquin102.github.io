@@ -31,6 +31,9 @@
 15. RESPONSIVE
 		   		   
 ---------------------------------------------  */
+
+.lt-ie9 img, img[src=”maps.gstatic.com”], img[src=”google”], .zoomin img + img, img.zoomin + img { max-width: none !important; }
+
 * { margin: 0; padding: 0; }
 *, :before, :after { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; -o-box-sizing: content-box; -ms-box-sizing: content-box; box-sizing: content-box; }
 
