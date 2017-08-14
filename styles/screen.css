@@ -85,7 +85,8 @@ article, aside, details, div, figcaption, figure, footer, header, hgroup, menu, 
 					#clone nav > ul > li > ul li a, #clone nav > ul > li > ul > li > ul a { border-color: #fff; color: #fff; }
 					.rgba #clone nav > ul > li > ul li a { border-color: rgba(255,255,255,.25); }
 				#clone nav > ul > li > ul > li > ul { border-radius: 0 5px 5px 5px; background: #000; }
-		#top > .fit-a, #clone > .fit-a { display: block; position: absolute; right: 12px; top: -3000em; z-index: 4; width: 49px; height: 49px; background: #000000; cursor: pointer; }
+		#top > .fit-a, #clone > .fit-a { display: block; position: absolute; right: 12px; top: -3000em; z-index: 4; width: 49px; height: 49px; cursor: pointer; }
+		/*#top > .fit-a, #clone > .fit-a { display: block; position: absolute; right: 12px; top: -3000em; z-index: 4; width: 49px; height: 49px; background: #000000; cursor: pointer; }*/
 			#top > .fit-a:before, #top > .fit-a:after, #clone > .fit-a:before, #clone > .fit-a:after { content: ""; display: block; position: absolute; left: 50%; z-index: 0; width: 30px; margin: 0 0 0 -15px; height: 7px; border-bottom: 3px solid #FFFFFF; }
 				#top > .fit-a:before, #clone > .fit-a:before { top: 13px; border-top: 3px solid #FFFFFF; }
 				#top > .fit-a:after, #clone > .fit-a:after { bottom: 13px; }
