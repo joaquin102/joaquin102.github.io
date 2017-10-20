@@ -1,2443 +1,1044 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head>
-<meta content="exported via StampReady" name="sr_export">
-<meta content="exported via StampReady" name="sr_export">
-<meta content="exported via StampReady" name="sr_export">
-<meta content="exported via StampReady" name="sr_export">
-<meta content="exported via StampReady" name="sr_export">
-<meta content="exported via StampReady" name="sr_export">
-<meta content="exported via StampReady" name="sr_export">
-<meta content="exported via StampReady" name="sr_export">
-<meta content="exported via StampReady" name="sr_export">
-<meta content="exported via StampReady" name="sr_export">
-<meta content="exported via StampReady" name="sr_export">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-<style type="text/css">
-      div, p, a, li, td {
-        -webkit-text-size-adjust:none;
-      }
-      *{
-        -webkit-font-smoothing: ;
-        -moz-osx-font-smoothing: grayscale;
-      }
-      .ReadMsgBody{
-        width: 100%;
-        background-color: #ffffff;
-      }
-      .ExternalClass{
-        width: 100%;
-        background-color: #ffffff;
-      }
-      /*body*/ #tc_central{
-        width: 100%;
-        height: 100%;
-        background-color: #ffffff;
-        margin:0;
-        padding:0;
-        -webkit-font-smoothing: ;
-      }
-      /*html*/ #tc_central{
-        width: 100%;
-        background-color: #ffffff;
-      }
-      @font-face {
-        font-family: 'proxima_novalight';
-        src: url('http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.eot');
-        src: url('http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-      }
-      @font-face {
-        font-family: 'proxima_nova_rgregular';
-        src: url('http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.eot');
-        src: url('http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-      }
-      @font-face {
-        font-family: 'proxima_novasemibold';
-        src: url('http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.eot');
-        src: url('http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-      }
-      @font-face {
-        font-family: 'proxima_nova_rgbold';
-        src: url('http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.eot');
-        src: url('http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-      }
-      @font-face {
-        font-family: 'proxima_novathin';
-        src: url('http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.eot');
-        src: url('http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-      }
-      @font-face {
-        font-family: 'proxima_novaextrabold';
-        src: url('http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.eot');
-        src: url('http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.woff2') format('woff2'),url('http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-      }
-      p {
-        padding: 0!important;
-        margin-top: 0!important;
-        margin-right: 0!important;
-        margin-bottom: 0!important;
-        margin-left: 0!important;
-      }
-      .hover:hover {
-        opacity:0.85;
-        filter:alpha(opacity=85);
-      }
-      .underline:hover {
-        text-decoration: underline!important;
-      }
-      .brightness:hover {
-        filter: brightness(80%);
-        -webkit-filter: brightness(80%);
-        -moz-filter: brightness(80%);
-        -o-filter: brightness(80%);
-        -ms-filter: brightness(80%);
-      }
-      .opacity img{
-        opacity: 0.2;
-        filter: alpha(opacity=20);
-      }
-      a:hover.opacity img{
-        opacity: 1;
-        filter: alpha(opacity=100);
-      }
-      a.opacity:hover img{
-        opacity: 1;
-        filter: alpha(opacity=100);
-      }
-      .jump:hover {
-        opacity:0.75;
-        filter:alpha(opacity=75);
-        padding-top: 10px!important;
-      }
-      a#rotator img {
-        -webkit-transition: all 1s ease-in-out;
-        -moz-transition: all 1s ease-in-out;
-        -o-transition: all 1s ease-in-out;
-        -ms-transition: all 1s ease-in-out;
-      }
-      a#rotator img:hover {
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-      }
-      #box {
-        -webkit-animation: bounceInLeftFast 2s;
-        -moz-animation: bounceInLeftFast 2s;
-        -o-animation: bounceInLeftFast 2s;
-        animation: bounceInLeftFast 2s;
-      }
-      @-webkit-keyframes bounceInLeftFast {
-        0% {
-          opacity: 0;
-          -webkit-transform: translateY(-2000px);
-          transform: translateY(-2000px);
-        }
-        60% {
-          opacity: 1;
-          -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-        }
-        80% {
-          -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
-        }
-        100% {
-          -webkit-transform: translateY(0);
-          transform: translateY(0);
-        }
-      }
-      @-moz-keyframes bounceInLeftFast {
-        0% {
-          opacity: 0;
-          -webkit-transform: translateY(-2000px);
-          transform: translateY(-2000px);
-        }
-        60% {
-          opacity: 1;
-          -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-        }
-        80% {
-          -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
-        }
-        100% {
-          -webkit-transform: translateY(0);
-          transform: translateY(0);
-        }
-      }
-      @-o-keyframes bounceInLeftFast {
-        0% {
-          opacity: 0;
-          -webkit-transform: translateY(-2000px);
-          transform: translateY(-2000px);
-        }
-        60% {
-          opacity: 1;
-          -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-        }
-        80% {
-          -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
-        }
-        100% {
-          -webkit-transform: translateY(0);
-          transform: translateY(0);
-        }
-      }
-      #box2 {
-        -webkit-animation: bounceInLeftSlow 3s;
-        -moz-animation: bounceInLeftSlow 3s;
-        -o-animation: bounceInLeftSlow 3s;
-        animation: bounceInLeftSlow 3s;
-      }
-      @-webkit-keyframes bounceInLeftSlow {
-        0% {
-          opacity: 0;
-          -webkit-transform: translateY(-2000px);
-          transform: translateY(-2000px);
-        }
-        60% {
-          opacity: 1;
-          -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-        }
-        80% {
-          -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
-        }
-        100% {
-          -webkit-transform: translateY(0);
-          transform: translateY(0);
-        }
-      }
-      @-moz-keyframes bounceInLeftSlow {
-        0% {
-          opacity: 0;
-          -webkit-transform: translateY(-2000px);
-          transform: translateY(-2000px);
-        }
-        60% {
-          opacity: 1;
-          -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-        }
-        80% {
-          -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
-        }
-        100% {
-          -webkit-transform: translateY(0);
-          transform: translateY(0);
-        }
-      }
-      @-o-keyframes bounceInLeftSlow {
-        0% {
-          opacity: 0;
-          -webkit-transform: translateY(-2000px);
-          transform: translateY(-2000px);
-        }
-        60% {
-          opacity: 1;
-          -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-        }
-        80% {
-          -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
-        }
-        100% {
-          -webkit-transform: translateY(0);
-          transform: translateY(0);
-        }
-      }
-      #logo img {
-        width: 125px;
-        height: auto;
-      }
-      #icon12 img {
-        width: 12px;
-        height: auto;
-      }
-      .icon28 img {
-        width: 28px;
-        height: auto;
-      }
-      .image185 img {
-        width: 185px;
-        height: auto;
-      }
-      .image100 img {
-        width: 100px;
-        height: auto;
-      }
-      .image270 img {
-        width: 270px;
-        height: auto;
-      }
-      .image600 img {
-        width: 600px;
-        height: auto;
-      }
-      .check img {
-        width: 13px;
-        height: auto;
-      }
-    </style><style>
-      .ReadMsgBody {
-        width: 100%;
-        background-color: #ffffff;
-      }
-      .ExternalClass {
-        width: 100%;
-        background-color: #ffffff;
-      }
-      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
-        line-height: 100%;
-      }
-      html {
-        width: 100%;
-      }
-      body {
-        -webkit-text-size-adjust: none;
-        -ms-text-size-adjust: none;
-        margin: 0;
-        padding: 0;
-      }
-      table {
-        border-spacing: 0;
-        table-layout: fixed;
-        margin: 0 auto;
-      }
-      table table table {
-        table-layout: auto;
-      }
-      img {
-        display: block !important;
-        overflow: hidden !important;
-      }
-      table td {
-        border-collapse: collapse;
-      }
-      .yshortcuts a {
-        border-bottom: none !important;
-      }
-      a {
-        color: #3498db;
-        text-decoration: none;
-      }
-      .textbutton a {
-        font-family: 'open sans', arial, sans-serif !importat;
-        color: #ffffff !important;
-      }
-      .footer-link a {
-        color: #979797 !important;
-      }
-      /*Responsive*/
-      @media only screen and (max-width: 590px) {
-        body {
-          width: auto !important;
-        }
-        table[class="zay600"] {
-          width: 450px !important;
-        }
-        table[class="zay-inner"] {
-          width: 90% !important;
-        }
-        table[class="zay2-2"] {
-          width: 47% !important;
-          text-align: left !importatrtant;
-        }
-        table[class="zay3-3"] {
-          width: 100% !important;
-          text-align: center !important;
-        }
-        table[class="zay4-4"] {
-          width: 29% !important;
-        }
-        table[class="zay5-5"] {
-          width: 64% !important;
-          text-align: left !important;
-        }
-        td[class="header-td"] {
-          height: 50px !important;
-          max-height: 50px !important;
-          line-height: 0px !important;
-        }
-        td[class="td-hide"] {
-          height: 0px !important;
-          max-height: 0px !important;
-          line-height: 0px !important;
-        }
-        /* Image */img[class="img1"] {
-          width: 100% !important;
-          height: auto !important;
-        }
-      }
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Garota newsletter</title>
 
-      @media only screen and (max-width: 479px) {
-        body {
-          width: auto !important;
-        }
-        table[class="zay600"] {
-          width: 290px !important;
-        }
-        table[class="zay-inner"] {
-          width: 82% !important;
-        }
-        table[class="zay2-2"] {
-          width: 100% !important;
-          text-align: center !important;
-        }
-        table[class="zay3-3"] {
-          width: 100% !important;
-          text-align: center !important;
-        }
-        table[class="zay4-4"] {
-          width: 100% !important;
-        }
-        table[class="zay5-5"] {
-          width: 100% !important;
-          text-align: center !important;
-        }
-        td[class="header-td"] {
-          height: 50px !important;
-          max-height: 20px !important;
-          line-height: 0px !important;
-        }
-        td[class="td-hide"] {
-          height: 0px !important;
-          max-height: 0px !important;
-          line-height: 0px !important;
-        }
-        /* image */
-        img[class="img1"] {
-          width: 100% !important;
-        }
-      }
+      <style type="text/css">
 
-      /* Moving Dots */    .dot1 {
-        -webkit-animation: dot1 18s linear infinite;
-        animation: dot1 18s linear infinite;
-      }
-      @-webkit-keyframes dot1 {
-        0% {
-          left: 0%;
-          bottom: 0%;
-        }
-        100% {
-          left: 100%;
-          bottom: 70%;
-        }
-      }
-      @-moz-keyframes dot1 {
-        0% {
-          left: 0%;
-          bottom: 0%;
-        }
-        100% {
-          left: 100%;
-          bottom: 70%;
-        }
-      }
-      .dot2 {
-        -webkit-animation: dot2 10s linear infinite;
-        animation: dot2 10s linear infinite;
-      }
-      @-webkit-keyframes dot2 {
-        0% {
-          left: 0%;
-          bottom: 10%;
-        }
-        100% {
-          left: 100%;
-          bottom: 50%;
-        }
-      }
-      @-moz-keyframes dot2 {
-        0% {
-          left: 0%;
-          bottom: 10%;
-        }
-        100% {
-          left: 100%;
-          bottom: 50%;
-        }
-      }
-      .dot3 {
-        -webkit-animation: dot3 14s linear infinite;
-        animation: dot3 14s linear infinite;
-      }
-      @-webkit-keyframes dot3 {
-        0% {
-          right: 0%;
-          top: 10%;
-        }
-        100% {
-          right: 100%;
-          top: 60%;
-        }
-      }
-      @-moz-keyframes dot3 {
-        0% {
-          right: 0%;
-          top: 10%;
-        }
-        100% {
-          right: 100%;
-          top: 60%;
-        }
-      }
-      .dot4 {
-        -webkit-animation: dot4 8s linear infinite;
-        animation: dot4 8s linear infinite;
-      }
-      @-webkit-keyframes dot4 {
-        0% {
-          right: 40%;
-          bottom: 0%;
-        }
-        100% {
-          right: 60%;
-          bottom: 100%;
-        }
-      }
-      @-moz-keyframes dot4 {
-        0% {
-          right: 40%;
-          bottom: 0%;
-        }
-        100% {
-          right: 60%;
-          bottom: 100%;
-        }
-      }
-      .dot5 {
-        -webkit-animation: dot5 30s linear infinite;
-        -webkit-animation-delay: 2s;
-        animation: dot5 30s linear infinite;
-        animation-delay: 2s;
-      }
-      @-webkit-keyframes dot5 {
-        0% {
-          right: 80%;
-          bottom: 0%;
-        }
-        100% {
-          right: 50%;
-          bottom: 100%;
-        }
-      }
-      @-moz-keyframes dot5 {
-        0% {
-          right: 80%;
-          bottom: 0%;
-        }
-        100% {
-          right: 50%;
-          bottom: 100%;
-        }
-      }
-      .dot6 {
-        -webkit-animation: dot6 60s linear infinite;
-        -webkit-animation-delay: 4s;
-        animation: dot6 linear infinite;
-        animation-delay: 4s;
-      }
-      @-webkit-keyframes dot6 {
-        0% {
-          right: 0%;
-          top: 40%;
-        }
-        100% {
-          right: 100%;
-          top: 60%;
-        }
-      }
-      @-moz-keyframes dot6 {
-        0% {
-          right: 0%;
-          top: 40%;
-        }
-        100% {
-          right: 100%;
-          top: 60%;
-        }
-      }
-      .dot7 {
-        -webkit-animation: dot7 16s linear infinite;
-        animation: dot7 16s linear infinite;
-      }
-      @-webkit-keyframes dot7 {
-        0% {
-          left: 5%;
-          bottom: 0%;
-        }
-        100% {
-          left: 20%;
-          bottom: 100%;
-        }
-      }
-      @-moz-keyframes dot7 {
-        0% {
-          left: 5%;
-          bottom: 0%;
-        }
-        100% {
-          left: 20%;
-          bottom: 100%;
-        }
-      }
-      .dot8 {
-        -webkit-animation: dot8 6s linear infinite;
-        -webkit-animation-delay: 3s;
-        animation: dot8 6s linear infinite;
-      }
-      @-webkit-keyframes dot8 {
-        0% {
-          left: 0%;
-          bottom: 30%;
-        }
-        100% {
-          left: 100%;
-          bottom: 10%;
-        }
-      }
-      @-moz-keyframes dot8 {
-        0% {
-          left: 0%;
-          bottom: 30%;
-        }
-        100% {
-          left: 100%;
-          bottom: 10%;
-        }
-      }
-      .dot9 {
-        -webkit-animation: dot9 22s linear infinite;
-        animation: dot9 22s linear infinite;
-      }
-      @-webkit-keyframes dot9 {
-        0% {
-          left: 0%;
-          bottom: 60%;
-        }
-        100% {
-          left: 100%;
-          bottom: 90%;
-        }
-      }
-      @-moz-keyframes dot9 {
-        0% {
-          left: 0%;
-          bottom: 60%;
-        }
-        100% {
-          left: 100%;
-          bottom: 90%;
-        }
-      }
-      .dot10 {
-        -webkit-animation: dot10 14s linear infinite;
-        -webkit-animation-delay: 2s;
-        animation: dot10 14s linear infinite;
-        animation-delay: 2s;
-      }
-      @-webkit-keyframes dot10 {
-        0% {
-          right: 5%;
-          top: 0%;
-        }
-        100% {
-          right: 45%;
-          top: 100%;
-        }
-      }
-      @-moz-keyframes dot10 {
-        0% {
-          right: 5%;
-          top: 0%;
-        }
-        100% {
-          right: 45%;
-          top: 100%;
-        }
-      }
+      @import url(http://fonts.googleapis.com/css?family=Lato:400);
+         @import url(https://fonts.googleapis.com/css?family=Open+Sans)
+         @font-face {
+         font-family: 'proxima_novalight';
+         src: url('http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.eot');
+         src: url('http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.ttf') format('truetype');
+         font-weight: normal;
+         font-style: normal;
+         }
+         @font-face {
+         font-family: 'proxima_nova_rgregular';
+         src: url('http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.eot');
+         src: url('http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.ttf') format('truetype');
+         font-weight: normal;
+         font-style: normal;
+         }
+         @font-face {
+         font-family: 'proxima_novasemibold';
+         src: url('http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.eot');
+         src: url('http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.ttf') format('truetype');
+         font-weight: normal;
+         font-style: normal;
+         }
+         @font-face {
+         font-family: 'proxima_nova_rgbold';
+         src: url('http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.eot');
+         src: url('http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.ttf') format('truetype');
+         font-weight: normal;
+         font-style: normal;
+         }
+         @font-face {
+         font-family: 'proxima_novathin';
+         src: url('http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.eot');
+         src: url('http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.ttf') format('truetype');
+         font-weight: normal;
+         font-style: normal;
+         }
+         @font-face {
+         font-family: 'proxima_novaextrabold';
+         src: url('http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.eot');
+         src: url('http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.woff2') format('woff2'),url('http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.ttf') format('truetype');
+         font-weight: normal;
+         font-style: normal;
+         }
 
 
       /*MY CODE*/
-
       .logo {
+       width: 100px;
+       margin-left: 5%;
+     }
+     .logo img {
+       max-width: 100%;
+       display: inline;
+       margin-top: 20px;
+     }
+     .navigationBar {
+       text-align: center;
+       font-family: 'Open Sans', Arial, sans-serif;
+       height: 100px;
+       font-size: 13px;
+       line-height: 28px;
+     }
+     .navigationBar ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+     }
+     .navigationBar li {
+       display: inline;
+     }
+     .navigationBar li a {
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;
+       color: rgb(184, 184, 184);
+     }
+     .navigationBar li a:hover {
+       color: rgb(254, 1, 82);
+     }
+     .navigationBar .selected a{
+       color: rgb(254, 1, 82);
+     }
+     .mainImage img{
+       max-width: 100%;
+     }
 
-        width: 100px;
-        margin-left: 5%;
+     /*PRODUCTS */
+
+     .products {
+       background-color: rgba(226, 226, 226, 0.15);
+       padding-bottom: 30px;
+     }
+     .products .container .title p {
+       font-family: 'Open Sans', Arial, sans-serif;
+       color: rgb(35, 30, 30);
+       font-size: 23px;
+       line-height: 23.5px;
+       font-weight: 900;
+     }
+     .products .container {
+       width: 70%;
+       margin: 0 auto;
+       padding-top: 20px;
+     }
+     .row {
+       margin-bottom: 50px;
+     }
+     .product {
+       width: 32%;
+       margin-left: 1.5%;
+       float: left;
+     }
+     .product img {
+       max-width: 100%;
+     }
+     .name {
+       font-family: "Open Sans", Arial, sans-serif;
+       color: rgb(43, 43, 43);
+       font-size: 16px;
+       font-weight: 400;
+       line-height: 27.2px;
+       text-align: left;
+       margin-bottom: 0px;
+     }
+     .price {
+       font-family: "Open Sans", Arial, sans-serif;
+       color: rgb(140, 140, 140);
+       font-size: 13px;
+       line-height: 22.1px;
+       text-align: left;
+       margin-top: 0px;
+     }
+     .products .button {
+       width: 60%;
+       height: 30px;
+       margin: 0 auto;
+       background-color: black;
+     }
+     .products .button p {
+       line-height: 30px;
+       font-family: HelveticaNeue-Bold, sans-serif;
+       color: rgb(255, 255, 255);
+       font-size: 10px;
+       font-weight: 400;
+       text-align: center;
+       background-color: black;
+     }
+
+     /* COLLECTIONS */
+
+     .collection {
+       width: 25%;
+       height: 100%;
+       float: left;
+     }
+     .collection img {
+       max-height: 100%;
+       min-width: 100%;
+       object-fit: cover;
+     }
+
+     /* SHIPPING */
+
+     .shipping .container {
+       width: 40%;
+       margin: 0 auto;
+       margin-top: 50px;
+     }
+     .shipping .container .feature {
+       float: left;
+       width: 30%;
+       margin-left: 5%;
+     }
+     .feature .image {
+       width: 25%;
+       margin: 0 auto;
+     }
+     .feature img {
+       max-width: 100%;
+     }
+     .feature .title {
+       font-family: HelveticaNeue-Bold, Arial, sans-serif;
+       font-size: 16px;
+       font-weight: 400;
+       color: rgb(31, 31, 31);
+       line-height: 27.2px;
+       margin-bottom: 0px;
+       text-align: center;
+     }
+     .feature .subtitle {
+       font-family: HelveticaNeue-Medium, sans-serif;
+       font-size: 13px;
+       font-weight: 400;
+       color: rgb(173, 173, 173);
+       line-height: 22.1px;
+       margin-top: 0px;
+       text-align: center;
+     }
+
+     /* LANDSCAPE IMAGE */
+
+     .landscapeImage {
+       width: 80%;
+       margin: 0 auto;
+     }
+     .landscapeImage img{
+       max-width: 100%;
+     }
+     .line {
+       width: 90%;
+       margin-top: 100px;
+       background-color: rgb(230, 230, 230);
+       border: 0;
+       height: 1px;
+     }
+
+     /* NEWS */
+
+     .news {
+
+      margin-bottom: 100px;
+     }
+
+     .news .verticalContainer {
+       width: 70%;
+       margin: 0 auto;
+       margin-top: 100px;
+     }
+     .text {
+       float: left;
+       width: 60%;
+       margin-top: 100px;
+     }
+     .news .text .myButton {
+       margin-top: 30px;
+     }
+     .news .verticalContainer .title p {
+       font-family: 'Lato', Arial, sans-serif;
+       color: rgb(65, 74, 81);
+       font-size: 22px;
+       font-weight: 700;
+     }
+     .news .verticalContainer .description {
+       margin-top: 30px;
+       width: 80%;
+     }
+     .news .verticalContainer .description p {
+       font-family: 'Lato', Arial, sans-serif;
+       color: #7f8c8d;
+       font-size: 14px;
+       line-height: 23px;
+     }
+     .news .verticalContainer .image {
+       float: right;
+       width: 30%;
+       margin-right: 10%;
+     }
+     .news .verticalContainer .image img {
+       max-width: 100%;
+     }
+     .news .horizontalContainer {
+       width: 60%;
+       margin: 0 auto;
+       margin-top: 100px;
+     }
+     .news .horizontalContainer .header {
+       width: 60%;
+       margin: 0 auto;
+     }
+     .news .horizontalContainer .header .title .upperTitle {
+       font-family: 'Open Sans', Arial, sans-serif;
+       color: rgb(186, 186, 186);
+       font-size: 27px;
+       line-height: 39.15px;
+       font-weight: 100;
+     }
+     .news .horizontalContainer .header .title .mainTitle {
+       font-family: 'Open Sans', Arial, sans-serif;
+       font-size: 37px;
+       font-weight: 900;
+       color: rgb(254, 1, 82);
+       line-height: 12px;
+     }
+     .news .horizontalContainer .header .description {
+       font-family: 'Open Sans', Arial, sans-serif;
+       color: rgb(160, 160, 160);
+       font-size: 14px;
+       font-weight: 100;
+       line-height: 22.8px;
+     } 
+     .news .horizontalContainer .image {
+       margin-top: 80px;
+     }
+     .news .horizontalContainer .image img {
+       max-width: 100%;
+       display: block;
+       margin: auto;
+     }
+     .news .button {
+       width: 25%;
+       height: 45px;
+       margin-top: 60px;
+       border-color: black;
+       border-style: solid;
+       border-width: 1px;
+       border-radius: 45px;
+     }
+     .news .button p {
+       line-height: 45px;
+       font-family: HelveticaNeue-Bold, sans-serif;
+       color: black;
+       font-size: 15px;
+       font-weight: 400;
+       text-align: center;
+       margin: 0;
+     }
+
+
+     /* PHOTOSHOOT */
+
+     .photoshoot {
+
+      margin-top: 50px;
+     }
+
+     .photoshoot .container {
+
+      width: 50%;
+      margin: 0 auto;
+    }
+    .photoshoot .title .mainTitle{
+      font-family: 'Open Sans', Arial, sans-serif;
+      color: #FE0152;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27.2px;
+      margin-bottom: 0px;
+    }
+
+    .photoshoot .title .subtitle{
+      font-family: 'Open Sans', Arial, sans-serif;
+      color: rgb(127, 127, 127);
+      font-size: 21px;
+      font-weight: 100;
+      line-height: 27.7px;
+      margin-top: 0px
+    }
+
+    .photoshoot img {
+      max-width: 100%;
+    }
+
+    .row-3PA .image1{
+
+      float: left;
+      width: 60%;
+      margin-right: 1%;
+    }
+
+    .row-3PA .image2 {
+
+      float: left;
+      width: 30%;
+    }
+
+    .row-3PA .image3 {
+
+      float: left;
+      width: 30%;
+    }
+
+    .row-3PB .image1{
+
+      float: right;
+      width: 60%;
+      margin-left: 1%;
+    }
+
+    .row-3PB .image2 {
+
+      float: right;
+      width: 30%;
+    }
+
+    .row-3PB .image3 {
+
+      float: right;
+      width: 30%;
+    }
+
+    .row-1P img {
+      display: block;;
+      margin: auto;
+    }
+
+    .row-1P {
+
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+
+    .clear {
+     clear: both;
+   }
+
+
+
+      @media only screen and (max-width: 1000px) {
+
+      /* PRODUCTS TABLETS */
+
+      .products .container {
+         width: 95%;
       }
 
-      .logo img {
+    }
 
-        max-width: 100%;
-        display: inline;
-        margin-top: 20px;
+
+     @media only screen and (max-device-width: 800px) {
+       .logo {
+         margin-bottom: 15px;
+       }
+
+       /* NAVIGATION BAR MOBILE */
+
+       .navigationBar {
+         height: 150px;
+             margin-bottom: 40px;
+       }
+
+       /* PRODUCTS MOBILE */
+
+       .products .container {
+         width: 90%;
+       }
+       .product {
+         width: 100%;
+         margin-left: 0px;
+         margin-bottom: 50px;
+       }
+       .product img {
+         display: block;
+         margin: auto;
+       }
+       .product p {
+         padding-left: 5%;
+       }
+       .product .button {
+         width: 60%;
+         height: 40px;
+       }
+       .product .button p {
+         font-size: 14px;
+         line-height: 40px;
+         font-family: HelveticaNeue-Bold, sans-serif;
+       }
+
+       /* COLLECTIONS MOBILE */
+
+       .collection {
+         width: 100%;
+       }
+       .collection {
+         margin-bottom: 10px;
+       }
+
+       /* FEATURES MOBILE */
+
+       .shipping .container {
+         width: 100%;
+       }
+       .shipping .container .feature {
+         margin-left: 0px;
+         width: 100%;
+         margin-bottom: 30px;
+       }
+       .feature .image {
+         width: 20%;
+       }
+       .shipping .title {
+         font-size: 18px;
+         font-family: Lato, Arial, sans-serif;
+       }
+       .shipping .subtitle {
+         font-size: 12px;
+         line-height: 25px;
+         font-family: Lato, Arial, sans-serif;
+       }
+
+       /* LANDSCAPE IMAGE MOBILE */
+
+       .landscapeImage {
+         width: 100%;
+       }
+
+       /* NEWS MOBILE */
+
+       .news {
+         width: 100%;
+       }
+       .news .verticalContainer {
+         width: 90%;
+       }
+       .news .verticalContainer .text {
+         margin-top: 0px;
+       }
+       .news .verticalContainer .image {
+         width: 40%;
+         margin-right: 0px;
+       }
+       .news .verticalContainer .title .mainTitle{
+         margin-bottom: 25px;
+         margin-top: 0px;
+         font-weight: 800;
+       }
+       .news .verticalContainer .title .subtitle {
+         margin-top: 0px;
+         margin-bottom: 0px;
+         font-weight: 100;
+       }
+       .news .verticalContainer .description p{
+         margin-top: 0px;
+       }
+       .news .verticalContainer .button {
+         width: 80%;
+         margin: 0 auto;
+         margin-top: 60px;
+       }
+       .news .horizontalContainer {
+         width: 90%;
+       }
+       .news .horizontalContainer .header {
+         width: 100%;
+       }
+       .news .horizontalContainer .image {
+         margin-top: 30px;
+       }
+       .newsImage {
+         float: right;
+         width: 35%;
+         margin-right: 0%;
+       }
+
+       /* OTHER ELEMENTS MOBILE */
+
+       .line {
+        margin-top: 50px;
       }
-
-      .navigationBar {
-
-          text-align: center;
-          font-family: 'Open Sans', Arial, sans-serif;
-          height: 100px;
-          font-size: 13px;
-          line-height: 28px;
-      }
-      .navigationBar ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-
-      }
-
-      .navigationBar li {
-          display: inline;
-      }
-
-      .navigationBar li a {
-
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        color: rgb(184, 184, 184);
-
-      }
-
-      .navigationBar li a:hover {
-
-        color: rgb(254, 1, 82);
-      }
-
-      .navigationBar .selected a{
-        color: rgb(254, 1, 82);
-      }
-
-      .mainImage img{
-
-        max-width: 100%;
-      }
-
-
-      .landscapeImage {
-
-        width: 80%;
-        margin: 0 auto;
-      }
-      .landscapeImage img{
-
-        max-width: 100%;
-      }
-
-      .line {
-
-        width: 90%;
-        margin-top: 100px;
-        background-color: rgb(230, 230, 230);
-        border: 0;
-        height: 1px;
-      }
-
-
-      .news {
-        width: 70%;
-        margin: 0 auto;
-        margin-top: 100px;
-      }
-
-      .newsText {
-        float: left;
-        width: 60%;
-        margin-top: 100px;
-      }
-
-      .newsText .myButton {
-        margin-top: 30px;
-      }
-
-      .newsTitle p {
-
-        font-family: 'Open Sans', Arial, sans-serif;
-        color: rgb(65, 74, 81);
-        font-size: 22px;
-        font-weight: 700;
-      }
-
-      .newsDescription {
-
-        margin-top: 30px;
-        width: 80%;
-
-      }
-
-      .newsDescription p {
-
-        font-family: 'Open sans', Arial, sans-serif;
-        color: #7f8c8d;
-        font-size: 14px;
-        line-height: 23px;
-
-      }
-
-      .newsImage {
-
-        float: right;
-        width: 30%;
-        margin-right: 10%;
-
-      }
-
-      .newsImage img {
-        max-width: 100%;
-      }
-
-      .clear {
-
-        clear: both;
-      }
-
-      @media only screen and (max-width: 479px) {
-
-        .logo {
-
-          margin-bottom: 15px;
-        }
-
-        .navigationBar {
-
-          height: 120px;
-        }
-
-
-        .landscapeImage1 {
-
-          visibility: hidden;
-        }
-
-      .news {
-
-        width: 80%;
-      }
-
-      .newsText {
-
-        margin-top: 0px;
-      }
-
-      .newsTitle p{
-        font-size: 16px;
-      }
-
-      .newsDescription p{
-        font-size: 14px;
-      }
-
-
-      .news .myButton {
-
-        height: 70px;
-      }
-
-      .newsImage {
-
-        float: right;
-        width: 35%;
-        margin-right: 0%;
-      }
-
-      }
-
-    </style></head>
-    <body>  					  					  					 					  				
-
-
-<div class="navigationBar">
-  <div class="logo">
-    <img src="https://cdn.shopify.com/s/files/1/1603/0391/t/2/assets/logo.png">
-  </div>
-  <ul>
-    <li class="selected"><a href="https://www.garotastore.com/collections/new-arrivals">New arrivals</a></li>
-    <li><a href="https://www.garotastore.com/collections/best-selling">Best selling</a></li>
-    <li><a href="https://www.garotastore.com/collections/clothes">Clothes</a></li>
-    <li><a href="https://www.garotastore.com/collections/shoes">Shoes</a></li>
-    <li><a href="https://www.garotastore.com/collections/handbags">Handbags</a></li>
-    <li><a href="https://www.garotastore.com/collections/sale">Sale</a></li>
-  </ul>
-</div>
-
-<div class="mainImage">
-  <img src="https://cdn.shopify.com/s/files/1/1603/0391/t/2/assets/image1.jpg">
-</div>
-
-     
-     <table data-thumb="http://www.stampready.net/dashboard/editor/user_uploads/image_uploads/2017/08/08/CNTDnaIF6LAqlmkuz4BbpJv0s8SiZdGUy5VfYwWH7QK1rg3hEPcj9RtO.jpg" mc:repeatable="layout-8a" mc:hideable="8a" mc:variant="8a-Content" data-module="module-8a_81322" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="position: relative; opacity: 1; z-index: 0; background-color: rgba(226, 226, 226, 0.15); top: 0px; left: 0px;">
-       <tr>
-         <td align="center">
-           <table class="zay600" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
-             <tr>
-               <td height="50">
-               </td>
-             </tr>
-             <tr>
-               <td>
-                 <!-- left -->
-                 <table align="center" class="IN3-3" width="600" border="0" cellspacing="0" cellpadding="0">
-                   <tr>
-                     <td align="left">
-                       <table class="IN3-3" align="left" width="200" border="0" cellspacing="0" cellpadding="0">
-                         <tr>
-                           <td align="center">
-                             <table class="IN3-3" width="100%" border="0" align="LEFT" cellpadding="0" cellspacing="0">
-                               <tr align="LEFT">
-                                 <td  mc:edit="content-title-39" data-link-style="text-decoration:none; color:#414a51;" data-link-color="Feature Title Link" data-color="Feature Feature Title" data-size="Feature Header" style="font-family: 'Open Sans', Arial, sans-serif;color: rgb(35, 30, 30);font-size: 23px;line-height: 23.5px;font-weight: 900;">
-                                   NEW                                    <br>
-                                   COLLECTION                                 </td>
-                               </tr>
-                             </table>
-                           </td>
-                         </tr>
-                       </table>
-                     </td>
-                   </tr>
-                 </table>
-                 <!-- end left -->
-               </td>
-             </tr>
-             <tr>
-               <td height="30">
-               </td>
-             </tr>
-             <tr>
-               <td>
-                 <table class="zay3-3" width="31%" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td align="LEFT"><a href="https://www.garotastore.com/collections/new-arrivals/products/mrs-ashley-robe">
-                       <img  mc:edit="19-feature-img" src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0620_60f4c028-a026-4536-b40c-9d013f653f5e_large.jpg" alt="MRS. ASHLEY ROBE" width="190" height="265" class="img1"></a>
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="20">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-44" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link" data-color="Headline1" data-size="Headline1" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(43, 43, 43); font-size: 16px; font-weight: 400; line-height: 27.2px; text-align: left;" align="center">
-                       MRS. ASHLEY ROBE 									                     
-                     </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-45" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link1" data-color="Main Texts" data-size="Main Text" align="center" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(140, 140, 140); font-size: 13px; line-height: 22.1px; text-align: left;">
-                       $36.00
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="10">
-                     </td>
-                   </tr>
-                   <tr align="center">
-                     <td>
-                       <table class="class-inner" width="60%" border="0" align="center" cellpadding="0" cellspacing="0">
-                         <tr>
-                           <td  mc:edit="content-title-46" data-link-style="text-decoration:none; color:#FFFFFF;" align="center" height="30" style="padding-left: 10px;padding-right: 10px;font-family: &quot;Open Sans&quot;, HelveticaNeue-Bold, sans-serif;color: rgb(255, 255, 255);font-size: 10px;/* border: 1px solid rgb(173, 173, 173); */font-weight: 400;text-align: center;background-color: black;padding-left: 12px;">
-                            <a href="https://www.garotastore.com/collections/new-arrivals/products/mrs-ashley-robe" style="color: rgb(255, 255, 255)"> ADD TO CART </a>                      
-                           </td>
-                         </tr>
-                       </table>
-                     </td>
-                   </tr>
-                 </table>
-                 <!-- SPACE -->
-                 <table width="1.5%" height="40" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td height="40" style="line-height: 0;">
-                       &nbsp; 									                     </td>
-                   </tr>
-                 </table>
-                 <!-- SPACE -->
-                 <table class="zay3-3" width="31%" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td align="LEFT"><a href="https://www.garotastore.com/collections/new-arrivals/products/selma-overall">
-                       <img  mc:edit="20-feature-img" src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0105_fcc1ec5d-657d-41a3-8cfc-9615b927f400.jpg" alt="img" width="190" height="265" class="img1"></a>
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="20">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-47" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link" data-color="Headline1" data-size="Headline1" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(43, 43, 43); font-size: 16px; font-weight: 400; line-height: 27.2px; text-align: left;" align="center">
-                       SELMA OVERALL
-                       </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-48" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link1" data-color="Main Texts" data-size="Main Text" align="center" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(140, 140, 140); font-size: 13px; line-height: 22.1px; text-align: left;">
-                       $40.00 									                     </td>
-                   </tr>
-                   <tr>
-                     <td height="10">
-                     </td>
-                   </tr>
-                   <tr align="center">
-                     <td>
-                       <table class="class-inner" width="60%" border="0" align="center" cellpadding="0" cellspacing="0">
-                         <tr>
-                           <td  mc:edit="content-title-46" data-link-style="text-decoration:none; color:#FFFFFF;" align="center" height="30" style="padding-left: 10px;padding-right: 10px;font-family: &quot;Open Sans&quot;, HelveticaNeue-Bold, sans-serif;color: rgb(255, 255, 255);font-size: 10px;/* border: 1px solid rgb(173, 173, 173); */font-weight: 400;text-align: center;background-color: black;padding-left: 12px;">
-                            <a href="https://www.garotastore.com/collections/new-arrivals/products/selma-overall" style="color: rgb(255, 255, 255)"> ADD TO CART </a>                      
-                           </td>
-                         </tr>
-                       </table>
-                     </td>
-                   </tr>
-                 </table>
-                 <!-- SPACE -->
-                 <table width="1.5%" height="40" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td height="40" style="line-height: 0;">
-                       &nbsp; 									                     </td>
-                   </tr>
-                 </table>
-                 <!-- SPACE -->
-                 <table class="zay3-3" width="31%" align="LEFT" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td align="left">
-                      <a href="https://www.garotastore.com/collections/new-arrivals/products/hana-top">
-                       <img  mc:edit="21-feature-img" src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0311.jpg" alt="img" width="190" height="265" class="img1">
-                     </a>
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="20">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-50" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link" data-color="Headline1" data-size="Headline1" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(43, 43, 43); font-size: 16px; font-weight: 400; line-height: 27.2px; text-align: left;" align="center">
-                       HANA TOP&nbsp; 									                     </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-51" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link1" data-color="Main Texts" data-size="Main Text" align="center" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(140, 140, 140); font-size: 13px; line-height: 22.1px; text-align: left;">
-                       $36.00
-                    </td>
-                   </tr>
-                   <tr>
-                     <td height="10">
-                     </td>
-                   </tr>
-                   <tr align="center">
-                     <td>
-                       <table class="class-inner" width="60%" border="0" align="center" cellpadding="0" cellspacing="0">
-                         <tr>
-                           <td  mc:edit="content-title-46" data-link-style="text-decoration:none; color:#FFFFFF;" align="center" height="30" style="padding-left: 10px;padding-right: 10px;font-family: &quot;Open Sans&quot;, HelveticaNeue-Bold, sans-serif;color: rgb(255, 255, 255);font-size: 10px;/* border: 1px solid rgb(173, 173, 173); */font-weight: 400;text-align: center;background-color: black;padding-left: 12px;">
-                            <a href="https://www.garotastore.com/collections/new-arrivals/products/selma-overall" style="color: rgb(255, 255, 255)"> ADD TO CART </a>                      
-                           </td>
-                         </tr>
-                       </table>
-                     </td>
-                   </tr>
-                 </table>
-               </td>
-             </tr>
-             <tr>
-               <td height="50">
-               </td>
-             </tr>
-             <tr>
-               <td>
-                 <table class="zay3-3" width="31%" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td align="LEFT"><a href="https://www.garotastore.com/collections/new-arrivals/products/karlie-skirt-1">
-                       <img  mc:edit="19-feature-img" src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0369_071929a7-fc58-4e88-b1c7-c8858489263b.jpg" alt="MRS. ASHLEY ROBE" width="190" height="265" class="img1"></a>
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="20">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-44" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link" data-color="Headline1" data-size="Headline1" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(43, 43, 43); font-size: 16px; font-weight: 400; line-height: 27.2px; text-align: left;" align="center">
-                       KARLIE SKIRT                                      
-                     </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-45" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link1" data-color="Main Texts" data-size="Main Text" align="center" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(140, 140, 140); font-size: 13px; line-height: 22.1px; text-align: left;">
-                       $30.00
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="10">
-                     </td>
-                   </tr>
-                   <tr align="center">
-                     <td>
-                       <table class="class-inner" width="60%" border="0" align="center" cellpadding="0" cellspacing="0">
-                         <tr>
-                           <td  mc:edit="content-title-46" data-link-style="text-decoration:none; color:#FFFFFF;" align="center" height="30" style="padding-left: 10px;padding-right: 10px;font-family: &quot;Open Sans&quot;, HelveticaNeue-Bold, sans-serif;color: rgb(255, 255, 255);font-size: 10px;/* border: 1px solid rgb(173, 173, 173); */font-weight: 400;text-align: center;background-color: black;padding-left: 12px;">
-                            <a href="https://www.garotastore.com/collections/new-arrivals/products/karlie-skirt-1" style="color: rgb(255, 255, 255)"> ADD TO CART </a>                      
-                           </td>
-                         </tr>
-                       </table>
-                     </td>
-                   </tr>
-                 </table>
-                 <!-- SPACE -->
-                 <table width="1.5%" height="40" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td height="40" style="line-height: 0;">
-                       &nbsp;                                        </td>
-                   </tr>
-                 </table>
-                 <!-- SPACE -->
-                 <table class="zay3-3" width="31%" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td align="LEFT"><a href="https://www.garotastore.com/collections/new-arrivals/products/west-coast-jumpsuit">
-                       <img  mc:edit="20-feature-img" src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0893.jpg?v=1506895119" alt="img" width="190" height="265" class="img1"></a>
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="20">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-47" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link" data-color="Headline1" data-size="Headline1" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(43, 43, 43); font-size: 14px; font-weight: 400; line-height: 27.2px; text-align: left;" align="center">
-                       WEST COAST JUMPSUIT
-                    </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-48" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link1" data-color="Main Texts" data-size="Main Text" align="center" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(140, 140, 140); font-size: 13px; line-height: 22.1px; text-align: left;">
-                       $32.00                                        
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="10">
-                     </td>
-                   </tr>
-                   <tr align="center">
-                     <td>
-                       <table class="class-inner" width="60%" border="0" align="center" cellpadding="0" cellspacing="0">
-                         <tr>
-                           <td  mc:edit="content-title-46" data-link-style="text-decoration:none; color:#FFFFFF;" align="center" height="30" style="padding-left: 10px;padding-right: 10px;font-family: &quot;Open Sans&quot;, HelveticaNeue-Bold, sans-serif;color: rgb(255, 255, 255);font-size: 10px;/* border: 1px solid rgb(173, 173, 173); */font-weight: 400;text-align: center;background-color: black;padding-left: 12px;">
-                            <a href="https://www.garotastore.com/collections/new-arrivals/products/west-coast-jumpsuit" style="color: rgb(255, 255, 255)"> ADD TO CART </a>                      
-                           </td>
-                         </tr>
-                       </table>
-                     </td>
-                   </tr>
-                 </table>
-                 <!-- SPACE -->
-                 <table width="1.5%" height="40" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td height="40" style="line-height: 0;">
-                       &nbsp;                                        </td>
-                   </tr>
-                 </table>
-                 <!-- SPACE -->
-                 <table class="zay3-3" width="31%" align="LEFT" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td align="left">
-                      <a href="https://www.garotastore.com/collections/new-arrivals/products/disco-sequin-jacket">
-                       <img  mc:edit="21-feature-img" src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0697.jpg?v=1506893516" alt="img" width="190" height="265" class="img1">
-                     </a>
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="20">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-50" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link" data-color="Headline1" data-size="Headline1" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(43, 43, 43); font-size: 16px; font-weight: 400; line-height: 27.2px; text-align: left;" align="center">
-                       DISCO SEQUIN JACKET&nbsp;                                        </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-51" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link1" data-color="Main Texts" data-size="Main Text" align="center" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(140, 140, 140); font-size: 13px; line-height: 22.1px; text-align: left;">
-                       $45.00
-                    </td>
-                   </tr>
-                   <tr>
-                     <td height="10">
-                     </td>
-                   </tr>
-                   <tr align="center">
-                     <td>
-                       <table class="class-inner" width="60%" border="0" align="center" cellpadding="0" cellspacing="0">
-                         <tr>
-                           <td  mc:edit="content-title-46" data-link-style="text-decoration:none; color:#FFFFFF;" align="center" height="30" style="padding-left: 10px;padding-right: 10px;font-family: &quot;Open Sans&quot;, HelveticaNeue-Bold, sans-serif;color: rgb(255, 255, 255);font-size: 10px;/* border: 1px solid rgb(173, 173, 173); */font-weight: 400;text-align: center;background-color: black;padding-left: 12px;">
-                            <a href="https://www.garotastore.com/collections/new-arrivals/products/disco-sequin-jacket" style="color: rgb(255, 255, 255)"> ADD TO CART </a>                      
-                           </td>
-                         </tr>
-                       </table>
-                     </td>
-                   </tr>
-                 </table>
-               </td>
-             </tr>
-             <tr>
-               <td height="80">
-               </td>
-             </tr>
-           </table>
-         </td>
-       </tr>
-     </table>
-     <table data-thumb="http://www.stampready.net/dashboard/editor/user_uploads/image_uploads/2017/08/08/JLqk2HbZUM6RP9vXQ5iChGutYfgrTwFyeBNjxndOpWzlA0o8m4acIKS3.jpg" mc:repeatable="layout-9" mc:hideable="9" mc:variant="9-Content" data-module="module-9_54911" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="background-color: rgb(247, 247, 247); position: relative; opacity: 1; top: 0px; left: 0px;" data-bgcolor="Background 0a">
-       <tr>
-         <td align="center">
-           <table class="zay600" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
-             <tr>
-               <td align="center">
-                 <!-- img -->
-                 <a href="https://www.garotastore.com/collections/sets">
-                 <table data-bg="Bg-1" data-bgcolor="Feature 02" bgcolor="#f3f4f9" data-border-bottom-color="Border Bottom" style="background-image: url(&quot;https://cdn.shopify.com/s/files/1/1603/0391/files/weLoveSets.jpg?6801326526039023374&quot;); background-size: cover; background-position: 50% 50%;" background="http://www.stampready.net/dashboard/editor/user_uploads/image_uploads/2017/08/31/OtNzWniqcoKSZj9QTB7y1I68GlYMVUfsgeuLJvHDrdE53PXhxbpCwmR2.jpg" width="25%" border="0" align="left" cellpadding="0" cellspacing="0" class="zay3-3">
-                   <tr>
-                     <td bgcolor="#3498db" border="0" align="center" cellpadding="0" cellspacing="0" style="background-color: rgba(4, 4, 4, 0.78);background: rgba(255,0,0,1);background: -moz-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 0%, rgba(254,1,81,0.58) 100%);background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,0,0,1)), color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(254,1,81,0.58)));background: -webkit-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255, 255, 255, 0) 0%, rgba(254, 1, 81, 0.92) 100%);background: -o-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 0%, rgba(254,1,81,0.58) 100%);background: -ms-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 0%, rgba(254,1,81,0.58) 100%);background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(58, 58, 58, 0.94) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#fe0151', GradientType=0 );background-size: cover;">
-                       <table cellspacing="0" cellpadding="0" align="center" border="0" class="zay600" width="100%">
-                         <tr>
-                           <td height="200">
-                           </td>
-                         </tr>
-                    <tr align="center">
-     							  <td>
-     								<table class="class-inner" width="160" border="0" align="center" cellpadding="0" cellspacing="0" style="padding: 3px;"><tr>
-                      <td  mc:edit="content-title-71" data-link-style=&quot;text-decoration: none; color:#3498db;&quot; data-link-color=&quot;Content Linka&quot; data-color=&quot;Headlinea1&quot; data-size=&quot;Headlinea1&quot; style="&quot;font-family: &amp;quot;Open Sans&amp;quot;, Arial,sans-serif;color: rgb(255, 255, 255);font-size: 21px;font-weight: 600;line-height: 30.45px;&quot; align=&quot;center&quot; contenteditable=&quot;true&quot; class=&quot;editable&quot;>;;;border: 1px solid #ADADAD;;">
-                      <tr>
-                        <td  mc:edit="content-title-69" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Linka" data-color="Headlinea1" data-size="Headlinea1" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif;color: rgb(255, 255, 255);font-size: 21px;font-weight: 600;line-height: 30.45px;" align="center">
-                        SETS
-                        </td>
-     								 </table>
-     								 </td>
-     							    </tr>
-                         <tr>
-                           <td  mc:edit="content-title-64" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link1" data-color="Main Textsd" data-size="Main Textd" align="center" style="font-family: 'Open Sans', Arial, sans-serif; color: rgb(255, 255, 255); font-size: 13px; line-height: 22.1px;">
-                             <!-- Some text --> 												                           
-                           </td>
-                         </tr>
-                         <tr>
-                           <td height="200">
-                           </td>
-                         </tr>
-                       </table>
-                     </td>
-                   </tr>
-                 </table>
-                 </a>
-                 <a href="https://www.garotastore.com/collections/skirts">
-                 <table data-bg="Bg-2" data-bgcolor="Feature 02" bgcolor="#f3f4f9" data-border-bottom-color="Border Bottom" style="background-image: url(&quot;https://cdn.shopify.com/s/files/1/1603/0391/files/skirtsToDieFor.jpg?1837014787909890116&quot;); background-size: cover; background-position: 50% 50%;" background="http://www.stampready.net/dashboard/editor/user_uploads/image_uploads/2017/08/31/FZpCLRIOuts5G9VBKHehkqvrWbYxlDTacywUgXQJ23MSj74iN8mn10z6.jpg" width="25%" border="0" align="left" cellpadding="0" cellspacing="0" class="zay3-3">
-                   <tr>
-                     <td bgcolor="#3498db" border="0" align="center" cellpadding="0" cellspacing="0" style="background-color: rgba(210, 24, 38, 0.78);background: rgba(255,0,0,1);background: -moz-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 0%, rgba(254,1,81,0.58) 100%);background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,0,0,1)), color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(254,1,81,0.58)));background: -webkit-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255, 255, 255, 0) 0%, rgba(254, 1, 81, 0.92) 100%);background: -o-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 0%, rgba(254,1,81,0.58) 100%);background: -ms-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 0%, rgba(254,1,81,0.58) 100%);background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(58, 58, 58, 0.94) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#fe0151', GradientType=0 );background-size: cover;">
-                       <table cellspacing="0" cellpadding="0" align="left" border="0" class="zay600" width="100%">
-                         <tr>
-                           <td height="200">
-                           </td>
-                         </tr>
-                         <tr align="center">
-         							<td>
-
-         								<table   class="class-inner" width="160" border="0" align="center" cellpadding="0" cellspacing="0" style="padding: 3px;"<tr>
-              <td  mc:edit="content-title-71" data-link-style=&quot;text-decoration: none; color:#3498db;&quot; data-link-color=&quot;Content Linka&quot; data-color=&quot;Headlinea1&quot; data-size=&quot;Headlinea1&quot; style="&quot;font-family: &amp;quot;Open Sans&amp;quot;, Arial,sans-serif;color: rgb(255, 255, 255);font-size: 21px;font-weight: 600;line-height: 30.45px;&quot; align=&quot;center&quot; contenteditable=&quot;true&quot; class=&quot;editable&quot;>;;;border: 1px solid #ADADAD;;">
-                            <tr>
-                        <td  mc:edit="content-title-69" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Linka" data-color="Headlinea1" data-size="Headlinea1" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif;color: rgb(255, 255, 255);font-size: 21px;font-weight: 600;line-height: 30.45px;" align="center">SKIRTS</td>
-                        </tr>	
-         								</table>
-         								</td>
-         							</tr>
-                         <tr>
-                           <td  mc:edit="content-title-67" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link1" data-color="Main Textsd" data-size="Main Textd" align="center" style="font-family: 'Open Sans', Arial, sans-serif; color: rgb(255, 255, 255); font-size: 13px; line-height: 22.1px;">
-                             <!-- Some text --> 												                           
-                           </td>
-                         </tr>
-                         <tr>
-                           <td height="200">
-                           </td>
-                         </tr>
-                       </table>
-                     </td>
-                   </tr>
-                 </table>
-                 </a>
-                 <a href="https://www.garotastore.com/collections/fall-must-haves">
-                 <table data-bg="Bg-3" data-bgcolor="Feature 03" bgcolor="#f3f4f9" data-border-bottom-color="Border Bottom" style="background-image: url(&quot;https://cdn.shopify.com/s/files/1/1603/0391/files/fallMustHaves.jpg?9354622809841961198&quot;); background-position: center center; background-size: cover;" background="http://www.stampready.net/dashboard/editor/user_uploads/image_uploads/2017/08/31/z1BOWr6t0X7vAILqUH2gEFNs5TkmlYKM3CDedJP4SjaQwhiZGbfpyxVn.jpg" width="25%" border="0" align="left" cellpadding="0" cellspacing="0" class="zay3-3">
-                   <tr>
-                     <td bgcolor="#3498db" border="0" align="center" cellpadding="0" cellspacing="0" style="background-color: rgba(210, 24, 38, 0.78);background: rgba(255,0,0,1);background: -moz-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 0%, rgba(254,1,81,0.58) 100%);background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,0,0,1)), color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(254,1,81,0.58)));background: -webkit-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255, 255, 255, 0) 0%, rgba(254, 1, 81, 0.92) 100%);background: -o-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 0%, rgba(254,1,81,0.58) 100%);background: -ms-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 0%, rgba(254,1,81,0.58) 100%);background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(58, 58, 58, 0.94) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#fe0151', GradientType=0 );background-size: cover;">
-                       <table cellspacing="0" cellpadding="0" align="left" border="0" class="zay600" width="100%">
-                         <tr>
-                           <td height="200">
-                           </td>
-                         </tr>
-                         <tr align="center">
- 												<td>
- 													<table   class="class-inner" width="160" border="0" align="center" cellpadding="0" cellspacing="0" style="padding: 3px;"<tr>
-              <td  mc:edit="content-title-71" data-link-style=&quot;text-decoration: none; color:#3498db;&quot; data-link-color=&quot;Content Linka&quot; data-color=&quot;Headlinea1&quot; data-size=&quot;Headlinea1&quot; style="&quot;font-family: &amp;quot;Open Sans&amp;quot;, Arial,sans-serif;color: rgb(255, 255, 255);font-size: 21px;font-weight: 600;line-height: 30.45px;&quot; align=&quot;center&quot; contenteditable=&quot;true&quot; class=&quot;editable&quot;>;;;border: 1px solid #ADADAD;;">
- 														<tr>
- 												<td  mc:edit="content-title-69" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Linka" data-color="Headlinea1" data-size="Headlinea1" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif;color: rgb(255, 255, 255);font-size: 21px;font-weight: 600;line-height: 30.45px;" align="center">MUST HAVES</td>
- 											</tr>
- 													</table>
- 												</td>
- 											</tr>
-                              <tr>
-                           <td  mc:edit="content-title-70" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link1" data-color="Main Textsd" data-size="Main Textd" align="center" style="font-family: 'Open Sans', Arial, sans-serif; color: rgb(255, 255, 255); font-size: 13px; line-height: 22.1px;">
-                             <!-- Some text -->												                           </td>
-                         </tr>
-                         <tr>
-                           <td height="200">
-                           </td>
-                         </tr>
-                       </table>
-                     </td>
-                   </tr>
-                 </table>
-                 </a>
-                 <a href="https://www.garotastore.com/collections/prints">
-                 <table data-bg="Bg-4" data-bgcolor="Feature 03" bgcolor="#f3f4f9" data-border-bottom-color="Border Bottom" style="background-image: url(&quot;https://cdn.shopify.com/s/files/1/1603/0391/files/printsPlease.jpg?2753092722110120609&quot;); background-position: center center; background-size: cover;" background="http://www.stampready.net/dashboard/editor/user_uploads/image_uploads/2017/08/31/ksCtSqgHofirxzwcl1YGOLWyRdJTB62U0MKpuamQ7jeNEI8hvFnVADXP.jpg" width="25%" border="0" align="left" cellpadding="0" cellspacing="0" class="zay3-3">
-                   <tr>
-                     <td bgcolor="#3498db" border="0" align="center" cellpadding="0" cellspacing="0" style="background-color: rgba(210, 24, 38, 0.78);background: rgba(255,0,0,1);background: -moz-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 0%, rgba(254,1,81,0.58) 100%);background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,0,0,1)), color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(254,1,81,0.58)));background: -webkit-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255, 255, 255, 0) 0%, rgba(254, 1, 81, 0.92) 100%);background: -o-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 0%, rgba(254,1,81,0.58) 100%);background: -ms-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 0%, rgba(254,1,81,0.58) 100%);background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(58, 58, 58, 0.94) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#fe0151', GradientType=0 );background-size: cover;">
-                       <table cellspacing="0" cellpadding="0" align="left" border="0" class="zay600" width="100%">
-                         <tr>
-                           <td height="200">
-                           </td>
-                         </tr>
-                        <tr align="center">
- 												<td>
- 													<table class="class-inner" width="160" border="0" align="center" cellpadding="0" cellspacing="0" style=" padding: 3px;"<tr>
-              <td  mc:edit="content-title-71" data-link-style=&quot;text-decoration: none; color:#3498db;&quot; data-link-color=&quot;Content Linka&quot; data-color=&quot;Headlinea1&quot; data-size=&quot;Headlinea1&quot; style="&quot;font-family: &amp;quot;Open Sans&amp;quot;, Arial,sans-serif;color: rgb(255, 255, 255);font-size: 21px;font-weight: 600;line-height: 30.45px;&quot; align=&quot;center&quot; contenteditable=&quot;true&quot; class=&quot;editable&quot;>;;;border: 1px solid #ADADAD;;">
- 														<tr>
- 												<td  mc:edit="content-title-72" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Linka" data-color="Headlinea1" data-size="Headlinea1" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif;color: rgb(255, 255, 255);font-size: 21px;font-weight: 600;line-height: 30.45px;" align="center">
-                        PRINTS
-                      </td>
- 											</tr>
- 													</table>
- 												</td>
- 							</tr>
-                         <tr>
-                           <td  mc:edit="content-title-73" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link1" data-color="Main Textsd" data-size="Main Textd" align="center" style="font-family: 'Open Sans', Arial, sans-serif; color: rgb(255, 255, 255); font-size: 13px; line-height: 22.1px;">
-                             <!-- Some text -->												                           
-                           </td>
-                         </tr>
-                         <tr>
-                           <td height="200">
-                           </td>
-                         </tr>
-                       </table>
-                     </td>
-                   </tr>
-                 </table>
-                 </a>
-                 <!-- End 4 images-->
-               </td>
-             </tr>
-           </table>
-         </td>
-       </tr>
-     </table>
-     <table data-thumb="http://www.stampready.net/dashboard/editor/user_uploads/image_uploads/2017/08/08/CNTDnaIF6LAqlmkuz4BbpJv0s8SiZdGUy5VfYwWH7QK1rg3hEPcj9RtO.jpg" mc:repeatable="layout-8a" mc:hideable="8a" mc:variant="8a-Content" data-module="module-8a_81322" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="position: relative; opacity: 1; z-index: 0; background-color: rgba(226, 226, 226, 0.15); top: 0px; left: 0px;">
-       <tr>
-         <td align="center">
-           <table class="zay600" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
-             <tr>
-               <td height="50">
-               </td>
-             </tr>
-             <tr>
-               <td>
-                 <!-- left -->
-                 <table align="center" class="IN3-3" width="600" border="0" cellspacing="0" cellpadding="0">
-                   <tr>
-                     <td align="left">
-                       <table class="IN3-3" align="left" width="200" border="0" cellspacing="0" cellpadding="0">
-                         <tr>
-                           <td align="center">
-                             <table class="IN3-3" width="100%" border="0" align="LEFT" cellpadding="0" cellspacing="0">
-                               <tr align="LEFT">
-                                 <td  mc:edit="content-title-39" data-link-style="text-decoration:none; color:#414a51;" data-link-color="Feature Title Link" data-color="Feature Feature Title" data-size="Feature Header" style="font-family: 'Open Sans', Arial, sans-serif;color: rgb(35, 30, 30);font-size: 23px;line-height: 23.5px;font-weight: 900;">
-                                   NEW                                    <br>
-                                   COLLECTION                                 </td>
-                               </tr>
-                             </table>
-                           </td>
-                         </tr>
-                       </table>
-                       
-                     </td>
-                   </tr>
-                 </table>
-                 <!-- end left -->
-               </td>
-             </tr>
-             <tr>
-               <td height="30">
-               </td>
-             </tr>
-             <tr>
-               <td>
-                 <table class="zay3-3" width="31%" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td align="LEFT"><a href="https://www.garotastore.com/collections/new-arrivals/products/mrs-ashley-robe">
-                       <img  mc:edit="19-feature-img" src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0620_60f4c028-a026-4536-b40c-9d013f653f5e_large.jpg?v=1506892730" alt="MRS. ASHLEY ROBE" width="190" height="265" class="img1"></a>
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="20">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-44" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link" data-color="Headline1" data-size="Headline1" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(43, 43, 43); font-size: 16px; font-weight: 400; line-height: 27.2px; text-align: left;" align="center">
-                       MRS. ASHLEY ROBE                                        
-                     </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-45" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link1" data-color="Main Texts" data-size="Main Text" align="center" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(140, 140, 140); font-size: 13px; line-height: 22.1px; text-align: left;">
-                       $36.00
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="10">
-                     </td>
-                   </tr>
-                   <tr align="center">
-                     <td>
-                       <table class="class-inner" width="60%" border="0" align="center" cellpadding="0" cellspacing="0">
-                         <tr>
-                           <td  mc:edit="content-title-46" data-link-style="text-decoration:none; color:#FFFFFF;" align="center" height="30" style="padding-left: 10px;padding-right: 10px;font-family: &quot;Open Sans&quot;, HelveticaNeue-Bold, sans-serif;color: rgb(255, 255, 255);font-size: 10px;/* border: 1px solid rgb(173, 173, 173); */font-weight: 400;text-align: center;background-color: black;padding-left: 12px;">
-                            <a href="https://www.garotastore.com/collections/new-arrivals/products/mrs-ashley-robe" style="color: rgb(255, 255, 255)"> ADD TO CART </a>                      
-                           </td>
-                         </tr>
-                       </table>
-                     </td>
-                   </tr>
-                 </table>
-                 <!-- SPACE -->
-                 <table width="1.5%" height="40" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td height="40" style="line-height: 0;">
-                       &nbsp;                                        </td>
-                   </tr>
-                 </table>
-                 <!-- SPACE -->
-                 <table class="zay3-3" width="31%" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td align="LEFT"><a href="https://www.garotastore.com/collections/new-arrivals/products/selma-overall">
-                       <img  mc:edit="20-feature-img" src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0105_fcc1ec5d-657d-41a3-8cfc-9615b927f400.jpg?v=1506710871" alt="img" width="190" height="265" class="img1"></a>
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="20">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-47" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link" data-color="Headline1" data-size="Headline1" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(43, 43, 43); font-size: 16px; font-weight: 400; line-height: 27.2px; text-align: left;" align="center">
-                       SELMA OVERALL
-                       </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-48" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link1" data-color="Main Texts" data-size="Main Text" align="center" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(140, 140, 140); font-size: 13px; line-height: 22.1px; text-align: left;">
-                       $40.00                                        </td>
-                   </tr>
-                   <tr>
-                     <td height="10">
-                     </td>
-                   </tr>
-                   <tr align="center">
-                     <td>
-                       <table class="class-inner" width="60%" border="0" align="center" cellpadding="0" cellspacing="0">
-                         <tr>
-                           <td  mc:edit="content-title-46" data-link-style="text-decoration:none; color:#FFFFFF;" align="center" height="30" style="padding-left: 10px;padding-right: 10px;font-family: &quot;Open Sans&quot;, HelveticaNeue-Bold, sans-serif;color: rgb(255, 255, 255);font-size: 10px;/* border: 1px solid rgb(173, 173, 173); */font-weight: 400;text-align: center;background-color: black;padding-left: 12px;">
-                            <a href="https://www.garotastore.com/collections/new-arrivals/products/selma-overall" style="color: rgb(255, 255, 255)"> ADD TO CART </a>                      
-                           </td>
-                         </tr>
-                       </table>
-                     </td>
-                   </tr>
-                 </table>
-                 <!-- SPACE -->
-                 <table width="1.5%" height="40" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td height="40" style="line-height: 0;">
-                       &nbsp;                                        </td>
-                   </tr>
-                 </table>
-                 <!-- SPACE -->
-                 <table class="zay3-3" width="31%" align="LEFT" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td align="left">
-                      <a href="https://www.garotastore.com/collections/new-arrivals/products/hana-top">
-                       <img  mc:edit="21-feature-img" src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0311.jpg?v=1506711728" alt="img" width="190" height="265" class="img1">
-                     </a>
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="20">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-50" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link" data-color="Headline1" data-size="Headline1" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(43, 43, 43); font-size: 16px; font-weight: 400; line-height: 27.2px; text-align: left;" align="center">
-                       HANA TOP&nbsp;                                        </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-51" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link1" data-color="Main Texts" data-size="Main Text" align="center" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(140, 140, 140); font-size: 13px; line-height: 22.1px; text-align: left;">
-                       $36.00
-                    </td>
-                   </tr>
-                   <tr>
-                     <td height="10">
-                     </td>
-                   </tr>
-                   <tr align="center">
-                     <td>
-                       <table class="class-inner" width="60%" border="0" align="center" cellpadding="0" cellspacing="0">
-                         <tr>
-                           <td  mc:edit="content-title-46" data-link-style="text-decoration:none; color:#FFFFFF;" align="center" height="30" style="padding-left: 10px;padding-right: 10px;font-family: &quot;Open Sans&quot;, HelveticaNeue-Bold, sans-serif;color: rgb(255, 255, 255);font-size: 10px;/* border: 1px solid rgb(173, 173, 173); */font-weight: 400;text-align: center;background-color: black;padding-left: 12px;">
-                            <a href="https://www.garotastore.com/collections/new-arrivals/products/selma-overall" style="color: rgb(255, 255, 255)"> ADD TO CART </a>                      
-                           </td>
-                         </tr>
-                       </table>
-                     </td>
-                   </tr>
-                 </table>
-               </td>
-             </tr>
-             <tr>
-               <td height="50">
-               </td>
-             </tr>
-             <tr>
-               <td>
-                 <table class="zay3-3" width="31%" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td align="LEFT"><a href="https://www.garotastore.com/collections/new-arrivals/products/karlie-skirt-1">
-                       <img  mc:edit="19-feature-img" src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0369_071929a7-fc58-4e88-b1c7-c8858489263b.jpg?v=1506711922" alt="MRS. ASHLEY ROBE" width="190" height="265" class="img1"></a>
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="20">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-44" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link" data-color="Headline1" data-size="Headline1" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(43, 43, 43); font-size: 16px; font-weight: 400; line-height: 27.2px; text-align: left;" align="center">
-                       KARLIE SKIRT                                      
-                     </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-45" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link1" data-color="Main Texts" data-size="Main Text" align="center" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(140, 140, 140); font-size: 13px; line-height: 22.1px; text-align: left;">
-                       $30.00
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="10">
-                     </td>
-                   </tr>
-                   <tr align="center">
-                     <td>
-                       <table class="class-inner" width="60%" border="0" align="center" cellpadding="0" cellspacing="0">
-                         <tr>
-                           <td  mc:edit="content-title-46" data-link-style="text-decoration:none; color:#FFFFFF;" align="center" height="30" style="padding-left: 10px;padding-right: 10px;font-family: &quot;Open Sans&quot;, HelveticaNeue-Bold, sans-serif;color: rgb(255, 255, 255);font-size: 10px;/* border: 1px solid rgb(173, 173, 173); */font-weight: 400;text-align: center;background-color: black;padding-left: 12px;">
-                            <a href="https://www.garotastore.com/collections/new-arrivals/products/karlie-skirt-1" style="color: rgb(255, 255, 255)"> ADD TO CART </a>                      
-                           </td>
-                         </tr>
-                       </table>
-                     </td>
-                   </tr>
-                 </table>
-                 <!-- SPACE -->
-                 <table width="1.5%" height="40" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td height="40" style="line-height: 0;">
-                       &nbsp;                                        </td>
-                   </tr>
-                 </table>
-                 <!-- SPACE -->
-                 <table class="zay3-3" width="31%" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td align="LEFT"><a href="https://www.garotastore.com/collections/new-arrivals/products/west-coast-jumpsuit">
-                       <img  mc:edit="20-feature-img" src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0893.jpg?v=1506895119" alt="img" width="190" height="265" class="img1"></a>
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="20">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-47" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link" data-color="Headline1" data-size="Headline1" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(43, 43, 43); font-size: 14px; font-weight: 400; line-height: 27.2px; text-align: left;" align="center">
-                       WEST COAST JUMPSUIT
-                    </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-48" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link1" data-color="Main Texts" data-size="Main Text" align="center" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(140, 140, 140); font-size: 13px; line-height: 22.1px; text-align: left;">
-                       $32.00                                        
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="10">
-                     </td>
-                   </tr>
-                   <tr align="center">
-                     <td>
-                       <table class="class-inner" width="60%" border="0" align="center" cellpadding="0" cellspacing="0">
-                         <tr>
-                           <td  mc:edit="content-title-46" data-link-style="text-decoration:none; color:#FFFFFF;" align="center" height="30" style="padding-left: 10px;padding-right: 10px;font-family: &quot;Open Sans&quot;, HelveticaNeue-Bold, sans-serif;color: rgb(255, 255, 255);font-size: 10px;/* border: 1px solid rgb(173, 173, 173); */font-weight: 400;text-align: center;background-color: black;padding-left: 12px;">
-                            <a href="https://www.garotastore.com/collections/new-arrivals/products/west-coast-jumpsuit" style="color: rgb(255, 255, 255)"> ADD TO CART </a>                      
-                           </td>
-                         </tr>
-                       </table>
-                     </td>
-                   </tr>
-                 </table>
-                 <!-- SPACE -->
-                 <table width="1.5%" height="40" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td height="40" style="line-height: 0;">
-                       &nbsp;                                        </td>
-                   </tr>
-                 </table>
-                 <!-- SPACE -->
-                 <table class="zay3-3" width="31%" align="LEFT" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td align="left">
-                      <a href="https://www.garotastore.com/collections/new-arrivals/products/disco-sequin-jacket">
-                       <img  mc:edit="21-feature-img" src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0697.jpg?v=1506893516" alt="img" width="190" height="265" class="img1">
-                     </a>
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="20">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-50" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link" data-color="Headline1" data-size="Headline1" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(43, 43, 43); font-size: 16px; font-weight: 400; line-height: 27.2px; text-align: left;" align="center">
-                       DISCO SEQUIN JACKET&nbsp;                                        </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-51" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link1" data-color="Main Texts" data-size="Main Text" align="center" style="font-family: &quot;Open Sans&quot;, Arial, sans-serif; color: rgb(140, 140, 140); font-size: 13px; line-height: 22.1px; text-align: left;">
-                       $45.00
-                    </td>
-                   </tr>
-                   <tr>
-                     <td height="10">
-                     </td>
-                   </tr>
-                   <tr align="center">
-                     <td>
-                       <table class="class-inner" width="60%" border="0" align="center" cellpadding="0" cellspacing="0">
-                         <tr>
-                           <td  mc:edit="content-title-46" data-link-style="text-decoration:none; color:#FFFFFF;" align="center" height="30" style="padding-left: 10px;padding-right: 10px;font-family: &quot;Open Sans&quot;, HelveticaNeue-Bold, sans-serif;color: rgb(255, 255, 255);font-size: 10px;/* border: 1px solid rgb(173, 173, 173); */font-weight: 400;text-align: center;background-color: black;padding-left: 12px;">
-                            <a href="https://www.garotastore.com/collections/new-arrivals/products/disco-sequin-jacket" style="color: rgb(255, 255, 255)"> ADD TO CART </a>                      
-                           </td>
-                         </tr>
-                       </table>
-                     </td>
-                   </tr>
-                 </table>
-               </td>
-             </tr>
-             <tr>
-               <td height="80">
-               </td>
-             </tr>
-           </table>
-         </td>
-       </tr>
-     </table>
-     <table data-thumb="http://www.stampready.net/dashboard/editor/user_uploads/image_uploads/2017/08/08/fVvdT8MGZlXzmk9aQ3PbcrSInxt0HAKJ4BwFUOieLsDoqhCyuEWgY72N.jpg" mc:repeatable="layout-11" mc:hideable="11" mc:variant="11-Content" data-module="module-11_53023" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="position: relative; opacity: 1; z-index: 0;">
-       <tr>
-         <td align="center">
-           <table class="zay600" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
-             <tr>
-               <td height="50">
-               </td>
-             </tr>
-             <tr>
-               <td>
-                 <table class="zay3-3" width="30%" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td align="center">
-                       <img  mc:edit="31-feature-img" src="https://maxcdn.icons8.com/Share/icon/Ecommerce//cardboard_box_filled1600.png" alt="icon" width="50" height="50">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="10">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td mc:edit="content-title-97"  data-color="Feature01" data-size="Feature01" align="center" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; font-weight: 400; color: rgb(31, 31, 31); line-height: 27.2px;">
-                       Free Shipping
-                    </td>
-                   </tr>
-                   <tr>
-                     <td height="20">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td mc:edit="content-title-98"  data-color="Content" data-size="Content" align="center" style="font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: 400; color: rgb(173, 173, 173); line-height: 22.1px;">
-                       For orders more than $50&nbsp; 									                     
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="20">
-                     </td>
-                   </tr>
-                 </table>
-                 <!-- SPACE -->
-                 <table width="24" height="30" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td height="30" style="line-height: 0;">
-                       &nbsp; 									                     </td>
-                   </tr>
-                 </table>
-                 <!-- SPACE -->
-                 <table class="zay3-3" width="30%" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td align="center">
-                       <img  mc:edit="32-feature-img" src="https://maxcdn.icons8.com/Share/icon/User_Interface//available_updates1600.png" alt="icon" width="50" height="50">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="10">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td mc:edit="content-title-99"  data-color="Feature01" data-size="Feature01" align="center" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; font-weight: 400; color: rgb(31, 31, 31); line-height: 27.2px;">
-                       Free returns in store 									                     </td>
-                   </tr>
-                   <tr>
-                     <td height="20">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-100" data-color="Content" data-size="Content" align="center" style="font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: 400; color: rgb(173, 173, 173); line-height: 22.1px;">
-                       Our stores in California and Florida. 									                     </td>
-                   </tr>
-                   <tr>
-                     <td height="20">
-                     </td>
-                   </tr>
-                 </table>
-                 <!-- SPACE -->
-                 <table width="24" height="30" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td height="30" style="line-height: 0;">
-                       &nbsp; 									                     </td>
-                   </tr>
-                 </table>
-                 <!-- SPACE -->
-                 <table class="zay3-3" width="30%" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td align="center">
-                       <img  mc:edit="33-feature-img" src="https://bookbindingbycrawford.co.uk/wp-content/uploads/2017/05/Delivery-Icon_grande.png" alt="icon" width="50" height="50">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="10">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-101" data-color="Feature01" data-size="Feature01" align="center" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; font-weight: 400; color: rgb(31, 31, 31); line-height: 27.2px;">
-                       Next Day Delivery 									                     </td>
-                   </tr>
-                   <tr>
-                     <td height="20">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td mc:edit="content-title-102"  data-color="Content" data-size="Content" align="center" style="font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: 400; color: rgb(173, 173, 173); line-height: 22.1px;">
-                       &nbsp;Our team is ready to ship. 									                     </td>
-                   </tr>
-                   <tr>
-                     <td height="20">
-                     </td>
-                   </tr>
-                 </table>
-               </td>
-             </tr>
-             <tr>
-               <td height="30">
-               </td>
-             </tr>
-           </table>
-         </td>
-       </tr>
-     </table>
-
-     <div class="landscapeImage">
-       <a href="https://www.garotastore.com/collections/glam">
-        <img src="https://cdn.shopify.com/s/files/1/1603/0391/t/2/assets/image2.jpg?8059548469303521345">
-       </a>
-     </div>
-
-     <hr class="line">
-
-
-
-
-
-     <div class="newsContainer">
-       <div class="news">
-        <div class="newsText">
-          <div class="newsTitle">
-           <p>NEW STORE</p>
-           <p>NOW OPEN DOLPHIN MALL</p>
+      </style>
+   </head>
+   <body class="body" style="padding:0; margin:0; display:block; background:#ffffff; -webkit-text-size-adjust:none" bgcolor="#ffffff">
+      <div class="navigationBar">
+         <div class="logo">
+            <img src="https://cdn.shopify.com/s/files/1/1603/0391/t/2/assets/logo.png">
          </div>
-         <div class="newsDescription">
-           <p>The wait is over! Our first store in Miami, Florida is finally here at Dolphin Mall. Come and check it out!</p>
+         <ul>
+            <li class="selected"><a href="https://www.garotastore.com/collections/new-arrivals">New arrivals</a></li>
+            <li><a href="https://www.garotastore.com/collections/best-selling">Best selling</a></li>
+            <li><a href="https://www.garotastore.com/collections/clothes">Clothes</a></li>
+            <li><a href="https://www.garotastore.com/collections/shoes">Shoes</a></li>
+            <li><a href="https://www.garotastore.com/collections/handbags">Handbags</a></li>
+            <li><a href="https://www.garotastore.com/collections/sale">Sale</a></li>
+         </ul>
+      </div>
+      <div class="mainImage">
+         <img src="https://cdn.shopify.com/s/files/1/1603/0391/t/2/assets/image1.jpg">
+      </div>
+      <div class="products">
+         <div class="container">
+            <div class="title">
+               <p style="margin-bottom: 0px">NEW</p>
+               <p style="margin-top: 0px">COLLECTION</p>
+            </div>
+            <div class="row">
+               <div class="product" style="margin-left: 0px">
+                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0620_60f4c028-a026-4536-b40c-9d013f653f5e_large.jpg">
+                  <p class="name">MRS. ASHLEY ROBE</p>
+                  <p class="price">$36.00</p>
+                  <div class="button">
+                     <p>ADD TO CART</p>
+                  </div>
+               </div>
+               <div class="product">
+                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0620_60f4c028-a026-4536-b40c-9d013f653f5e_large.jpg">
+                  <p class="name">MRS. ASHLEY ROBE</p>
+                  <p class="price">$36.00</p>
+                  <div class="button">
+                     <p>ADD TO CART</p>
+                  </div>
+               </div>
+               <div class="product">
+                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0620_60f4c028-a026-4536-b40c-9d013f653f5e_large.jpg">
+                  <p class="name">MRS. ASHLEY ROBE</p>
+                  <p class="price">$36.00</p>
+                  <div class="button">
+                     <p>ADD TO CART</p>
+                  </div>
+               </div>
+               <div class="clear"></div>
+            </div>
+            <div class="row">
+               <div class="product" style="margin-left: 0px">
+                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0620_60f4c028-a026-4536-b40c-9d013f653f5e_large.jpg">
+                  <p class="name">MRS. ASHLEY ROBE</p>
+                  <p class="price">$36.00</p>
+                  <div class="button">
+                     <p>ADD TO CART</p>
+                  </div>
+               </div>
+               <div class="product">
+                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0620_60f4c028-a026-4536-b40c-9d013f653f5e_large.jpg">
+                  <p class="name">MRS. ASHLEY ROBE</p>
+                  <p class="price">$36.00</p>
+                  <div class="button">
+                     <p>ADD TO CART</p>
+                  </div>
+               </div>
+               <div class="product">
+                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0620_60f4c028-a026-4536-b40c-9d013f653f5e_large.jpg">
+                  <p class="name">MRS. ASHLEY ROBE</p>
+                  <p class="price">$36.00</p>
+                  <div class="button">
+                     <p>ADD TO CART</p>
+                  </div>
+               </div>
+               <div class="clear"></div>
+            </div>
          </div>
-         <!--BUTTON-->
-         <div class="myButton">
-          <a href="https://www.google.com/maps/place/Dolphin+Mall/@25.7870262,-80.3829898,17z/data=!3m1!4b1!4m5!3m4!1s0x88d9bec6830371a3:0x1be2585e29f8be60!8m2!3d25.7870262!4d-80.3808011">
-          <tr align="left">
-           <td>
-             <table align="left" border="0" cellpadding="0" cellspacing="0" width="160">
-               <tr>
-                 <td  mc:edit="content-title-116" data-link-style="text-decoration:none; color:#FFFFFF;" data-link-color="Text Link" style="border-radius: 21px;padding-left: 5px;padding-right: 5px;font-family: 'Open Sans', Arial, sans-serif;color: #FFFFFF;font-size: 12px;background-color: #3498DB;-webkit-box-shadow: 0px 11px 45px -10px rgb(52, 152, 219);" align="center" height="40">
-                   <multiline>
-                     GET&nbsp;ADDRESS &nbsp; &nbsp; +                        
-                   </multiline>
-                 </td>
-               </tr>
-             </table>
-           </td>
-         </tr>
+      </div>
+      <div class="collections">
+         <div class="collection">
+            <a href="">
+            <img style="max-width: 100%" src="https://cdn.shopify.com/s/files/1/1603/0391/files/weLoveSets.jpg">
+            </a>
+         </div>
+         <div class="collection">
+            <a href="">
+            <img style="max-width: 100%" src="https://cdn.shopify.com/s/files/1/1603/0391/files/skirtsToDieFor.jpg">
+            </a>
+         </div>
+         <div class="collection">
+            <a href="">
+            <img style="max-width: 100%" src="https://cdn.shopify.com/s/files/1/1603/0391/files/fallMustHaves.jpg">
+            </a>
+         </div>
+         <div class="collection">
+            <a href="">
+            <img style="max-width: 100%" src="https://cdn.shopify.com/s/files/1/1603/0391/files/printsPlease.jpg">
+            </a>
+         </div>
+         <div class="clear"></div>
+      </div>
+      <div class="products">
+         <div class="container">
+            <div class="title">
+               <p style="margin-bottom: 0px">NEW</p>
+               <p style="margin-top: 0px">COLLECTION</p>
+            </div>
+            <div class="row">
+               <div class="product" style="margin-left: 0px">
+                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0620_60f4c028-a026-4536-b40c-9d013f653f5e_large.jpg">
+                  <p class="name">MRS. ASHLEY ROBE</p>
+                  <p class="price">$36.00</p>
+                  <div class="button">
+                     <p>ADD TO CART</p>
+                  </div>
+               </div>
+               <div class="product">
+                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0620_60f4c028-a026-4536-b40c-9d013f653f5e_large.jpg">
+                  <p class="name">MRS. ASHLEY ROBE</p>
+                  <p class="price">$36.00</p>
+                  <div class="button">
+                     <p>ADD TO CART</p>
+                  </div>
+               </div>
+               <div class="product">
+                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0620_60f4c028-a026-4536-b40c-9d013f653f5e_large.jpg">
+                  <p class="name">MRS. ASHLEY ROBE</p>
+                  <p class="price">$36.00</p>
+                  <div class="button">
+                     <p>ADD TO CART</p>
+                  </div>
+               </div>
+               <div class="clear"></div>
+            </div>
+            <div class="row">
+               <div class="product" style="margin-left: 0px">
+                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0620_60f4c028-a026-4536-b40c-9d013f653f5e_large.jpg">
+                  <p class="name">MRS. ASHLEY ROBE</p>
+                  <p class="price">$36.00</p>
+                  <div class="button">
+                     <p>ADD TO CART</p>
+                  </div>
+               </div>
+               <div class="product">
+                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0620_60f4c028-a026-4536-b40c-9d013f653f5e_large.jpg">
+                  <p class="name">MRS. ASHLEY ROBE</p>
+                  <p class="price">$36.00</p>
+                  <div class="button">
+                     <p>ADD TO CART</p>
+                  </div>
+               </div>
+               <div class="product">
+                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0620_60f4c028-a026-4536-b40c-9d013f653f5e_large.jpg">
+                  <p class="name">MRS. ASHLEY ROBE</p>
+                  <p class="price">$36.00</p>
+                  <div class="button">
+                     <p>ADD TO CART</p>
+                  </div>
+               </div>
+               <div class="clear"></div>
+            </div>
+         </div>
+      </div>
+      <div class="shipping">
+         <div class="container">
+            <div class="feature" style="margin-left: 0px">
+               <div class="image">
+                  <img src="https://maxcdn.icons8.com/Share/icon/Ecommerce//cardboard_box_filled1600.png">
+               </div>
+               <p class="title">Free Shipping</p>
+               <p class="subtitle">For order over $20</p>
+            </div>
+            <div class="feature">
+               <div class="image">
+                  <img src="https://maxcdn.icons8.com/Share/icon/User_Interface//available_updates1600.png">
+               </div>
+               <p class="title">Free returns in store</p>
+               <p class="subtitle">In any of our stores in California or Florida.</p>
+            </div>
+            <div class="feature">
+               <div class="image">
+                  <img src="https://bookbindingbycrawford.co.uk/wp-content/uploads/2017/05/Delivery-Icon_grande.png">
+               </div>
+               <p class="title">Next Day Shipping</p>
+               <p class="subtitle">Our team is ready to ship.</p>
+            </div>
+            <div class="clear"></div>
+         </div>
+      </div>
+      <div class="landscapeImage">
+         <a href="https://www.garotastore.com/collections/glam">
+         <img src="https://cdn.shopify.com/s/files/1/1603/0391/t/2/assets/image2.jpg?8059548469303521345">
          </a>
-       </div>
-       <!--END BUTTON-->
-     </div>
-     <div class="newsImage">
-      <img src="http://www.shopdolphinmall.com/asset/get.asp?asset_id=19087">
-    </div>
+      </div>
+      <hr class="line">
+      <div class="news">
+         <div class="verticalContainer">
+            <div class="text">
+               <div class="title">
+                  <p class="mainTitle" style="margin-bottom: 0px">NEW STORE</p>
+                  <p class="subtitle" style="margin-top: 0px">NOW OPEN DOLPHIN MALL</p>
+               </div>
+               <div class="description">
+                  <p>The wait is over! Our first store in Miami, Florida is finally here at Dolphin Mall. Come and check it out!</p>
+               </div>
+               <div class="button">
+                  <p>GET ADDRESS</p>
+               </div>
+            </div>
+            <div class="image">
+               <img src="http://www.shopdolphinmall.com/asset/get.asp?asset_id=19087">
+            </div>
+            <div class="clear"></div>
+         </div>
+         <div class="horizontalContainer">
+            <div class="header">
+               <div class="title">
+                  <p class="upperTitle" style="margin-bottom: 10px">
+                     we don't
+                  </p>
+                  <p class="mainTitle" style="margin-top: 0px">
+                     MESS AROUND
+                  </p>
+               </div>
+               <div class="description" style="margin-bottom: 0px">
+                  <p>Garota is continuously expanding its precence across the country and we are about to open another store in Miami in Dadeland Mall.</p>
+               </div>
+            </div>
+            <div class="image">
+               <img style="max-width: 100%" src="http://images.miamiandbeaches.com/images/101526_8793_full.jpg">
+            </div>
+         </div>
+      </div>
 
-    <div class="clear"></div>
-  </div>
-</div>
 
-     <table data-thumb="http://www.stampready.net/dashboard/editor/user_uploads/image_uploads/2017/08/08/dHQefNy4LipaUgBVWjkXO8u0ARlsov56znGJ1KY2Z9Tr3mFSMCI7hPcb.jpg" mc:repeatable="layout-19" mc:hideable="19" mc:variant="19-Content" data-module="module-19_97903" data-bgcolor="Background" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="position: relative; opacity: 1; z-index: 0; max-width: 900px; background-color: rgb(255, 255, 255);">
-       <tr>
-         <td align="center">
-           <table class="zay600" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
-             <tr>
-               <td height="50">
-               </td>
-             </tr>
-             <tr>
-               <td  mc:edit="content-title-124" data-color="Date2" data-size="Date2" data-link-style="text-decoration:none; color:#3498db;" style="font-family: 'Open Sans', Arial, sans-serif; color: rgb(186, 186, 186); font-size: 27px; line-height: 39.15px; font-weight: 100;" align="left">
-                 we don’t. 						               </td>
-             </tr>
-             <tr>
-               <td height="10">
-               </td>
-             </tr>
-             <tr>
-               <td  mc:edit="content-title-125" data-color="Seperator Title02" data-size="Seperator Title02" align="left" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 37px; font-weight: 900; color: rgb(254, 1, 82);line-height: 12px;">
-                 MESS AROUND 						               </td>
-             </tr>
-             <tr>
-               <td height="50">
-               </td>
-             </tr>
-             <tr>
-               <td align="center" style="background-color: rgb(255, 255, 255);">
-                 <table class="zay3-3" align="left" width="100%" border="0" cellspacing="0" cellpadding="0">
-                   <tr>
-                     <td align="center">
-                       <table class="zay3-3" width="100%" border="0" align="right" cellpadding="0" cellspacing="0">
-                         <tr>
-                           <td>
-                             <table class="zay-inner" align="left" width="100%" border="0" cellspacing="0" cellpadding="0">
-                               <!-- title -->
-                               <tr>
-                                 <td  mc:edit="content-title-126" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link" data-color="Headline" data-size="Headline" align="left" style="font-family: 'Open Sans', Arial, sans-serif; color: rgb(160, 160, 160); font-size: 14px; font-weight: 100;line-height: 22.8px;">
-                                   Garota is continuously expanding its precence across the country and we are about to open another store in Miami in Dadeland Mall.
-                                  </td>
-                               </tr>
-                               <!-- end title -->
-                             </table>
-                           </td>
-                         </tr>
-                       </table>
-                     </td>
-                   </tr>
-                 </table>
-               </td>
-             </tr>
-           </table>
-         </td>
-       </tr>
-       <tr>
-         <td align="center">
-           <table class="zay600" width="80%" align="center" border="0" cellpadding="0" cellspacing="0">
-             <tr>
-               <td height="80">
-               </td>
-             </tr>
-           </table>
-         </td>
-       </tr>
-     </table>
-     <a href="https://www.garotastore.com/collections/glam">
-     <table data-thumb="http://www.stampready.net/dashboard/editor/user_uploads/image_uploads/2017/08/08/45YVNxIniGD2Ky1ebLqASXtkoWTgrvMOuQFdRw7H8z3PcahfE6U9lZ0m.jpg" mc:repeatable="layout-12" mc:hideable="12" mc:variant="12-Content" data-module="module-12_47980" data-bg="F02" style="position: relative; opacity: 1; z-index: 0; max-width: 900px; background-image: url(&quot;http://images.miamiandbeaches.com/images/101526_8793_full.jpg&quot;); background-size: cover; background-position: 50% 40%;" bgcolor="#f3f4f9" width="60%" border="0" align="center" cellpadding="0" cellspacing="0" background="http://www.stampready.net/dashboard/editor/user_uploads/image_uploads/2017/08/31/ZcYHTd4ftim05lk8RpuqP7BCaKVXObnSDoQwzeU3xLAFGIJs29gWMrE6.jpg">
-       <tr>
-         <td class="zay600" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="/* background-color: rgba(0, 0, 0, 0.50); */background-size: cover;">
-           <table cellspacing="0" cellpadding="0" align="right" border="0" width="400" class="zay600">
-             <!-- img -->
-             <tr>
-               <td>
-                 <!-- left -->
-                 <table class="zay3-3" width="340" border="0" align="center" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td height="150">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-103" data-color="Seperator Title" data-size="Seperator Title" align="left" style="font-family: Montserrat, sans-serif; font-size: 41px; font-weight: 700; color: rgb(255, 255, 255); line-height: 41px;">
-                       <!-- text here -->                       
-                       <br>
-                       <!-- text here -->                                        
-                     </td>
-                   </tr>
-                   <tr>
-                     <td mc:edit="content-title-104"  data-color="Detail2" data-size="Detail2" align="left" style="font-family: Montserrat, sans-serif; font-size: 12px; font-weight: 700; color: rgb(255, 255, 255); line-height: 29px;">
-                       <!-- text here -->                                        
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="30">
-                     </td>
-                   </tr>
-                   <tr align="center">
-                     <td>
-                       <table class="class-inner" width="110" border="0" align="left" cellpadding="0" cellspacing="0">
-                         <tr>
-                          <!-- BUTTON 
-                           <td  mc:edit="content-title-105"  data-link-style="text-decoration:none; color:#FFFFFF;" align="center" height="30" style=" font-family: 'Open Sans', Arial, sans-serif; color: #FFFFFF; font-size: 12px; background-color: #1d1b1c;font-weight: 700;">
-                             <a href="#" style="color: rgb(255, 255, 255); font-size: 12px; line-height: 20.4px; font-weight: 400;" data-color="Text Link23" data-size="Main Text23">
-                             </a>
-                             <singleline>
-                               SHOP MEN'S                                                        
-                             </singleline>
-                           </td>
-                           -->
-                         </tr>
-                       </table>
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="250">
-                     </td>
-                   </tr>
-                 </table>
-                 <!-- end left -->
-               </td>
-             </tr>
-             <!-- end img -->
-           </table>
-         </td>
-       </tr>
-     </table>
-     </a>
-     <table data-thumb="http://www.stampready.net/dashboard/editor/user_uploads/image_uploads/2017/08/08/SRmh3QecX1BdkEUIAPOHoYZK42ljDGfaTy07MtLrxzipg6WqNVnF5vws.jpg" mc:repeatable="layout-21" mc:hideable="21" mc:variant="21-Content" data-module="module-21_48779" data-bgcolor="Background" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="position: relative; opacity: 1; z-index: 0; background-color: rgb(255, 255, 255);max-width: 900px;">
-       <tr>
-         <td height="80">
-         </td>
-       </tr>
-       <tr>
-         <td align="center">
-           <table class="zay600" width="580" border="0" cellspacing="0" cellpadding="0">
-             <tr>
-               <td  mc:edit="content-title-132" data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link1" data-color="Headline1" data-size="Headline1" align="left" style="font-family: 'Open Sans', Arial, sans-serif;color: #FE0152;font-size: 16px;font-weight: 400;line-height: 27.2px;">
-                 STUDIO PHOTOSHOOT 						               
-               </td>
-             </tr>
-             <tr>
-               <td height="5">
-               </td>
-             </tr>
-             <tr>
-               <td  mc:edit="content-title-133"   data-link-style="text-decoration:none; color:#3498db;" data-link-color="Content Link2" data-color="Mains Text2" data-size="Main Text2" align="left" style="font-family: 'Open Sans', Arial, sans-serif;color: rgb(127, 127, 127);font-size: 21px;font-weight: 100;line-height: 27.7px;">
-                 <multiline>
-                   Take a peek at our last studio photoshoot                  
-                   <br>
-                   in Los Angeles, California.                   
-                   <br>
-                   <br>
-                 </multiline>
-               </td>
-             </tr>
-             <tr>
-               <td>
-                 <!-- left -->
-                 <table width="183" border="0" align="left" cellpadding="0" cellspacing="0" class="zay3-3">
-                   <!-- img -->
-                   <tr>
-                     <td align="center" style="line-height:0px;">
-                       <img  mc:edit="45-feature-img" style="display:block; line-height:0px; font-size:0px; border:0px;" class="img1" src="http://mundoencom.webs.com/1.jpg" alt="img" width="385" height=auto>
-                     </td>
-                   </tr>
-                 </table>
-                 <table width="1" height="25" border="0" cellpadding="0" cellspacing="0" align="left">
-                   <tr>
-                     <td height="25" style="font-size: 0;line-height: 0;border-collapse: collapse;">
-                       <p style="padding-left: 5px;">
-                         &nbsp; 										                       </p>
-                     </td>
-                   </tr>
-                 </table>
-                 <table width="183" border="0" align="right" cellpadding="0" cellspacing="0" class="zay3-3">
-                   <!-- img -->
-                   <tr>
-                     <td align="center" style="line-height:0px;">
-                       <img  mc:edit="46-feature-img" style="display:block; line-height:0px; font-size:0px; border:0px;" class="img1" src="http://mundoencom.webs.com/2.jpg" alt="img" width="190" height=auto>
-                     </td>
-                   </tr>
-                 </table>
-                 <!-- end middle -->
-                 <!--Space-->
-                 <table width="20" height="5" border="0" cellpadding="0" cellspacing="0" align="center">
-                   <tr>
-                     <td height="5" style="font-size: 0;line-height: 0;border-collapse: collapse;">
-                       <p style="padding-left: 5px;">
-                         &nbsp; 										                       </p>
-                     </td>
-                   </tr>
-                 </table>
-                 <table width="1" height="1" border="0" cellpadding="0" cellspacing="0" align="left">
-                   <tr>
-                     <td height="0" style="font-size: 0;line-height: 0;border-collapse: collapse;">
-                       <p style="padding-left: 5px;">
-                         &nbsp; 										                       </p>
-                     </td>
-                   </tr>
-                 </table>
-                 <table width="183" border="0" align="right" cellpadding="0" cellspacing="0" class="zay3-3">
-                   <!-- img -->
-                   <tr>
-                     <td align="center" style="line-height:0px;">
-                       <img  mc:edit="47-feature-img" style="display:block; line-height:0px; font-size:0px; border:0px;" class="img1" src="http://mundoencom.webs.com/3.jpg" alt="img" width="190" height=auto>
-                     </td>
-                   </tr>
-                 </table>
-                 <!--End Space-->
-                 <!-- right -->
-                 <!-- end right -->
-               </td>
-             </tr>
-             <tr>
-               <td height="5" style="font-size: 0;line-height: 0;border-collapse: collapse;">
-                 <p style="padding-left: 5px;">
-                   &nbsp; 										                 </p>
-               </td>
-             </tr>
-             <tr>
-               <td>
-                 <!-- left -->
-                 <table width="580" border="0" align="left" cellpadding="0" cellspacing="0" class="zay3-3">
-                   <!-- img -->
-                   <tr>
-                     <td align="center" style="line-height:0px;">
-                       <img  mc:edit="48-feature-img" style="display:block; line-height:0px; font-size:0px; border:0px;" class="img1" src="http://mundoencom.webs.com/4.jpg" alt="img" width="580" height=auto>
-                     </td>
-                   </tr>
-                 </table>
-                 <!--End Space-->
-                 <!-- right -->
-                 <!-- end right -->
-               </td>
-             </tr>
-             <tr>
-               <td height="5" style="font-size: 0;line-height: 0;border-collapse: collapse;">
-                 <p style="padding-left: 5px;">
-                   &nbsp; 										                 </p>
-               </td>
-             </tr>
-             <tr>
-               <td>
-                 <!-- left -->
-                 <table width="183" border="0" align="right" cellpadding="0" cellspacing="0" class="zay3-3">
-                   <!-- img -->
-                   <tr>
-                     <td align="center" style="line-height:0px;">
-                       <img  mc:edit="49-feature-img" style="display:block; line-height:0px; font-size:0px; border:0px;" class="img1" src="http://mundoencom.webs.com/6.jpg" alt="img" width="385" height=auto>
-                     </td>
-                   </tr>
-                 </table>
-                 <table width="183" border="0" align="left" cellpadding="0" cellspacing="0" class="zay3-3">
-                   <!-- img -->
-                   <tr>
-                     <td align="center" style="line-height:0px;">
-                       <img  mc:edit="50-feature-img" style="display:block; line-height:0px; font-size:0px; border:0px;" class="img1" src="http://mundoencom.webs.com/5.jpg" alt="img" width="190" height=auto>
-                     </td>
-                   </tr>
-                 </table>
 
-                 <table width="183" border="0" align="left" cellpadding="0" cellspacing="0" class="zay3-3">
-                   <!-- img -->
-                   <tr>
-                     <td align="center" style="line-height:0px;">
-                       <img  mc:edit="50-feature-img" style="display:block; line-height:0px; font-size:0px; border:0px;" class="img1" src="http://mundoencom.webs.com/7.jpg" alt="img" width="190" height=auto>
-                     </td>
-                   </tr>
-                 </table>
-               </td>
-             </tr>
-           </table>
-         </td>
-       </tr>
-       <tr>
-         <td height="80">
-         </td>
-       </tr>
-     </table>
-     
-     <!-- <table data-thumb="http://www.stampready.net/dashboard/editor/user_uploads/image_uploads/2017/08/08/ZsOdetiEXFjDo7fqNaIxMUTw29uRbJP6Grk1v0L3WKHApCBzVgnQYl4h.jpg" mc:repeatable="layout-56" mc:hideable="56" mc:variant="56-Content" data-module="module-56_3330" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="position: relative;opacity: 1;z-index: 0;top: 0px;left: 0px;background-color: #f3f3f3;">
-       <tr>
-         <td align="center">
-           <table class="zay600" width="628" align="center" border="0" cellpadding="0" cellspacing="0">
-             <tr>
-               <td align="center">
-                 <table class="zayinner" width="100%" border="0" cellspacing="0" cellpadding="0" style=" ">
-                   <tr>
-                     <td align="center">
-                       <table class="class-inner" align="center" border="0" cellpadding="0" cellspacing="0" width="1" style="">
-                         <tr>
-                           <td data-border-bottom-color="Divider Line" style="border-bottom: 80px solid rgb(142, 142, 142);">
-                           </td>
-                         </tr>
-                       </table>
-                     </td>
-                   </tr>
-                 </table>
-               </td>
-             </tr>
-             <tr>
-               <td height="50">
-               </td>
-             </tr>
-             <tr>
-               <td mc:edit="content-title-21 d3"  data-color="Seperator Title" data-size="Seperator Title" align="center" style="font-family: initial; font-size: 30px; color: rgb(23, 23, 23); font-weight: 100; text-align: center; line-height: 43.5px;">
-                 &nbsp;Instagram                              
-               </td>
-             </tr>
-             <tr>
-               <td mc:edit="content-sdtitle-213"  data-color="Detail2" data-size="Detail2" align="center" style="font-family: Montserrat, sans-serif;font-size: 10px;font-weight: 700;color: rgb(119, 119, 119);letter-spacing: 5px;line-height: 18px;padding-top: 10px;">
-                 @soygarota
-               </td>
-             </tr>
-             <tr>
-               <td height="100">
-               </td>
-             </tr>
-             <tr>
-               <td>
-                 <table class="zay3-3" width="25%" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td align="center">
-                       <img  mc:edit="117-feature-img" src="images/img117.jpg" alt="img" width="157" height="157" class="img1" data-pin-nopin="true">
-                     </td>
-                   </tr>
-                 </table>
-                 <table class="zay3-3" width="25%" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td align="center">
-                       <img  mc:edit="118-feature-img" src="images/img118.jpg" alt="img" width="157" height="157" class="img1" data-pin-nopin="true">
-                     </td>
-                   </tr>
-                 </table>
-                 <table class="zay3-3" width="25%" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td align="center">
-                       <img  mc:edit="119-feature-img" src="images/img119.jpg" alt="img" width="157" height="157" class="img1" data-pin-nopin="true">
-                     </td>
-                   </tr>
-                 </table>
-                 <table class="zay3-3" width="25%" align="left" border="0" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td align="center">
-                       <img  mc:edit="120-feature-img" src="images/img120.jpg" alt="img" width="157" height="157" class="img1" data-pin-nopin="true">
-                     </td>
-                   </tr>
-                 </table>
+      <!--PHOTOSHOOT-->
 
-               </td>
-             </tr>
-             <tr>
-               <td height="120">
-               </td>
-             </tr>
-           </table>
-         </td>
-       </tr>
-     </table> -->
 
-     <table data-thumb="http://www.stampready.net/dashboard/editor/user_uploads/image_uploads/2017/08/08/1dkw5cA0NRHlEn7LBivO9U2gafmrzJVGSe6sjFoIMX4hTQWyCu3DbtKp.jpg" mc:repeatable="layout-57" mc:hideable="57" mc:variant="57-Content" data-module="module-57_57748" data-bgcolor="BodyBg" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#333">
-       <tr>
-         <td valign="top" align="center">
-           <table class="main" align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
-             <tr>
-               <td valign="middle" align="center" bgcolor="#FFFFFF">
-                 <table class="two-left-inner" align="center" width="85%" border="0" cellspacing="0" cellpadding="0">
-                   <tr>
-                     <td colspan="3" style="font-size:35px; line-height:35px;" valign="middle" align="center" height="35" width="600">
-                       &nbsp; 									                     </td>
-                   </tr>
-                   <tr>
-                     <td class="two-left" valign="middle" align="left" width="200">
-                       <img  mc:edit="121-feature-img" src="images/img121.png" alt="" height="36" width="197">
+      <div class="photoshoot">
+        <div class="container">
+          <div class="title">
+            <p class="mainTitle">
+              STUDIO PHOTOSHOOT
+            </p>
+            <p class="subtitle">
+              Take a peek at our last studio photoshoot in Los Angeles, California.
+            </p>
+          </div>
+          <div class="row-3PA">
+            <div class="image1">
+              <img src="http://mundoencom.webs.com/1.jpg">
+            </div>
+
+            <div class="image2">
+              <img src="http://mundoencom.webs.com/2.jpg">
+            </div>
+
+            <div class="image3">
+              <img src="http://mundoencom.webs.com/3.jpg">
+            </div>
+            <div class="clear"></div>
+          </div>
+
+          <div class="row-1P">
+            <img src="http://mundoencom.webs.com/4.jpg">
+          </div>
+
+          <div class="row-3PB">
+            <div class="image1">
+              <img src="http://mundoencom.webs.com/1.jpg">
+            </div>
+
+            <div class="image2">
+              <img src="http://mundoencom.webs.com/2.jpg">
+            </div>
+
+            <div class="image3">
+              <img src="http://mundoencom.webs.com/3.jpg">
+            </div>
+            <div class="clear"></div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <table align="center" cellpadding="0" cellspacing="0" width="100%" height="100%" >
+         <tr>
+            <td align="center" valign="top" bgcolor="#ffffff"  width="100%">
+               <table cellspacing="0" cellpadding="0" width="100%">
+                  <tr>
+                     <td style="border-bottom: 3px solid #3bcdc3;" width="100%">
+                        <center>
+                           <table cellspacing="0" cellpadding="0" width="500" class="w320">
+                              <tr>
+                                 <td valign="top" style="padding:10px 0; text-align:left;" class="mobile-center">
+                                    <img width="250" height="62" src="https://www.filepicker.io/api/file/TtSuN5UdTmO0NXWPfYCJ">
+                                 </td>
+                              </tr>
+                           </table>
+                        </center>
                      </td>
-                     <td class="two-left" valign="middle" align="center" width="60">
-                       &nbsp; 									                     </td>
-                     <td  mc:edit="con tent-ti tle-213" style="font-family:'Open Sans', sans-serif, Verdana; font-size:15px; font-weight:normal; color:#4a494a; line-height:32px;" class="two-left" valign="middle" align="right" width="370">
-                       <multiline>
-                         © 2017 garotastore.com - 										                       
-                       </multiline>
-                       <unsubscribe>
-                         Unsubscribe 										                       
-                       </unsubscribe>
-                       <multiline>
-                          										                       
-                       </multiline>
+                  </tr>
+                  <tr>
+                     <td background="https://www.filepicker.io/api/file/mEwMJfoIQlKlv1u3CSfU" bgcolor="#0d0102" valign="top" style="background: url(https://www.filepicker.io/api/file/mEwMJfoIQlKlv1u3CSfU) no-repeat center; background-color: #0d0102; background-position: center;">
+                        <!--[if gte mso 9]>
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;height:303px;">
+                           <v:fill type="tile" src="https://www.filepicker.io/api/file/mEwMJfoIQlKlv1u3CSfU" color="#0d0102" />
+                           <v:textbox inset="0,0,0,0">
+                              <![endif]-->
+                              <div>
+                                 <center>
+                                    <table cellspacing="0" cellpadding="0" width="530" height="303" class="w320">
+                                       <tr>
+                                          <td valign="middle" style="vertical-align:middle; padding-right: 15px; padding-left: 15px; text-align:left;" class="mobile-center" height="303">
+                                             <h1>COME CHECK IT OUT</h1>
+                                             <h2>You won't believe what you're missing!</h2>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </center>
+                              </div>
+                              <!--[if gte mso 9]>
+                           </v:textbox>
+                        </v:rect>
+                        <![endif]-->
                      </td>
-                   </tr>
-                   <tr>
-                     <td colspan="3" style="font-size:35px; line-height:35px;" valign="middle" align="center" height="35">
-                       &nbsp; 									                     </td>
-                   </tr>
-                 </table>
-               </td>
-             </tr>
-             <tr>
-               <td align="center">
-                 <table class="class-inner" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="">
-                   <tr>
-                     <td data-border-bottom-color="Divider Line" style="border-bottom: 1px solid rgb(243, 243, 243);">
+                  </tr>
+                  <tr>
+                     <td valign="top">
+                        <center>
+                           <table cellspacing="0"  cellpadding="30" width="500" class="w320">
+                              <tr>
+                                 <td valign="top" style="border-bottom:1px solid #a1a1a1;">
+                                    <table cellspacing="0" cellpadding="0" width="100%">
+                                       <tr>
+                                          <td style="text-align: center;">
+                                             <h3>Free 20% off coupon code for signing-up!</h3>
+                                             <br>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                    <center>
+                                       <table style="margin: 0 auto;" cellspacing="0" cellpadding="8" width="180">
+                                          <tr>
+                                             <td style="border: 1px solid #a1a1a1; text-align:center;">
+                                                Code: <span style="font-family: Courier;">4562789498</span>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </center>
+                                 </td>
+                              </tr>
+                           </table>
+                           <table cellspacing="0" cellpadding="0" width="500" class="w320">
+                              <tr>
+                                 <td>
+                                    <table cellspacing="0" cellpadding="0" width="500" class="w320">
+                                       <tr>
+                                          <td style="padding-bottom:30px; padding-top:30px;" class="mobile-img" >
+                                             <table cellspacing="0" cellpadding="0" width="100%">
+                                                <tr>
+                                                   <td style="padding-bottom:0px;" class="mobile-img">
+                                                      <table cellspacing="0" cellpadding="0" width="120">
+                                                         <tr>
+                                                            <td  style="vertical-align:middle; text-align:center;" class="mobile-img">
+                                                               <img  style="border:1px solid #a1a1a1;" src="https://www.filepicker.io/api/file/OqRXT4JuRbmXSgbxccgK"  width="90" height="90" alt="profile"/>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td style="font-size:12px; padding-top:5px; text-align:center;">
+                                                               User: <a style="color:#3bcdc3;" href="">Jon Doe</a>
+                                                            </td>
+                                                         </tr>
+                                                      </table>
+                                                   </td>
+                                                   <td class="mobile-block mobile-padding" style="text-align:left;">
+                                                      I set up an Awesome Inc profile where I can do tons of really awesome stuff! I want you to follow me so we can keep in touch. <br><br>
+                                                      Because I've invited you, you can now receive 20% off when you sign up!
+                                                   </td>
+                                                </tr>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td class="mobile-padding">
+                                    <table cellspacing="0" cellpadding="0" width="100%">
+                                       <tr>
+                                          <td style="width:150px; background-color: #3bcdc3;">
+                                             <div>
+                                                <!--[if mso]>
+                                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" style="height:33px;v-text-anchor:middle;width:150px;" arcsize="8%" stroke="f" fillcolor="#3bcdc3">
+                                                   <w:anchorlock/>
+                                                   <center style="color:#ffffff;font-family:sans-serif;font-size:13px;">Sign up</center>
+                                                </v:roundrect>
+                                                <![endif]-->
+                                                <!--[if !mso]><!-- -->
+                                                <a href="#">
+                                                   <table cellspacing="0" cellpadding="0" width="100%">
+                                                      <tr>
+                                                         <td style="background-color:#3bcdc3;border-radius:0px;color:#ffffff;display:inline-block;font-family:'Lato', Helvetica, Arial, sans-serif;font-weight:bold;font-size:13px;line-height:33px;text-align:center;text-decoration:none;width:150px;-webkit-text-size-adjust:none;mso-hide:all;"><span style="color:#ffffff">Sign up</span></td>
+                                                      </tr>
+                                                   </table>
+                                                </a>
+                                                <!--<![endif]-->
+                                             </div>
+                                          </td>
+                                          <td>
+                                             &nbsp;
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <table cellspacing="0" cellpadding="25" width="100%">
+                                       <tr>
+                                          <td>
+                                             &nbsp;
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                           </table>
+                        </center>
                      </td>
-                   </tr>
-                 </table>
-               </td>
-             </tr>
-           </table>
-         </td>
-       </tr>
-     </table>
-     <table data-thumb="http://www.stampready.net/dashboard/editor/user_uploads/image_uploads/2017/08/08/JGH1fTXndBSzZygUYvA7t38sOK5WQj6CuNRb9V2ewPo4Ecp0aiMhDlkm.jpg" mc:repeatable="layout-58" mc:hideable="58" mc:variant="58-Content" data-module="module-58_76466" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
-       <tr>
-         <td height="40">
-         </td>
-       </tr>
-       <tr>
-         <td data-border-top-color="Border" data-bgcolor="footer" bgcolor="#3b3b3b" align="center" style="border-top-width: 0px; border-top-style: none; border-top-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
-           <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="zay600">
-             <tr>
-               <td>
-                 <table class="zay3-3" width="217" border="0" align="left" cellpadding="0" cellspacing="0" style="     padding-left: 15PX; ">
-                   <!-- logo -->
-                   <tr>
-                     <td height="40">
+                  </tr>
+                  <tr>
+                     <td style="background-color:#c2c2c2;">
+                        <center>
+                           <table cellspacing="0" cellpadding="0" width="500" class="w320">
+                              <tr>
+                                 <td>
+                                    <table cellspacing="0" cellpadding="30" width="100%">
+                                       <tr>
+                                          <td style="text-align:center;">
+                                             <a href="#">
+                                             <img width="61" height="51" src="https://www.filepicker.io/api/file/vkoOlof0QX6YCDF9cCFV" alt="twitter" />
+                                             </a>
+                                             <a href="#">
+                                             <img width="61" height="51" src="https://www.filepicker.io/api/file/fZaNDx7cSPaE23OX2LbB" alt="google plus" />
+                                             </a>
+                                             <a href="#">
+                                             <img width="61" height="51" src="https://www.filepicker.io/api/file/b3iHzECrTvCPEAcpRKPp" alt="facebook" />
+                                             </a>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <center>
+                                       <table style="margin:0 auto;" cellspacing="0" cellpadding="5" width="100%">
+                                          <tr>
+                                             <td style="text-align:center; margin:0 auto;" width="100%">
+                                                <a href="#" style="text-align:center;">
+                                                <img style="margin:0 auto;" width="123" height="24" src="https://www.filepicker.io/api/file/u7CkMXcOSlG8TMbr3LnG" alt="logo link" />
+                                                </a>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </center>
+                                 </td>
+                              </tr>
+                           </table>
+                        </center>
                      </td>
-                   </tr>
-                   <tr>
-                     <td align="left" valign="middle" style="line-height:0px;">
-                       <img  mc:edit="122-feature-img" style="display:block; font-size:0px; line-height:0px; border:0px;" src="https://cdn.shopify.com/s/files/1/1603/0391/t/2/assets/logo.png?8059548469303521345" width="90" height="35" alt="img">
-                     </td>
-                   </tr>
-                   <tr>
-                     <td  mc:edit="content-title-293" data-link-style="text-decoration:none; color:#3cb2d0;" data-link-color="Contact Link" data-color="Contact" data-size="Contact" data-min="12" data-max="18" align="left" style="font-family: 'Open Sans', Arial, sans-serif; color: rgb(156, 156, 156); font-size: 13px; line-height: 28px;">
-                       All Rights Reserved 2017                     </td>
-                   </tr>
-                   <!-- end content -->
-                   <tr>
-                     <td height="20">
-                     </td>
-                   </tr>
-                   <!-- social -->
-                   <tr>
-                     <td align="left">
-                       <table width="130" border="0" align="left" cellpadding="0" cellspacing="0">
-                         <tr>
-                           <td width="25" align="center" style="line-height:0px">
-                             <a href="https://www.facebook.com/Garota-189517921080564" style="color: rgb(255, 255, 255);">
-                               <img  mc:edit="123-feature-img" data-crop="false" src="http://siteassets.pagecloud.com/quarterworld/images/facebook-icon-ID-f952cd84-6aaf-4cf2-fd89-674acbbcfe15.png?nocache=6d32b055-e391-4c6e-dc27-3ebab3e36b72" width="26" height="26" alt="img">
-                             </a>
-                           </td>
-                           <td width="10">
-                           </td>
-                           <td width="25" align="center" style="line-height:0px">
-                             <a href="https://twitter.com/soygarota" style="color: rgb(255, 255, 255);">
-                               <img  mc:edit="124-feature-img" data-crop="false" src="http://www.freeiconspng.com/uploads/twitter-icon--basic-round-social-iconset--s-icons-0.png" width="26" height="26" alt="img">
-                             </a>
-                           </td>
-                           <td width="10">
-                           </td>
-                           <td width="25" align="center" style="line-height:0px">
-                             <a href="https://www.pinterest.com/garotastore22/" style="color: rgb(255, 255, 255);">
-                               <img  mc:edit="124-feature-img" data-crop="false" src="https://image.flaticon.com/icons/png/128/145/145808.png" width="26" height="26" alt="img">
-                             </a>
-                           </td>
-                           <td width="10">
-                           </td>
-                           <td width="25" align="center" style="line-height:0px">
-                             <a href="https://www.instagram.com/soygarota/" style="color: rgb(255, 255, 255);">
-                               <img  mc:edit="124-feature-img" data-crop="false" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_color-128.png" width="26" height="26" alt="img">
-                             </a>
-                           </td>
-                           <td width="10">
-                           </td>
-                           <!-- social 
-                           <td width="25" align="center" style="line-height:0px">
-                             <a href="#" style="color: rgb(255, 255, 255);">
-                               <img  mc:edit="125-feature-img" data-crop="false" src="images/img125.png" width="26" height="26" alt="img">
-                             </a>
-                           </td>
-                           <td width="10">
-                           </td>
-                           <td width="25" align="center" style="line-height:0px">
-                             <a href="#" style="color: rgb(255, 255, 255);">
-                               <img  mc:edit="126-feature-img" data-crop="false" src="images/img126.png" width="26" height="26" alt="img">
-                             </a>
-                           </td>-->
-                         </tr>
-                       </table>
-                     </td>
-                   </tr>
-                   <!-- end social -->
-                   <tr>
-                     <td height="45">
-                     </td>
-                   </tr>
-                 </table>
-                 <!-- left -->
-                 <table class="zay3-3" width="166" border="0" align="right" cellpadding="0" cellspacing="0" style="     padding-left: 15PX; ">
-                   <tr>
-                     <td height="40">
-                     </td>
-                   </tr>
-                   <!-- title -->
-                   <tr>
-                     <td  mc:edit="content-title-294" data-link-style="text-decoration:none; color:#3cb2d0;" data-link-color="Title Link" data-color="Footer Title" data-size="Footer Title" data-min="12" data-max="22" align="left" style="font-family: 'Open Sans', Arial, sans-serif;color: rgb(254, 1, 82);font-size: 16px;line-height: 28px;font-weight: 800;">
-                       Menu 									                     </td>
-                   </tr>
-                   <!-- end title -->
-                   <tr>
-                     <td height="10">
-                     </td>
-                   </tr>
-                   <!-- content -->
-                   <tr>
-                     <td  mc:edit="content-title-295" data-link-style="text-decoration:none; color:#7f8c8d;" data-link-color="Link" data-color="Footer Content" data-size="Footer Content" data-min="12" data-max="18" align="left" style="font-family: 'Open Sans', Arial, sans-serif; color:#979797; font-size:13px; line-height: 21px;">
-                       <a href="https://www.garotastore.com/collections/best-selling" style="color: rgb(128, 128, 128);" data-color="Footer Link">
-                         Best selling                       
-                       </a>
-                       <br>
-                       <a href="https://www.garotastore.com/collections/new-arrivals" style="color: rgb(128, 128, 128);" data-color="Footer Link">
-                         What's new                       
-                       </a>
-                       <br>
-                       <a href="https://www.garotastore.com/collections/favorites" style="color: rgb(128, 128, 128);" data-color="Footer Link">
-                         Our favorites                       
-                       </a>
-                       <br>
-                       <a href="https://www.garotastore.com/collections/new-arrivals" style="color: rgb(128, 128, 128);" data-color="Footer Link">
-                         Just arrived                       
-                       </a>
-                       <br>
-                     </td>
-                   </tr>
-                   <!-- end content -->
-                 </table>
-                 <!-- end left -->
-                 <!--Space-->
-                 <table width="1" height="25" border="0" cellpadding="0" cellspacing="0" align="left">
-                   <tr>
-                     <td height="25" style="font-size: 0;line-height: 0;border-collapse: collapse;">
-                       <p style="padding-left: 24px;">
-                         &nbsp; 										                       </p>
-                     </td>
-                   </tr>
-                 </table>
-                 <!--End Space-->
-                 <!-- middle -->
-                 <table class="zay3-3" width="166" border="0" align="right" cellpadding="0" cellspacing="0" style="     padding-left: 15PX; ">
-                   <tr>
-                     <td height="40">
-                     </td>
-                   </tr>
-                   <!-- title -->
-                   <tr>
-                     <td  mc:edit="content-title-296" data-link-style="text-decoration:none; color:#3cb2d0;" data-link-color="Title Link" data-color="Footer Title" data-size="Footer Title" data-min="12" data-max="22" align="left" style="font-family: 'Open Sans', Arial, sans-serif;color: rgb(254, 1, 82);font-size: 16px;line-height: 28px;font-weight: 800;">
-                       Our store 									                     </td>
-                   </tr>
-                   <!-- end title -->
-                   <tr>
-                     <td height="10">
-                     </td>
-                   </tr>
-                   <!-- content -->
-                   <tr>
-                     <td  mc:edit="content-title-asfdsfd" data-link-style="text-decoration:none; color:#7f8c8d;" data-link-color="Link" data-color="Footer Content" data-size="Footer Content" data-min="12" data-max="18" align="left" style="font-family: 'Open Sans', Arial, sans-serif; color:#979797; font-size:13px; line-height: 21px;">
-                       <a href="https://www.garotastore.com/search" style="color: rgb(128, 128, 128);" data-color="Footer Link">
-                         Search                       
-                       </a>
-                       <br>
-                       <a href="https://www.garotastore.com/pages/about-us" style="color: rgb(128, 128, 128);" data-color="Footer Link">
-                         About us                       
-                       </a>
-                       <br>
-                       <a href="https://www.garotastore.com/pages/shipping-policy" style="color: rgb(128, 128, 128);" data-color="Footer Link">
-                         Shipping policy                       
-                       </a>
-                       <br>
-                       <a href="https://www.garotastore.com/pages/terms-and-conditions" style="color: rgb(128, 128, 128);" data-color="Footer Link">
-                         Terms and conditions                       
-                       </a>
-                       <br>
-                       <a href="https://www.garotastore.com/pages/contact-us" style="color: rgb(128, 128, 128);" data-color="Footer Link">
-                         Contact us                       
-                       </a>
-                       <br>
-                       <a href="https://www.garotastore.com/pages/sizing-chart" style="color: rgb(128, 128, 128);" data-color="Footer Link">
-                         Sizing chart                       
-                       </a>
-                       <br>
-                     </td>
-                   </tr>
-                   <tr>
-                     <td height="40">
-                     </td>
-                   </tr>
-                   <!-- end content -->
-                 </table>
-                 <!-- end middle -->
-                 <!--Space-->
-                 <table width="1" height="25" border="0" cellpadding="0" cellspacing="0" align="left">
-                   <tr>
-                     <td height="25" style="font-size: 0;line-height: 0;border-collapse: collapse;">
-                       <p style="padding-left: 24px;">
-                         &nbsp; 										                       
-                       </p>
-                     </td>
-                   </tr>
-                 </table>
-               </td>
-             </tr>
-           </table>
-         </td>
-       </tr>
-       <tr>
-         <td height="40">
-         </td>
-       </tr>
-     </table>
-      			  		  	     </td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
- 					  				 					  				</body></html>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>
