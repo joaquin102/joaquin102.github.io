@@ -100,6 +100,11 @@
        background-color: rgba(226, 226, 226, 0.15);
        padding-bottom: 30px;
      }
+
+     .products .title {
+      margin-bottom: 50px;
+     }
+
      .products .container .title p {
        font-family: 'Open Sans', Arial, sans-serif;
        color: rgb(35, 30, 30);
@@ -121,8 +126,19 @@
        float: left;
      }
      .product img {
-       max-width: 100%;
+           width: 80%;
+    display: block;
+    margin: auto;
      }
+
+     .product p {
+      margin-left: 10%;
+     }
+
+     .product p {
+      margin-left: 10%;
+     }
+
      .name {
        font-family: "Open Sans", Arial, sans-serif;
        color: rgb(43, 43, 43);
@@ -146,6 +162,7 @@
        margin: 0 auto;
        background-color: black;
      }
+     
      .products .button p {
        line-height: 30px;
        font-family: HelveticaNeue-Bold, sans-serif;
@@ -154,6 +171,7 @@
        font-weight: 400;
        text-align: center;
        background-color: black;
+       margin: 0;
      }
 
      /* COLLECTIONS */
@@ -409,6 +427,107 @@
       margin-bottom: 10px;
     }
 
+    /*FOOTER*/
+
+    .leftContainer {
+
+      width: 50%;
+      float: left;
+    }
+
+    .footer .leftContainer .logo {
+
+          width: 115px;
+    margin-left: 30px;
+    margin-top: 50px;
+    }
+
+    .footer .rights {
+      font-family: 'Open Sans', Arial, sans-serif;
+    color: rgb(156, 156, 156);
+    font-size: 13px;
+    line-height: 28px;
+        margin-left: 30px;
+    }
+
+    .socialMedia {
+      width: 200px;
+          margin-left: 20px;
+    }
+
+    .socialMedia img {
+
+      max-width: 100%;
+    width: 15%;
+    float: left;
+    margin-left: 10px;
+
+    }
+
+    .payment {
+      width: 200px;
+          margin-left: 20px;
+          margin-top: 20px;
+    }
+
+    .payment img{
+
+      max-width: 100%;
+    width: 15%;
+    float: left;
+    margin-left: 10px;
+    }
+
+    .rightContainer {
+
+      float: right;
+      width: 50%;
+    }
+
+    .rightContainer ul {
+      list-style-type: none;
+       margin: 0;
+       padding: 0;
+    }
+
+    .rightContainer a {
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #979797;
+    font-size: 13px;
+    line-height: 21px;
+    }
+
+    .rightContainer .menuA {
+          float: right;
+    margin-right: 100px;
+    margin-top: 50px;
+    }
+
+    .rightContainer .menuB {
+
+      float: right;
+    margin-right: 100px;
+    margin-top: 50px;
+    }
+
+    .rightContainer .title {
+          font-family: 'Open Sans', Arial, sans-serif;
+    color: rgb(254, 1, 82);
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 800;
+    }
+
+    .copyright {
+      text-align: center;
+    font-family: 'Open Sans', sans-serif, Verdana;
+    font-size: 15px;
+    font-weight: normal;
+    color: #4a494a;
+    line-height: 32px;
+    }
 
     .clear {
      clear: both;
@@ -416,7 +535,7 @@
 
 
 
-      @media only screen and (max-width: 1000px) {
+      @media only screen and (min-device-width: 850px) {
 
       /* PRODUCTS TABLETS */
 
@@ -424,7 +543,30 @@
          width: 95%;
       }
 
+      .shipping .container {
+
+        width: 90%;
+      }
+
+      .news .button {
+
+        width: 80%;
+      }
+
+      .news .horizontalContainer .header {
+        width: 80%;
     }
+
+    .photoshoot .title .subtitle {
+
+      font-size: 18px;
+    }
+
+    }
+
+    .rightContainer .menuB{
+        margin-right: 40px;
+       }
 
 
      @media only screen and (max-device-width: 800px) {
@@ -552,6 +694,28 @@
          margin-right: 0%;
        }
 
+       /* FOOTER MOBILE */
+
+       .leftContainer {
+        width: 100%;
+       }
+
+       .rightContainer {
+
+        width: 100%;
+       }
+
+       .rightContainer .menuA{
+        float: left;
+        margin-right: 0px;
+        margin-left: 30px;
+       }
+
+       .rightContainer .menuB{
+        margin-right: 40px;
+        float: right;
+       }
+
        /* OTHER ELEMENTS MOBILE */
 
        .line {
@@ -579,8 +743,8 @@
       <div class="products">
          <div class="container">
             <div class="title">
-               <p style="margin-bottom: 0px">NEW</p>
-               <p style="margin-top: 0px">COLLECTION</p>
+               <p style="margin-bottom: 0px; text-align: center ">FALL COLLECTION</p>
+               <!--SECOND TILE <p style="margin-top: 0px">COLLECTION</p>-->
             </div>
             <div class="row">
                <div class="product" style="margin-left: 0px">
@@ -592,17 +756,17 @@
                   </div>
                </div>
                <div class="product">
-                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0620_60f4c028-a026-4536-b40c-9d013f653f5e_large.jpg">
-                  <p class="name">MRS. ASHLEY ROBE</p>
-                  <p class="price">$36.00</p>
+                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0017_44f895ca-e00c-428d-9175-ccb33d05cae9_large.jpg">
+                  <p class="name">ANYA FUR JACKET</p>
+                  <p class="price">$32.00</p>
                   <div class="button">
                      <p>ADD TO CART</p>
                   </div>
                </div>
                <div class="product">
-                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0620_60f4c028-a026-4536-b40c-9d013f653f5e_large.jpg">
-                  <p class="name">MRS. ASHLEY ROBE</p>
-                  <p class="price">$36.00</p>
+                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0718_cbd22b17-dc93-4ed0-aaab-fcf195055008_large.jpg">
+                  <p class="name">DARK VICKY TOP</p>
+                  <p class="price">$32.00</p>
                   <div class="button">
                      <p>ADD TO CART</p>
                   </div>
@@ -611,9 +775,9 @@
             </div>
             <div class="row">
                <div class="product" style="margin-left: 0px">
-                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0620_60f4c028-a026-4536-b40c-9d013f653f5e_large.jpg">
-                  <p class="name">MRS. ASHLEY ROBE</p>
-                  <p class="price">$36.00</p>
+                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_0530_4d579004-05d4-45b1-b00e-303ce083b4f2.jpg">
+                  <p class="name">LEYLA TOP</p>
+                  <p class="price">$24.00</p>
                   <div class="button">
                      <p>ADD TO CART</p>
                   </div>
@@ -846,199 +1010,59 @@
         </div>
       </div>
 
+      <div class="line"></div>
+
+      <div class="footer">
+        <div class="leftContainer">
+          <img class="logo" src="https://cdn.shopify.com/s/files/1/1603/0391/t/2/assets/logo.png">
+          <p class="rights">All Rights Reserved 2017</p>
+          <div class="socialMedia">
+            <img src="http://siteassets.pagecloud.com/quarterworld/images/facebook-icon-ID-f952cd84-6aaf-4cf2-fd89-674acbbcfe15.png">
+            <img src="http://www.freeiconspng.com/uploads/twitter-icon--basic-round-social-iconset--s-icons-0.png">
+            <img src="https://image.flaticon.com/icons/png/128/145/145808.png">
+            <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_color-128.png">
+            <div class="clear"></div>
+          </div>
+      <div class="payment">
+            <img src="http://pngimg.com/uploads/mastercard/mastercard_PNG17.png">
+            <img src="https://www.techgoondu.com/wp-content/uploads/2015/03/MasterCard.png">
+            <img style="width: 20%" src="http://www.cbankandtrust.com/wp-content/uploads/apple-pay-logo.png">
+            <img style="width: 30%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/PayPal2007.svg/1280px-PayPal2007.svg.png">
+            <div class="clear"></div>
+          </div>
+        </div>
+        
+        <div class="rightContainer">
+          <div class="menuA">
+          <p class="title">Our store</p>
+          <ul>
+              <li class="selected"><a href="https://www.garotastore.com/collections/new-arrivals">New arrivals</a></li>
+              <li><a href="https://www.garotastore.com/collections/best-selling">Best selling</a></li>
+              <li><a href="https://www.garotastore.com/collections/clothes">Clothes</a></li>
+              <li><a href="https://www.garotastore.com/collections/shoes">Shoes</a></li>
+              <li><a href="https://www.garotastore.com/collections/handbags">Handbags</a></li>
+              <li><a href="https://www.garotastore.com/collections/sale">Sale</a></li>
+          </ul>
+        </div>
+        <div class="menuB">
+          <p class="title">Menu</p>
+          <ul>
+            <li class="selected"><a href="https://www.garotastore.com/pages/about-us">About us</a></li>
+            <li><a href="https://www.garotastore.com/pages/shipping-policy">Shipping policy</a></li>
+            <li><a href="https://www.garotastore.com/pages/terms-and-conditions">Terms and conditions</a></li>
+            <li><a href="https://www.garotastore.com/pages/contact-us">Contact us</a></li>
+            <li><a href="https://www.garotastore.com/pages/sizing-chart">Sizing chart</a></li>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+
+      <div class="copyright">
+        <p>© 2017 garotastore.com - Unsubscribe</p>
+      </div>
+    </div>
 
 
-      <table align="center" cellpadding="0" cellspacing="0" width="100%" height="100%" >
-         <tr>
-            <td align="center" valign="top" bgcolor="#ffffff"  width="100%">
-               <table cellspacing="0" cellpadding="0" width="100%">
-                  <tr>
-                     <td style="border-bottom: 3px solid #3bcdc3;" width="100%">
-                        <center>
-                           <table cellspacing="0" cellpadding="0" width="500" class="w320">
-                              <tr>
-                                 <td valign="top" style="padding:10px 0; text-align:left;" class="mobile-center">
-                                    <img width="250" height="62" src="https://www.filepicker.io/api/file/TtSuN5UdTmO0NXWPfYCJ">
-                                 </td>
-                              </tr>
-                           </table>
-                        </center>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td background="https://www.filepicker.io/api/file/mEwMJfoIQlKlv1u3CSfU" bgcolor="#0d0102" valign="top" style="background: url(https://www.filepicker.io/api/file/mEwMJfoIQlKlv1u3CSfU) no-repeat center; background-color: #0d0102; background-position: center;">
-                        <!--[if gte mso 9]>
-                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;height:303px;">
-                           <v:fill type="tile" src="https://www.filepicker.io/api/file/mEwMJfoIQlKlv1u3CSfU" color="#0d0102" />
-                           <v:textbox inset="0,0,0,0">
-                              <![endif]-->
-                              <div>
-                                 <center>
-                                    <table cellspacing="0" cellpadding="0" width="530" height="303" class="w320">
-                                       <tr>
-                                          <td valign="middle" style="vertical-align:middle; padding-right: 15px; padding-left: 15px; text-align:left;" class="mobile-center" height="303">
-                                             <h1>COME CHECK IT OUT</h1>
-                                             <h2>You won't believe what you're missing!</h2>
-                                          </td>
-                                       </tr>
-                                    </table>
-                                 </center>
-                              </div>
-                              <!--[if gte mso 9]>
-                           </v:textbox>
-                        </v:rect>
-                        <![endif]-->
-                     </td>
-                  </tr>
-                  <tr>
-                     <td valign="top">
-                        <center>
-                           <table cellspacing="0"  cellpadding="30" width="500" class="w320">
-                              <tr>
-                                 <td valign="top" style="border-bottom:1px solid #a1a1a1;">
-                                    <table cellspacing="0" cellpadding="0" width="100%">
-                                       <tr>
-                                          <td style="text-align: center;">
-                                             <h3>Free 20% off coupon code for signing-up!</h3>
-                                             <br>
-                                          </td>
-                                       </tr>
-                                    </table>
-                                    <center>
-                                       <table style="margin: 0 auto;" cellspacing="0" cellpadding="8" width="180">
-                                          <tr>
-                                             <td style="border: 1px solid #a1a1a1; text-align:center;">
-                                                Code: <span style="font-family: Courier;">4562789498</span>
-                                             </td>
-                                          </tr>
-                                       </table>
-                                    </center>
-                                 </td>
-                              </tr>
-                           </table>
-                           <table cellspacing="0" cellpadding="0" width="500" class="w320">
-                              <tr>
-                                 <td>
-                                    <table cellspacing="0" cellpadding="0" width="500" class="w320">
-                                       <tr>
-                                          <td style="padding-bottom:30px; padding-top:30px;" class="mobile-img" >
-                                             <table cellspacing="0" cellpadding="0" width="100%">
-                                                <tr>
-                                                   <td style="padding-bottom:0px;" class="mobile-img">
-                                                      <table cellspacing="0" cellpadding="0" width="120">
-                                                         <tr>
-                                                            <td  style="vertical-align:middle; text-align:center;" class="mobile-img">
-                                                               <img  style="border:1px solid #a1a1a1;" src="https://www.filepicker.io/api/file/OqRXT4JuRbmXSgbxccgK"  width="90" height="90" alt="profile"/>
-                                                            </td>
-                                                         </tr>
-                                                         <tr>
-                                                            <td style="font-size:12px; padding-top:5px; text-align:center;">
-                                                               User: <a style="color:#3bcdc3;" href="">Jon Doe</a>
-                                                            </td>
-                                                         </tr>
-                                                      </table>
-                                                   </td>
-                                                   <td class="mobile-block mobile-padding" style="text-align:left;">
-                                                      I set up an Awesome Inc profile where I can do tons of really awesome stuff! I want you to follow me so we can keep in touch. <br><br>
-                                                      Because I've invited you, you can now receive 20% off when you sign up!
-                                                   </td>
-                                                </tr>
-                                             </table>
-                                          </td>
-                                       </tr>
-                                    </table>
-                                 </td>
-                              </tr>
-                              <tr>
-                                 <td class="mobile-padding">
-                                    <table cellspacing="0" cellpadding="0" width="100%">
-                                       <tr>
-                                          <td style="width:150px; background-color: #3bcdc3;">
-                                             <div>
-                                                <!--[if mso]>
-                                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" style="height:33px;v-text-anchor:middle;width:150px;" arcsize="8%" stroke="f" fillcolor="#3bcdc3">
-                                                   <w:anchorlock/>
-                                                   <center style="color:#ffffff;font-family:sans-serif;font-size:13px;">Sign up</center>
-                                                </v:roundrect>
-                                                <![endif]-->
-                                                <!--[if !mso]><!-- -->
-                                                <a href="#">
-                                                   <table cellspacing="0" cellpadding="0" width="100%">
-                                                      <tr>
-                                                         <td style="background-color:#3bcdc3;border-radius:0px;color:#ffffff;display:inline-block;font-family:'Lato', Helvetica, Arial, sans-serif;font-weight:bold;font-size:13px;line-height:33px;text-align:center;text-decoration:none;width:150px;-webkit-text-size-adjust:none;mso-hide:all;"><span style="color:#ffffff">Sign up</span></td>
-                                                      </tr>
-                                                   </table>
-                                                </a>
-                                                <!--<![endif]-->
-                                             </div>
-                                          </td>
-                                          <td>
-                                             &nbsp;
-                                          </td>
-                                       </tr>
-                                    </table>
-                                 </td>
-                              </tr>
-                              <tr>
-                                 <td>
-                                    <table cellspacing="0" cellpadding="25" width="100%">
-                                       <tr>
-                                          <td>
-                                             &nbsp;
-                                          </td>
-                                       </tr>
-                                    </table>
-                                 </td>
-                              </tr>
-                           </table>
-                        </center>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td style="background-color:#c2c2c2;">
-                        <center>
-                           <table cellspacing="0" cellpadding="0" width="500" class="w320">
-                              <tr>
-                                 <td>
-                                    <table cellspacing="0" cellpadding="30" width="100%">
-                                       <tr>
-                                          <td style="text-align:center;">
-                                             <a href="#">
-                                             <img width="61" height="51" src="https://www.filepicker.io/api/file/vkoOlof0QX6YCDF9cCFV" alt="twitter" />
-                                             </a>
-                                             <a href="#">
-                                             <img width="61" height="51" src="https://www.filepicker.io/api/file/fZaNDx7cSPaE23OX2LbB" alt="google plus" />
-                                             </a>
-                                             <a href="#">
-                                             <img width="61" height="51" src="https://www.filepicker.io/api/file/b3iHzECrTvCPEAcpRKPp" alt="facebook" />
-                                             </a>
-                                          </td>
-                                       </tr>
-                                    </table>
-                                 </td>
-                              </tr>
-                              <tr>
-                                 <td>
-                                    <center>
-                                       <table style="margin:0 auto;" cellspacing="0" cellpadding="5" width="100%">
-                                          <tr>
-                                             <td style="text-align:center; margin:0 auto;" width="100%">
-                                                <a href="#" style="text-align:center;">
-                                                <img style="margin:0 auto;" width="123" height="24" src="https://www.filepicker.io/api/file/u7CkMXcOSlG8TMbr3LnG" alt="logo link" />
-                                                </a>
-                                             </td>
-                                          </tr>
-                                       </table>
-                                    </center>
-                                 </td>
-                              </tr>
-                           </table>
-                        </center>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
    </body>
 </html>
