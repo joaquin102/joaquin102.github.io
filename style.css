@@ -139,13 +139,13 @@ ul {
   position: fixed;
   top: 20px;
   width: 30px;
-  background: #bca858;
+  background: #eb332a;
   height: 30px;
   line-height: 30px; }
 
 button.mfp-close,
 button.mfp-arrow {
-  background: #bca858; }
+  background: #eb332a; }
 
 .mfp-bottom-bar {
   display: none !important; }
@@ -298,7 +298,7 @@ input:focus {
   animation: load7 1.8s infinite ease-in-out; }
 
 .loader {
-  color: #bca858;
+  color: #eb332a;
   font-size: 6px;
   position: relative;
   -webkit-transform: translateZ(0);
@@ -361,7 +361,7 @@ input:focus {
     position: absolute;
     top: 50%;
     font-size: 100px;
-    color: #bca858;
+    color: #eb332a;
     font-family: "Playfair Display", serif;
     text-transform: uppercase;
     line-height: 1;
@@ -393,7 +393,7 @@ input:focus {
   width: 40px;
   height: 40px;
   bottom: 40px;
-  background-color: #bca858;
+  background-color: #eb332a;
   color: #ffffff;
   text-align: center;
   -webkit-transition-duration: 500ms;
@@ -432,16 +432,16 @@ input:focus {
   -o-transition-duration: 500ms;
   transition-duration: 500ms; }
   .akame-btn:focus, .akame-btn:hover {
-    border-color: #bca858;
+    border-color: #eb332a;
     font-weight: 400;
     font-size: 14px;
-    background-color: #bca858;
+    background-color: #eb332a;
     color: #ffffff;
     -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
     box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15); }
   .akame-btn.active {
-    border-color: #bca858;
-    background-color: #bca858;
+    border-color: #eb332a;
+    background-color: #eb332a;
     color: #ffffff; }
     .akame-btn.active:focus, .akame-btn.active:hover {
       border-color: #252525;
@@ -478,7 +478,7 @@ input:focus {
         .header-area .top-header-area .top-header-content p {
           font-size: 10px; } }
   .header-area .cart-icon a:focus, .header-area .cart-icon a:hover {
-    color: #bca858; }
+    color: #eb332a; }
 
 .classy-nav-container {
   background-color: transparent;
@@ -513,7 +513,7 @@ input:focus {
         .classy-nav-container .classy-navbar .classynav ul li a {
           font-size: 14px; } }
       .classy-nav-container .classy-navbar .classynav ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li a:hover {
-        color: #bca858; }
+        color: #eb332a; }
     .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a {
       font-size: 14px;
       text-transform: capitalize;
@@ -522,7 +522,7 @@ input:focus {
       padding: 0 30px;
       color: #252525; }
       .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:hover {
-        color: #bca858; }
+        color: #eb332a; }
 
 .classynav ul li.active a {
   position: relative;
@@ -530,7 +530,7 @@ input:focus {
   .classynav ul li.active a::before {
     width: 80%;
     height: 2px;
-    background-color: #bca858;
+    background-color: #eb332a;
     position: absolute;
     bottom: 0;
     left: 10%;
@@ -649,7 +649,7 @@ input:focus {
       .single-footer-widget .social-info a.instagram {
         background-color: #057ad7; }
       .single-footer-widget .social-info a:focus, .single-footer-widget .social-info a:hover {
-        background-color: #bca858; }
+        background-color: #eb332a; }
   .single-footer-widget .contact-address p {
     margin-bottom: 8px; }
     .single-footer-widget .contact-address p:last-child {
@@ -675,7 +675,7 @@ input:focus {
         .copywrite-text p a {
           font-size: 14px; } }
       .copywrite-text p a:focus, .copywrite-text p a:hover {
-        color: #bca858; }
+        color: #eb332a; }
 
 /* :: 10.0 CTA CSS */
 .akame-cta-area {
@@ -738,7 +738,7 @@ input:focus {
     -ms-flex-pack: center;
     justify-content: center; }
     .breadcrumb-content .breadcrumb .breadcrumb-item a:hover, .breadcrumb-content .breadcrumb .breadcrumb-item a:focus {
-      color: #bca858; }
+      color: #eb332a; }
     .breadcrumb-content .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
       content: '\f101';
       font-family: "FontAwesome"; }
@@ -763,7 +763,7 @@ input:focus {
       margin-bottom: 15px;
       font-family: "Playfair Display", serif; }
       .single-post-area .post-content .post-title:hover, .single-post-area .post-content .post-title:focus {
-        color: #bca858; }
+        color: #eb332a; }
     .single-post-area .post-content .post-meta {
       position: relative;
       z-index: 1;
@@ -784,11 +784,11 @@ input:focus {
             left: -20px;
             z-index: 1; }
         .single-post-area .post-content .post-meta a:hover, .single-post-area .post-content .post-meta a:focus {
-          color: #bca858; }
+          color: #eb332a; }
     .single-post-area .post-content p {
       margin-bottom: 0; }
   .single-post-area:hover .post-content .post-title, .single-post-area:focus .post-content .post-title {
-    color: #bca858; }
+    color: #eb332a; }
 
 .akame-blog-details-area {
   position: relative;
@@ -830,7 +830,7 @@ input:focus {
           .akame-blog-details-area .post-content .post-meta a {
             font-size: 14px; } }
         .akame-blog-details-area .post-content .post-meta a:hover, .akame-blog-details-area .post-content .post-meta a:focus {
-          color: #bca858; }
+          color: #eb332a; }
 
 .blog-details-text {
   position: relative;
@@ -877,7 +877,7 @@ input:focus {
   z-index: 1;
   margin-bottom: 30px;
   margin-top: 30px;
-  border-left: 5px solid #bca858;
+  border-left: 5px solid #eb332a;
   padding: 15px; }
   .akame-blockquote h4 {
     margin-bottom: 0; }
@@ -893,7 +893,7 @@ input:focus {
     width: 46px;
     height: 46px;
     border-radius: 50%;
-    background-color: #bca858;
+    background-color: #eb332a;
     color: #ffffff;
     text-align: center;
     margin-bottom: 10px;
@@ -912,7 +912,7 @@ input:focus {
     .akame-post-share a.instagram {
       background-color: #057ad7; }
     .akame-post-share a:hover, .akame-post-share a:focus {
-      background-color: #bca858; }
+      background-color: #eb332a; }
 
 .post-author-area {
   position: relative;
@@ -954,7 +954,7 @@ input:focus {
     width: 46px;
     height: 46px;
     border-radius: 50%;
-    background-color: #bca858;
+    background-color: #eb332a;
     color: #ffffff;
     text-align: center;
     margin-left: 15px;
@@ -973,7 +973,7 @@ input:focus {
     .post-author-area .author-social-info a.google-plus {
       background-color: #cb242e; }
     .post-author-area .author-social-info a:hover, .post-author-area .author-social-info a:focus {
-      background-color: #bca858; }
+      background-color: #eb332a; }
 
 /* :: 13.0 Choose Us CSS */
 .choose-us-content {
@@ -984,7 +984,7 @@ input:focus {
     display: block;
     margin-bottom: 15px; }
     .choose-us-content ul li i {
-      color: #bca858;
+      color: #eb332a;
       padding-right: 5px; }
     .choose-us-content ul li:last-child {
       margin-bottom: 0; }
@@ -1032,8 +1032,8 @@ input:focus {
       margin: 0 3px;
       font-size: 13px; } }
   .portfolio-menu .btn.active {
-    color: #bca858;
-    border-bottom-color: #bca858; }
+    color: #eb332a;
+    border-bottom-color: #eb332a; }
 
 .akame-portfolio-single-item {
   position: relative;
@@ -1062,7 +1062,7 @@ input:focus {
     border-radius: 3px;
     padding: 50px 30px; }
     .akame-portfolio-single-item .overlay-content .overlay-text h4 {
-      color: #bca858; }
+      color: #eb332a; }
       @media only screen and (max-width: 767px) {
         .akame-portfolio-single-item .overlay-content .overlay-text h4 {
           font-size: 20px; } }
@@ -1089,7 +1089,7 @@ input:focus {
     opacity: 0;
     visibility: hidden; }
     .akame-portfolio-single-item .thumbnail-zoom:hover, .akame-portfolio-single-item .thumbnail-zoom:focus {
-      color: #bca858; }
+      color: #eb332a; }
   .akame-portfolio-single-item:hover img, .akame-portfolio-single-item:focus img {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
@@ -1185,7 +1185,7 @@ input:focus {
         line-height: 46px;
         border-radius: 50%; }
         .single-team-member .team-member-img .team-social-info .social-link a:hover, .single-team-member .team-member-img .team-social-info .social-link a:focus {
-          background-color: #bca858;
+          background-color: #eb332a;
           -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
           box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
           color: #ffffff; }
@@ -1208,7 +1208,7 @@ input:focus {
       opacity: 1;
       visibility: visible; }
     .single-team-member:hover .team-member-info h5, .single-team-member:focus .team-member-info h5 {
-      color: #bca858; }
+      color: #eb332a; }
 
 /* :: 16.0 Service CSS */
 .single-service-area {
@@ -1245,7 +1245,7 @@ input:focus {
     -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
     box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15); }
     .single-service-area:hover h5, .single-service-area:focus h5 {
-      color: #bca858; }
+      color: #eb332a; }
 
 .single--service--item {
   position: relative;
@@ -1398,7 +1398,7 @@ input:focus {
       display: inline-block;
       width: 90px;
       height: 90px;
-      background-color: #bca858;
+      background-color: #eb332a;
       color: #ffffff;
       font-size: 30px;
       text-align: center;
@@ -1430,7 +1430,7 @@ input:focus {
     position: absolute;
     top: 50%;
     font-size: 48px;
-    color: #bca858;
+    color: #eb332a;
     font-family: "Playfair Display", serif;
     text-transform: uppercase;
     line-height: 1;
@@ -1474,11 +1474,11 @@ input:focus {
     .testimonial-slides .owl-dots .owl-dot {
       width: 12px;
       height: 12px;
-      border: 1px solid #bca858;
+      border: 1px solid #eb332a;
       margin: 0 5px;
       border-radius: 50%; }
       .testimonial-slides .owl-dots .owl-dot.active {
-        background-color: #bca858; }
+        background-color: #eb332a; }
 
 .single-testimonial-slide {
   position: relative;
@@ -1514,7 +1514,7 @@ input:focus {
       .booking-info h2 {
         font-size: 36px; } }
   .booking-info h4 {
-    color: #bca858;
+    color: #eb332a;
     margin-bottom: 15px; }
   .booking-info p:last-child {
     margin-bottom: 0; }
@@ -1584,7 +1584,7 @@ input:focus {
           background-color: #f6f9f9;
           color: #acacac; }
     .single-booking-table .single-date-hours.active .booking-day {
-      background-color: #bca858; }
+      background-color: #eb332a; }
       .single-booking-table .single-date-hours.active .booking-day h5,
       .single-booking-table .single-date-hours.active .booking-day h6 {
         color: #ffffff; }
@@ -1616,8 +1616,8 @@ input:focus {
     .booking-table-slider .owl-prev:hover, .booking-table-slider .owl-prev:focus,
     .booking-table-slider .owl-next:hover,
     .booking-table-slider .owl-next:focus {
-      border-color: #bca858;
-      background-color: #bca858;
+      border-color: #eb332a;
+      background-color: #eb332a;
       color: #ffffff; }
   .booking-table-slider .owl-next {
     left: auto;
@@ -1644,7 +1644,7 @@ input:focus {
       transition-duration: 500ms; }
       .booking-table-slider .owl-dots .owl-dot.active {
         height: 10px;
-        background-color: #bca858; }
+        background-color: #eb332a; }
 
 /* :: 18.0 Contact Area */
 .akame-contact-form {
@@ -1670,7 +1670,7 @@ input:focus {
     font-size: 14px; }
     .akame-contact-form .form-control:focus {
       box-shadow: none;
-      border-color: #bca858; }
+      border-color: #eb332a; }
   .akame-contact-form textarea.form-control {
     height: 150px;
     padding: 20px; }
@@ -1694,7 +1694,7 @@ input:focus {
   .single-contact-information i {
     font-size: 30px;
     margin-bottom: 15px;
-    color: #bca858;
+    color: #eb332a;
     display: block; }
   .single-contact-information h4 {
     display: block;
