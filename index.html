@@ -1,1131 +1,888 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Garota newsletter</title>
-
-      <style type="text/css">
-
-      @import url(http://fonts.googleapis.com/css?family=Lato:400);
-         @import url(https://fonts.googleapis.com/css?family=Open+Sans)
-         @font-face {
-         font-family: 'proxima_novalight';
-         src: url('http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.eot');
-         src: url('http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.ttf') format('truetype');
-         font-weight: normal;
-         font-style: normal;
-         }
-         @font-face {
-         font-family: 'proxima_nova_rgregular';
-         src: url('http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.eot');
-         src: url('http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.ttf') format('truetype');
-         font-weight: normal;
-         font-style: normal;
-         }
-         @font-face {
-         font-family: 'proxima_novasemibold';
-         src: url('http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.eot');
-         src: url('http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.ttf') format('truetype');
-         font-weight: normal;
-         font-style: normal;
-         }
-         @font-face {
-         font-family: 'proxima_nova_rgbold';
-         src: url('http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.eot');
-         src: url('http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.ttf') format('truetype');
-         font-weight: normal;
-         font-style: normal;
-         }
-         @font-face {
-         font-family: 'proxima_novathin';
-         src: url('http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.eot');
-         src: url('http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.ttf') format('truetype');
-         font-weight: normal;
-         font-style: normal;
-         }
-         @font-face {
-         font-family: 'proxima_novaextrabold';
-         src: url('http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.eot');
-         src: url('http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.woff2') format('woff2'),url('http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.ttf') format('truetype');
-         font-weight: normal;
-         font-style: normal;
-         }
-
-
-      /*MY CODE*/
-      .logo {
-       width: 100px;
-       margin-left: 5%;
-     }
-     .logo img {
-       max-width: 100%;
-       display: inline;
-       margin-top: 20px;
-     }
-     .navigationBar {
-       text-align: center;
-       font-family: 'Open Sans', Arial, sans-serif;
-       height: 100px;
-       font-size: 13px;
-       line-height: 28px;
-     }
-     .navigationBar ul {
-       list-style-type: none;
-       margin: 0;
-       padding: 0;
-     }
-     .navigationBar li {
-       display: inline;
-     }
-     .navigationBar li a {
-       text-align: center;
-       padding: 14px 16px;
-       text-decoration: none;
-       color: rgb(184, 184, 184);
-     }
-     .navigationBar li a:hover {
-       color: rgb(254, 1, 82);
-     }
-     .navigationBar .selected a{
-       color: rgb(254, 1, 82);
-     }
-     .mainImage img{
-       max-width: 100%;
-     }
-
-     /*PRODUCTS */
-
-     .products {
-       background-color: rgba(226, 226, 226, 0.15);
-       padding-bottom: 30px;
-     }
-
-     .products .title {
-     	margin-bottom: 50px;
-     }
-
-     .products .container .title p {
-       font-family: 'Open Sans', Arial, sans-serif;
-       color: rgb(35, 30, 30);
-       font-size: 23px;
-       line-height: 23.5px;
-       font-weight: 900;
-     }
-     .products .container {
-       width: 70%;
-       margin: 0 auto;
-       padding-top: 20px;
-     }
-     .row {
-       margin-bottom: 50px;
-     }
-     .product {
-       width: 32%;
-       margin-left: 1.5%;
-       float: left;
-     }
-     .product img {
-           width: 80%;
-    display: block;
-    margin: auto;
-     }
-
-     .product p {
-     	margin-left: 10%;
-     }
-
-     .product p {
-     	margin-left: 10%;
-     }
-
-     .name {
-       font-family: "Open Sans", Arial, sans-serif;
-       color: rgb(43, 43, 43);
-       font-size: 16px;
-       font-weight: 400;
-       line-height: 27.2px;
-       text-align: left;
-       margin-bottom: 0px;
-     }
-     .price {
-       font-family: "Open Sans", Arial, sans-serif;
-       color: rgb(140, 140, 140);
-       font-size: 13px;
-       line-height: 22.1px;
-       text-align: left;
-       margin-top: 0px;
-     }
-     .products .button {
-       width: 60%;
-       height: 30px;
-       margin: 0 auto;
-       background-color: black;
-     }
-
-     .products .button p {
-       line-height: 30px;
-       font-family: HelveticaNeue-Bold, sans-serif;
-       color: rgb(255, 255, 255);
-       font-size: 10px;
-       font-weight: 400;
-       text-align: center;
-       background-color: black;
-       margin: 0;
-     }
-
-     /* COLLECTIONS */
-
-     .collection {
-       width: 25%;
-       height: 100%;
-       float: left;
-     }
-     .collection img {
-       max-height: 100%;
-       min-width: 100%;
-       object-fit: cover;
-     }
-
-     /* SHIPPING */
-
-     .shipping .container {
-       width: 40%;
-       margin: 0 auto;
-       margin-top: 50px;
-     }
-     .shipping .container .feature {
-       float: left;
-       width: 30%;
-       margin-left: 5%;
-     }
-     .feature .image {
-       width: 25%;
-       margin: 0 auto;
-     }
-     .feature img {
-       max-width: 100%;
-     }
-     .feature .title {
-       font-family: HelveticaNeue-Bold, Arial, sans-serif;
-       font-size: 16px;
-       font-weight: 400;
-       color: rgb(31, 31, 31);
-       line-height: 27.2px;
-       margin-bottom: 0px;
-       text-align: center;
-     }
-     .feature .subtitle {
-       font-family: HelveticaNeue-Medium, sans-serif;
-       font-size: 13px;
-       font-weight: 400;
-       color: rgb(173, 173, 173);
-       line-height: 22.1px;
-       margin-top: 0px;
-       text-align: center;
-     }
-
-     /* LANDSCAPE IMAGE */
-
-     .landscapeImage {
-       width: 80%;
-       margin: 0 auto;
-     }
-     .landscapeImage img{
-       max-width: 100%;
-     }
-     .line {
-       width: 90%;
-       margin-top: 100px;
-       background-color: rgb(230, 230, 230);
-       border: 0;
-       height: 1px;
-     }
-
-     /* NEWS */
-
-     .news {
-
-      margin-bottom: 100px;
-     }
-
-     .news .verticalContainer {
-       width: 70%;
-       margin: 0 auto;
-       margin-top: 100px;
-     }
-     .text {
-       float: left;
-       width: 60%;
-       margin-top: 100px;
-     }
-     .news .text .myButton {
-       margin-top: 30px;
-     }
-     .news .verticalContainer .title p {
-       font-family: 'Lato', Arial, sans-serif;
-       color: rgb(65, 74, 81);
-       font-size: 22px;
-       font-weight: 700;
-     }
-     .news .verticalContainer .description {
-       margin-top: 30px;
-       width: 80%;
-     }
-     .news .verticalContainer .description p {
-       font-family: 'Lato', Arial, sans-serif;
-       color: #7f8c8d;
-       font-size: 14px;
-       line-height: 23px;
-     }
-     .news .verticalContainer .image {
-       float: right;
-       width: 30%;
-       margin-right: 10%;
-     }
-     .news .verticalContainer .image img {
-       max-width: 100%;
-     }
-     .news .horizontalContainer {
-       width: 60%;
-       margin: 0 auto;
-       margin-top: 100px;
-     }
-     .news .horizontalContainer .header {
-       width: 60%;
-       margin: 0 auto;
-     }
-     .news .horizontalContainer .header .title .upperTitle {
-       font-family: 'Open Sans', Arial, sans-serif;
-       color: rgb(186, 186, 186);
-       font-size: 27px;
-       line-height: 39.15px;
-       font-weight: 100;
-     }
-     .news .horizontalContainer .header .title .mainTitle {
-       font-family: 'Open Sans', Arial, sans-serif;
-       font-size: 37px;
-       font-weight: 900;
-       color: rgb(254, 1, 82);
-       line-height: 12px;
-     }
-     .news .horizontalContainer .header .description {
-       font-family: 'Open Sans', Arial, sans-serif;
-       color: rgb(160, 160, 160);
-       font-size: 14px;
-       font-weight: 100;
-       line-height: 22.8px;
-     } 
-     .news .horizontalContainer .image {
-       margin-top: 80px;
-     }
-     .news .horizontalContainer .image img {
-       max-width: 100%;
-       display: block;
-       margin: auto;
-     }
-     .news .button {
-       width: 25%;
-       height: 45px;
-       margin-top: 60px;
-       border-color: black;
-       border-style: solid;
-       border-width: 1px;
-       border-radius: 45px;
-     }
-     .news .button p {
-       line-height: 45px;
-       font-family: HelveticaNeue-Bold, sans-serif;
-       color: black;
-       font-size: 15px;
-       font-weight: 400;
-       text-align: center;
-       margin: 0;
-     }
-
-
-     /* PHOTOSHOOT */
-
-     .photoshoot {
-
-      margin-top: 50px;
-     }
-
-     .photoshoot .container {
-
-      width: 50%;
-      margin: 0 auto;
-    }
-    .photoshoot .title .mainTitle{
-      font-family: 'Open Sans', Arial, sans-serif;
-      color: #FE0152;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 27.2px;
-      margin-bottom: 0px;
-    }
-
-    .photoshoot .title .subtitle{
-      font-family: 'Open Sans', Arial, sans-serif;
-      color: rgb(127, 127, 127);
-      font-size: 21px;
-      font-weight: 100;
-      line-height: 27.7px;
-      margin-top: 0px
-    }
-
-    .photoshoot img {
-      max-width: 100%;
-    }
-
-    .row-3PA .image1{
-
-      float: left;
-      width: 60%;
-      margin-right: 1%;
-    }
-
-    .row-3PA .image2 {
-
-      float: left;
-      width: 30%;
-    }
-
-    .row-3PA .image3 {
-
-      float: left;
-      width: 30%;
-    }
-
-    .row-3PB .image1{
-
-      float: right;
-      width: 60%;
-      margin-left: 1%;
-    }
-
-    .row-3PB .image2 {
-
-      float: right;
-      width: 30%;
-    }
-
-    .row-3PB .image3 {
-
-      float: right;
-      width: 30%;
-    }
-
-    .row-1P img {
-      display: block;;
-      margin: auto;
-    }
-
-    .row-1P {
-
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-
-    /*FOOTER*/
-
-    .leftContainer {
-
-    	width: 50%;
-    	float: left;
-    }
-
-    .footer .leftContainer .logo {
-
-    	    width: 115px;
-    margin-left: 30px;
-    margin-top: 50px;
-    }
-
-    .footer .rights {
-    	font-family: 'Open Sans', Arial, sans-serif;
-    color: rgb(156, 156, 156);
-    font-size: 13px;
-    line-height: 28px;
-        margin-left: 30px;
-    }
-
-    .socialMedia {
-    	width: 200px;
-    	    margin-left: 20px;
-    }
-
-    .socialMedia img {
-
-    	max-width: 100%;
-    width: 15%;
-    float: left;
-    margin-left: 10px;
-
-    }
-
-    .payment {
-    	width: 200px;
-    	    margin-left: 20px;
-    	    margin-top: 20px;
-    }
-
-    .payment img{
-
-    	max-width: 100%;
-    width: 15%;
-    float: left;
-    margin-left: 10px;
-    }
-
-    .rightContainer {
-
-    	float: right;
-    	width: 50%;
-    }
-
-    .rightContainer ul {
-    	list-style-type: none;
-       margin: 0;
-       padding: 0;
-    }
-
-    .rightContainer a {
-    text-decoration: none;
-    color: rgb(128, 128, 128);
-    font-family: 'Open Sans', Arial, sans-serif;
-    color: #979797;
-    font-size: 13px;
-    line-height: 21px;
-    }
-
-    .rightContainer .menuA {
-    	    float: right;
-    margin-right: 100px;
-    margin-top: 50px;
-    }
-
-    .rightContainer .menuB {
-
-    	float: right;
-    margin-right: 100px;
-    margin-top: 50px;
-    }
-
-    .rightContainer .title {
-    	    font-family: 'Open Sans', Arial, sans-serif;
-    color: rgb(254, 1, 82);
-    font-size: 16px;
-    line-height: 28px;
-    font-weight: 800;
-    }
-
-    .copyright {
-    	text-align: center;
-    font-family: 'Open Sans', sans-serif, Verdana;
-    font-size: 15px;
-    font-weight: normal;
-    color: #4a494a;
-    line-height: 32px;
-    }
-
-    .clear {
-     clear: both;
-   }
-
-   a {
-   	text-decoration: none;
-   }
-
-
-      @media only screen and (min-device-width: 850px) {
-
-      /* PRODUCTS TABLETS */
-
-      .products .container {
-         width: 95%;
-      }
-
-      .shipping .container {
-
-      	width: 90%;
-      }
-
-      .news .button {
-
-      	width: 80%;
-      }
-
-      .news .horizontalContainer .header {
-    		width: 80%;
-		}
-
-		.photoshoot .title .subtitle {
-
-			font-size: 18px;
-		}
-
-    }
-
-    .rightContainer .menuB{
-       	margin-right: 40px;
-       }
-
-
-     @media only screen and (max-device-width: 800px) {
-       .logo {
-         margin-bottom: 15px;
-       }
-
-       /* NAVIGATION BAR MOBILE */
-
-       .navigationBar {
-         height: 150px;
-             margin-bottom: 30px;
-       }
-
-       /* PRODUCTS MOBILE */
-
-       .products .container {
-         width: 90%;
-       }
-       .product {
-         width: 100%;
-         margin-left: 0px;
-         margin-bottom: 50px;
-       }
-       .product img {
-         display: block;
-         margin: auto;
-       }
-       .product p {
-         padding-left: 5%;
-       }
-       .product .button {
-         width: 60%;
-         height: 40px;
-       }
-       .product .button p {
-         font-size: 14px;
-         line-height: 40px;
-         font-family: HelveticaNeue-Bold, sans-serif;
-       }
-
-       /* COLLECTIONS MOBILE */
-
-       .collection {
-         width: 100%;
-       }
-       .collection {
-         margin-bottom: 10px;
-       }
-
-       /* FEATURES MOBILE */
-
-       .shipping .container {
-         width: 100%;
-       }
-       .shipping .container .feature {
-         margin-left: 0px;
-         width: 100%;
-         margin-bottom: 30px;
-       }
-       .feature .image {
-         width: 20%;
-       }
-       .shipping .title {
-         font-size: 18px;
-         font-family: Lato, Arial, sans-serif;
-       }
-       .shipping .subtitle {
-         font-size: 12px;
-         line-height: 25px;
-         font-family: Lato, Arial, sans-serif;
-       }
-
-       /* LANDSCAPE IMAGE MOBILE */
-
-       .landscapeImage {
-         width: 100%;
-       }
-
-       /* NEWS MOBILE */
-
-       .news {
-         width: 100%;
-       }
-       .news .verticalContainer {
-         width: 90%;
-       }
-       .news .verticalContainer .text {
-         margin-top: 0px;
-       }
-       .news .verticalContainer .image {
-         width: 40%;
-         margin-right: 0px;
-       }
-       .news .verticalContainer .title .mainTitle{
-         margin-bottom: 25px;
-         margin-top: 0px;
-         font-weight: 800;
-       }
-       .news .verticalContainer .title .subtitle {
-         margin-top: 0px;
-         margin-bottom: 0px;
-         font-weight: 100;
-       }
-       .news .verticalContainer .description p{
-         margin-top: 0px;
-       }
-       .news .verticalContainer .button {
-         width: 80%;
-         margin: 0 auto;
-         margin-top: 60px;
-       }
-       .news .horizontalContainer {
-         width: 90%;
-       }
-       .news .horizontalContainer .header {
-         width: 100%;
-       }
-       .news .horizontalContainer .image {
-         margin-top: 30px;
-       }
-       .newsImage {
-         float: right;
-         width: 35%;
-         margin-right: 0%;
-       }
-
-       /* FOOTER MOBILE */
-
-       .leftContainer {
-       	width: 100%;
-       }
-
-       .rightContainer {
-
-       	width: 100%;
-       }
-
-       .rightContainer .menuA{
-       	float: left;
-       	margin-right: 0px;
-       	margin-left: 30px;
-       }
-
-       .rightContainer .menuB{
-       	margin-right: 40px;
-       	float: right;
-       }
-
-       /* OTHER ELEMENTS MOBILE */
-
-       .line {
-        margin-top: 50px;
-      }
-      </style>
-
-
-
-
-   </head>
-   <body class="body" style="padding:0; margin:0; display:block; background:#ffffff; -webkit-text-size-adjust:none" bgcolor="#ffffff">
-
-    <!--NAVIGATION BAR-->
-
-      <div class="navigationBar">
-         <div class="logo">
-            <img src="https://cdn.shopify.com/s/files/1/1603/0391/t/2/assets/logo.png">
-         </div>
-         <ul>
-            <li class="selected"><a href="https://www.garotastore.com/collections/new-arrivals">New arrivals</a></li>
-            <li><a href="https://www.garotastore.com/collections/best-selling">Best selling</a></li>
-            <li><a href="https://www.garotastore.com/collections/clothes">Clothes</a></li>
-            <li><a href="https://www.garotastore.com/collections/shoes">Shoes</a></li>
-            <li><a href="https://www.garotastore.com/collections/handbags">Handbags</a></li>
-            <li><a href="https://www.garotastore.com/collections/sale">Sale</a></li>
-         </ul>
-      </div>
-
-      <!--MAIN IMAGE-->
-
-      <div class="mainImage">
-        <a href="https://www.garotastore.com/collections/new-arrivals">
-         <img src="https://cdn.shopify.com/s/files/1/1603/0391/t/2/assets/image1.jpg?5533085955321688767">
-        </a>
-      </div>
-
-      <!--PRODUCTS GROUPS 1-->
-
-      <div class="products">
-         <div class="container">
-            <div class="title">
-               <p style="margin-bottom: 0px; text-align: center ">FALL COLLECTION</p>
-               <!--SECOND TILE <p style="margin-top: 0px">COLLECTION</p>-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Ximi Vouge US</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom.css">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <!-- Top Header Area Start -->
+        <div class="top-header-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-5">
+                        <div class="top-header-content">
+                            <p>Welcome to Ximivouge US</p>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="top-header-content text-right">
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> . <span class="mx-2"></span> | <span class="mx-2"></span> <i class="fa fa-phone" aria-hidden="true"></i> (123) 456.8978 </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-               <div class="product" style="margin-left: 0px">
-               	<a href="https://www.garotastore.com/collections/new-arrivals/products/abby-romper">
-                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_5867_b3abbe4e-cba0-419a-b90b-d7f845298576.jpg">
-                  <p class="name">ABBY ROMPER</p>
-                  <p class="price">$52.00</p>
-                  <div class="button">
-                     <p>ADD TO CART</p>
-                  </div>
-                </a>
-                  
-               </div>
-               <div class="product">
-               	<a href="https://www.garotastore.com/collections/new-arrivals/products/alecia-bomber-jacket-1">
-                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_6476.jpg?v=1508888188">
-                  <p class="name">ALECIA BOMBER JACKET</p>
-                  <p class="price">$42.00</p>
-                  <div class="button">
-                     <p>ADD TO CART</p>
-                  </div>
-                </a>
-               </div>
-               <div class="product">
-               	<a href="https://www.garotastore.com/collections/new-arrivals/products/sheryl-top">
-                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_6557_d200beaa-ee80-45c1-a56b-d2f4d2f06205.jpg?v=1508887048">
-                  <p class="name">SHERYL VELVET TOP</p>
-                  <p class="price">$18.00</p>
-                  <div class="button">
-                     <p>ADD TO CART</p>
-                  </div>
-                </a>
-               </div>
-               <div class="clear"></div>
+        </div>
+        <!-- Top Header Area End -->
+
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="akameNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Menu Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul id="nav">
+                                    <li class="active"><a href="./index.html">Home</a></li>
+                                    <li><a href="#">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="./index.html">- Home</a></li>
+                                            <li><a href="./about.html">- About Us</a></li>
+                                            <!-- <li><a href="./service.html">- Services</a></li> -->
+                                            <li><a href="./portfolio.html">- Portfolio</a></li>
+                                            <li><a href="./blog.html">- Blog</a></li>
+                                            <li><a href="./single-blog.html">- Blog Details</a></li>
+                                            <li><a href="./contact.html">- Contact</a></li>
+                                            <li><a href="#">- Dropdown</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./portfolio.html">Portfolio</a></li>
+                                    <!-- <li><a href="./service.html">Services</a></li> -->
+                                    <li><a href="./about.html">About Us</a></li>
+                                    <li><a href="./blog.html">Blog</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                                </ul>
+
+                                <!-- Cart Icon -->
+<!--                                 <div class="cart-icon ml-5 mt-4 mt-lg-0">
+                                    <a href="#"><i class="icon_cart"></i></a>
+                                </div> -->
+
+                                <!-- Book Icon -->
+<!--                                 <div class="book-now-btn ml-5 mt-4 mt-lg-0 ml-md-4">
+                                    <a href="#" class="btn akame-btn">Book Now</a>
+                                </div> -->
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
             </div>
-            <div class="row">
-               <div class="product" style="margin-left: 0px">
-               	<a href="https://www.garotastore.com/collections/new-arrivals/products/noelia-top">
-                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_6500.jpg?v=1508886741">
-                  <p class="name">NOELIA TOP</p>
-                  <p class="price">$26.00</p>
-                  <div class="button">
-                     <p>ADD TO CART</p>
-                  </div>
-                </a>
-               </div>
-               <div class="product">
-               	<a href="https://www.garotastore.com/collections/new-arrivals/products/donna-pants">
-                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_5891.jpg?v=1508875898">
-                  <p class="name">DONNA PANTS</p>
-                  <p class="price">$38.00</p>
-                  <div class="button">
-                     <p>ADD TO CART</p>
-                  </div>
-                </a>
-               </div>
-               <div class="product">
-               	<a href="https://www.garotastore.com/collections/new-arrivals/products/buttercup-top">
-                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_6577_b78fa0da-81bf-4fc5-ac7d-8f4969a97073.jpg?v=1508887246">
-                  <p class="name">BUTTERCUP KNIT TOP</p>
-                  <p class="price">$44.00</p>
-                  <div class="button">
-                     <p>ADD TO CART</p>
-                  </div>
-                </a>
-               </div>
-               <div class="clear"></div>
-            </div>
-         </div>
-      </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
 
-      <!--COLLECTIONS-->
-
-      <div class="collections">
-         <div class="collection">
-            <a href="https://www.garotastore.com/collections/fall-must-haves-1">
-            <img style="max-width: 100%" src="https://cdn.shopify.com/s/files/1/1603/0391/files/fallMustHaves2.jpg?14254969096724249078">
-            </a>
-         </div>
-         <div class="collection">
-            <a href="https://www.soygarota.com/collections/colors-of-fall">
-            <img style="max-width: 100%" src="https://cdn.shopify.com/s/files/1/1603/0391/files/colorsOfFall.jpg?3563014641497667285">
-            </a>
-         </div>
-         <div class="collection">
-            <a href="https://www.garotastore.com/collections/all-about-pants">
-            <img style="max-width: 100%" src="https://cdn.shopify.com/s/files/1/1603/0391/files/allAboutPants.jpg?930417618976703865">
-            </a>
-         </div>
-         <div class="collection">
-            <a href="https://www.garotastore.com/collections/velvet-is-back">
-            <img style="max-width: 100%" src="https://cdn.shopify.com/s/files/1/1603/0391/files/velvetIsBack_1f070859-1821-4231-a300-8b09541542f0.jpg?15243058544926766495">
-            </a>
-         </div>
-         <div class="clear"></div>
-      </div>
-
-
-      <!--PRODUCTS GROUPS 2-->
-
-      <div class="products">
-         <div class="container">
-            <div class="title">
-               <p style="margin-bottom: 0px; text-align: center ">FALL COLLECTION</p>
-               <!--SECOND TILE <p style="margin-top: 0px">COLLECTION</p>-->
-            </div>
-            <div class="row">
-               <div class="product" style="margin-left: 0px">
-               	<a href="https://www.garotastore.com/collections/new-arrivals/products/julia-dress-1">
-                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_5966_86955e50-a67c-460d-a78f-b3467b0806eb.jpg?v=1508885358">
-                  <p class="name">JULIA DRESS</p>
-                  <p class="price">$32.00</p>
-                  <div class="button">
-                     <p>ADD TO CART</p>
-                  </div>
-                </a>
-                  
-               </div>
-               <div class="product">
-               	<a href="https://www.garotastore.com/collections/new-arrivals/products/ayana-top-2">
-                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_6719.jpg?v=1508888308">
-                  <p class="name">AYANA VELVET TOP</p>
-                  <p class="price">$112.00</p>
-                  <div class="button">
-                     <p>ADD TO CART</p>
-                  </div>
-                </a>
-               </div>
-               <div class="product">
-               	<a href="https://www.garotastore.com/collections/new-arrivals/products/florence-jacket">
-                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_5932.jpg?v=1508876173">
-                  <p class="name">FLORENCE JACKET</p>
-                  <p class="price">$60.00</p>
-                  <div class="button">
-                     <p>ADD TO CART</p>
-                  </div>
-                </a>
-               </div>
-               <div class="clear"></div>
-            </div>
-            <div class="row">
-               <div class="product" style="margin-left: 0px">
-               	<a href="https://www.garotastore.com/collections/new-arrivals/products/dorothy-pants">
-                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_6415.jpg?v=1508885882">
-                  <p class="name">DOROTHY PANTS</p>
-                  <p class="price">$28.00</p>
-                  <div class="button">
-                     <p>ADD TO CART</p>
-                  </div>
-                </a>
-               </div>
-               <div class="product">
-               	<a href="https://www.garotastore.com/collections/new-arrivals/products/ilana-top-2">
-                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_6748_944df72b-906a-41f1-ae95-09fa9d676404.jpg?v=1508888723">
-                  <p class="name">ILANA VELVET TOP</p>
-                  <p class="price">$15.00</p>
-                  <div class="button">
-                     <p>ADD TO CART</p>
-                  </div>
-                </a>
-               </div>
-               <div class="product">
-               	<a href="https://www.garotastore.com/collections/new-arrivals/products/leonela-coat">
-                  <img src="https://cdn.shopify.com/s/files/1/1603/0391/products/DSC_6280.jpg?v=1508876515">
-                  <p class="name">LEONELA COAT</p>
-                  <p class="price">$46.00</p>
-                  <div class="button">
-                     <p>ADD TO CART</p>
-                  </div>
-                </a>
-               </div>
-               <div class="clear"></div>
-            </div>
-         </div>
-      </div>
-
-      <!--SHIPPING FEATURES-->
-
-      <div class="shipping">
-         <div class="container">
-            <div class="feature" style="margin-left: 0px">
-               <div class="image">
-                  <img src="https://maxcdn.icons8.com/Share/icon/Ecommerce//cardboard_box_filled1600.png">
-               </div>
-               <p class="title">Free Shipping</p>
-               <p class="subtitle">For order over $50</p>
-            </div>
-            <div class="feature">
-               <div class="image">
-                  <img src="https://maxcdn.icons8.com/Share/icon/User_Interface//available_updates1600.png">
-               </div>
-               <p class="title">Free returns in store</p>
-               <p class="subtitle">In any of our stores in California or Florida.</p>
-            </div>
-            <div class="feature">
-               <div class="image">
-                  <img src="https://bookbindingbycrawford.co.uk/wp-content/uploads/2017/05/Delivery-Icon_grande.png">
-               </div>
-               <p class="title">Next Day Shipping</p>
-               <p class="subtitle">Our team is ready to ship.</p>
-            </div>
-            <div class="clear"></div>
-         </div>
-      </div>
-
-      <!--SECOND MAIN IMAGE-->
-
-      <div class="landscapeImage">
-         <a href="https://www.garotastore.com/collections/jackets-to-love">
-         <img src="https://cdn.shopify.com/s/files/1/1603/0391/files/jacketsToLove.jpg?6409587286323714704">
-         </a>
-      </div>
-      <hr class="line">
-
-
-      <!--NEWS-->
-
-      <div class="news">
-         <div class="verticalContainer">
-            <div class="text">
-               <div class="title">
-                  <p class="mainTitle" style="margin-bottom: 0px">NEW STORE</p>
-                  <p class="subtitle" style="margin-top: 0px">NOW OPEN DOLPHIN MALL</p>
-               </div>
-               <div class="description">
-                  <p>The wait is over! Our first store in Miami, Florida is finally here at Dolphin Mall. Come and check it out!</p>
-               </div>
-               <div class="button">
-                  <p>GET ADDRESS</p>
-               </div>
-            </div>
-            <div class="image">
-               <img src="http://www.shopdolphinmall.com/asset/get.asp?asset_id=19087">
-            </div>
-            <div class="clear"></div>
-         </div>
-         <div class="horizontalContainer">
-            <div class="header">
-               <div class="title">
-                  <p class="upperTitle" style="margin-bottom: 10px">
-                     we don't
-                  </p>
-                  <p class="mainTitle" style="margin-top: 0px">
-                     MESS AROUND
-                  </p>
-               </div>
-               <div class="description" style="margin-bottom: 0px">
-                  <p>Garota is continuously expanding its precence across the country and we are about to open another store in Miami in Dadeland Mall.</p>
-               </div>
-            </div>
-            <div class="image">
-               <img style="max-width: 100%" src="http://images.miamiandbeaches.com/images/101526_8793_full.jpg">
-            </div>
-         </div>
-      </div>
-
-
-
-      <!--PHOTOSHOOT-->
-
-
-      <div class="photoshoot">
-        <div class="container">
-          <div class="title">
-            <p class="mainTitle">
-              STUDIO PHOTOSHOOT
-            </p>
-            <p class="subtitle">
-              Take a peek at our last studio photoshoot in Los Angeles, California.
-            </p>
-          </div>
-          <div class="row-3PA">
-            <div class="image1">
-              <img src="http://mundoencom.webs.com/1.jpg">
+    <!-- Welcome Area Start -->
+    <section class="welcome-area">
+        <div class="welcome-slides owl-carousel">
+            <!-- Single Welcome Slide -->
+            <div class="single-welcome-slide bg-img" style="background-image: url(img/bg-img/womanInWhite.jpg);">
+                <!-- Welcome Content -->
+                <div class="welcome-content h-100">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+                            <div class="col-12 col-md-9 col-lg-6">
+                                <div class="welcome-text">
+                                    <h2 data-animation="fadeInUp" data-delay="100ms">XimiVouge US <br> Franchised</h2>
+                                    <p data-animation="fadeInUp" data-delay="400ms">“Ximivouge has over 7000 high-quality products. More than 800 are updated every month.”</p>
+                                    <a href="#" class="btn akame-btn" data-animation="fadeInUp" data-delay="700ms">About Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="image2">
-              <img src="http://mundoencom.webs.com/2.jpg">
+            <!-- Single Welcome Slide -->
+            <div class="single-welcome-slide bg-img" style="background-image: url(img/bg-img/newYork.jpg);">
+                <!-- Welcome Content -->
+                <div class="welcome-content h-100">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+                            <div class="col-12 col-md-9 col-lg-6">
+                                <div class="welcome-text">
+                                    <h2 data-animation="fadeInUp" data-delay="100ms">Ximivouge is <br> worldwide</h2>
+                                    <p data-animation="fadeInUp" data-delay="400ms">“Now with over 200 stores opened around the world.”</p>
+                                    <a href="#" class="btn akame-btn active" data-animation="fadeInUp" data-delay="700ms">About Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="image3">
-              <img src="http://mundoencom.webs.com/3.jpg">
+            <!-- Single Welcome Slide -->
+            <div class="single-welcome-slide bg-img" style="background-image: url(img/bg-img/16_3.jpg);">
+                <!-- Welcome Content -->
+                <div class="welcome-content h-100">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+                            <div class="col-12 col-md-9 col-lg-6">
+                                <div class="welcome-text">
+                                    <h2 data-animation="fadeInUp" data-delay="100ms">Inmediate turnover <br> on opening day</h2>
+                                    <p data-animation="fadeInUp" data-delay="400ms">“On average, every ximivouge store makes a turnover around $5000 on opending day.”</p>
+                                    <a href="#" class="btn akame-btn active" data-animation="fadeInUp" data-delay="700ms">About Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="clear"></div>
-          </div>
-
-          <div class="row-1P">
-            <img src="http://mundoencom.webs.com/4.jpg">
-          </div>
-
-          <div class="row-3PB">
-            <div class="image1">
-              <img src="http://mundoencom.webs.com/1.jpg">
-            </div>
-
-            <div class="image2">
-              <img src="http://mundoencom.webs.com/2.jpg">
-            </div>
-
-            <div class="image3">
-              <img src="http://mundoencom.webs.com/3.jpg">
-            </div>
-            <div class="clear"></div>
-          </div>
 
         </div>
-      </div>
+    </section>
+    <!-- Welcome Area End -->
 
-      <div class="line"></div>
+    <!-- About Area Start -->
+    <section class="akame-about-area section-padding-80-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Section Heading -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="section-heading mb-80">
+                        <h2>About us</h2>
+                        <p>Ximi vogue US</p>
+                        <span>About Us</span>
+                    </div>
+                </div>
 
-      <!-- FOOTER -->
+                <!-- About Us Thumbnail -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="about-us-thumbnail mb-80">
+                        <img src="img/bg-img/15.jpg" alt="">
+                    </div>
+                </div>
 
-      <div class="footer">
-      	<div class="leftContainer">
-      		<img class="logo" src="https://cdn.shopify.com/s/files/1/1603/0391/t/2/assets/logo.png">
-      		<p class="rights">All Rights Reserved 2017</p>
-	      	<div class="socialMedia">
-	      		<img src="http://siteassets.pagecloud.com/quarterworld/images/facebook-icon-ID-f952cd84-6aaf-4cf2-fd89-674acbbcfe15.png">
-	      		<img src="http://www.freeiconspng.com/uploads/twitter-icon--basic-round-social-iconset--s-icons-0.png">
-	      		<img src="https://image.flaticon.com/icons/png/128/145/145808.png">
-	      		<img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_color-128.png">
-	      		<div class="clear"></div>
-	      	</div>
-			<div class="payment">
-	      		<img src="http://pngimg.com/uploads/mastercard/mastercard_PNG17.png">
-	      		<img src="https://www.techgoondu.com/wp-content/uploads/2015/03/MasterCard.png">
-	      		<img style="width: 20%" src="http://www.cbankandtrust.com/wp-content/uploads/apple-pay-logo.png">
-	      		<img style="width: 30%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/PayPal2007.svg/1280px-PayPal2007.svg.png">
-	      		<div class="clear"></div>
-	      	</div>
-      	</div>
-      	
-      	<div class="rightContainer">
-      		<div class="menuA">
-      		<p class="title">Our store</p>
-      		<ul>
-	            <li class="selected"><a href="https://www.garotastore.com/collections/new-arrivals">New arrivals</a></li>
-	            <li><a href="https://www.garotastore.com/collections/best-selling">Best selling</a></li>
-	            <li><a href="https://www.garotastore.com/collections/clothes">Clothes</a></li>
-	            <li><a href="https://www.garotastore.com/collections/shoes">Shoes</a></li>
-	            <li><a href="https://www.garotastore.com/collections/handbags">Handbags</a></li>
-	            <li><a href="https://www.garotastore.com/collections/sale">Sale</a></li>
-	        </ul>
-		    </div>
-		    <div class="menuB">
-		    	<p class="title">Menu</p>
-		    	<ul>
-		    		<li class="selected"><a href="https://www.garotastore.com/pages/about-us">About us</a></li>
-		    		<li><a href="https://www.garotastore.com/pages/shipping-policy">Shipping policy</a></li>
-		    		<li><a href="https://www.garotastore.com/pages/terms-and-conditions">Terms and conditions</a></li>
-		    		<li><a href="https://www.garotastore.com/pages/contact-us">Contact us</a></li>
-		    		<li><a href="https://www.garotastore.com/pages/sizing-chart">Sizing chart</a></li>
-		    	</ul>
-		    </div>
-		    <div class="clear"></div>
-			</div>
-			<div class="clear"></div>
+                <!-- About Us Content -->
+                <div class="col-12 col-lg-4">
+                    <div class="about-us-content mb-80 pl-4">
+                        <h3>Worldwide</h3>
+                        <p>“XIMIVOGUE is a fast fashion department franchised store, and has opened more than 1,400 stores around the world within three years, also has reached strategic cooperation agreements with more than…”</p>
+                        <a href="#" class="btn akame-btn active mt-30">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Area End -->
 
-			<div class="copyright">
-				<p>© 2017 garotastore.com - Unsubscribe</p>
-			</div>
-		</div>
+    <!-- Border -->
+    <div class="container">
+        <div class="border-top mt-3"></div>
+    </div>
+
+    <!-- Our Service Area Start -->
+    <section class="akame-service-area section-padding-80-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center">
+                        <h2>Our Products</h2>
+                        <p>XIMIVOGUE is not just a brand name but also a way of life style.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!-- Single Service Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-service-area mb-80 wow fadeInUp" data-wow-delay="200ms">
+                        <img src="img/core-img/p1.png" alt="">
+                        <h5>Health & Beauty</h5>
+                        <p></p>
+                    </div>
+                </div>
+
+                <!-- Single Service Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-service-area mb-80 wow fadeInUp" data-wow-delay="400ms">
+                        <img src="img/core-img/p2.png" alt="">
+                        <h5>Office</h5>
+                        <p></p>
+                    </div>
+                </div>
+
+                <!-- Single Service Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-service-area mb-80 wow fadeInUp" data-wow-delay="600ms">
+                        <img src="img/core-img/p3.png" alt="">
+                        <h5>Bags</h5>
+                        <p></p>
+                    </div>
+                </div>
+
+                <!-- Single Service Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-service-area mb-80 wow fadeInUp" data-wow-delay="600ms">
+                        <img src="img/core-img/p4.png" alt="">
+                        <h5>Toys</h5>
+                        <p></p>
+                    </div>
+                </div>
+
+                <!-- Single Service Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-service-area mb-80 wow fadeInUp" data-wow-delay="600ms">
+                        <img src="img/core-img/p3.png" alt="">
+                        <h5>Digitals</h5>
+                        <p></p>
+                    </div>
+                </div>
+
+                <!-- Single Service Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-service-area mb-80 wow fadeInUp" data-wow-delay="600ms">
+                        <img src="img/core-img/p7.png" alt="">
+                        <h5>Household items</h5>
+                        <p></p>
+                    </div>
+                </div>
+
+                <!-- Single Service Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-service-area mb-80 wow fadeInUp" data-wow-delay="600ms">
+                        <img src="img/core-img/p5.png" alt="">
+                        <h5>Seasonals</h5>
+                        <p></p>
+                    </div>
+                </div>
+
+                <!-- Single Service Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-service-area mb-80 wow fadeInUp" data-wow-delay="800ms">
+                        <img src="img/core-img/p6.png" alt="">
+                        <h5>Fashion</h5>
+                        <p></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Our Service Area End -->
+
+    <!-- Why Choose Us Area Start -->
+    <section class="why-choose-us-area bg-gray section-padding-80-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                    <div class="choose-us-thumbnail mt-30 mb-80">
+                        <div class="choose-us-img bg-img" style="background-image: url(img/bg-img/50.jpg);"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <!-- Section Heading -->
+                    <div class="section-heading">
+                        <h2>Why Choose Us</h2>
+                        <p>More than 7000 high-quality products are available for selection, 800 products are updated every month.
+1.2 Good suppliers with stable cooperation,such as San Fu, Sassoon, Gialen, atsons, Muji,etc.</p>
+                    </div>
+                    <!-- Choose Us Content -->
+                    <div class="choose-us-content mt-30 mb-80">
+                        <ul>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Professional after-sales team to serve customers 24 hours a day.</li>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Advanced ERP management system which is good for store operations.</li>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> With a small investment, you can get stable long-term income and have yourself fast fashion department store.</li>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> We also have senior supervisors to help the franchisees.</li>
+                            
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> 1400+ stores around the world.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Us Area End -->
+
+    <!-- Portfolio Area Start -->
+    <section class="akame-portfolio section-padding-80 clearfix">
+        <div class="container">
+            <div class="row">
+                <!-- Section Heading -->
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h2>Gallery</h2>
+                        <p>Take a peek at our current collection</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="portfolio-menu text-center mb-30">
+                        <button class="btn active" data-filter="*">All</button>
+                        <button class="btn" data-filter=".health">Health & Beauty</button>
+                        <button class="btn" data-filter=".office">Office</button>
+                        <button class="btn" data-filter=".home">Home</button>
+                        <button class="btn" data-filter=".seasonals">Seasonals</button>
+                        <button class="btn" data-filter=".fashion">Fashion</button>
+                        <button class="btn" data-filter=".digital">Digital</button>
+                        <button class="btn" data-filter=".toys">Toys</button>
+                        <button class="btn" data-filter=".bags">Bags</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row akame-portfolio-area">
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-3 akame-portfolio-item health mb-30 wow fadeInUp" data-wow-delay="200ms">
+                    <div class="akame-portfolio-single-item">
+                        <img src="img/bg-img/makeup.jpg" alt="">
+
+                        <!-- Overlay Content -->
+                        <div class="overlay-content d-flex align-items-center justify-content-center">
+                            <div class="overlay-text text-center">
+                                <h4>Hairstyle</h4>
+                                <p>Consectetur adipisicing elit sed doe</p>
+                            </div>
+                        </div>
+
+                        <!-- Thumbnail Zoom -->
+                        <a href="img/bg-img/5.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 akame-portfolio-item health mb-30 wow fadeInUp" data-wow-delay="200ms">
+                    <div class="akame-portfolio-single-item">
+                        <img src="img/bg-img/dryer.jpg" alt="">
+
+                        <!-- Overlay Content -->
+                        <div class="overlay-content d-flex align-items-center justify-content-center">
+                            <div class="overlay-text text-center">
+                                <h4>Hairstyle</h4>
+                                <p>Consectetur adipisicing elit sed doe</p>
+                            </div>
+                        </div>
+
+                        <!-- Thumbnail Zoom -->
+                        <a href="img/bg-img/5.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 akame-portfolio-item health mb-30 wow fadeInUp" data-wow-delay="200ms">
+                    <div class="akame-portfolio-single-item">
+                        <img src="img/bg-img/makeup_2.jpg" alt="">
+
+                        <!-- Overlay Content -->
+                        <div class="overlay-content d-flex align-items-center justify-content-center">
+                            <div class="overlay-text text-center">
+                                <h4>Hairstyle</h4>
+                                <p>Consectetur adipisicing elit sed doe</p>
+                            </div>
+                        </div>
+
+                        <!-- Thumbnail Zoom -->
+                        <a href="img/bg-img/makeup_2.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 akame-portfolio-item office mb-30 wow fadeInUp" data-wow-delay="200ms">
+                    <div class="akame-portfolio-single-item">
+                        <img src="img/bg-img/25.jpg" alt="">
+
+                        <!-- Overlay Content -->
+                        <div class="overlay-content d-flex align-items-center justify-content-center">
+                            <div class="overlay-text text-center">
+                                <h4>Hairstyle</h4>
+                                <p>Consectetur adipisicing elit sed doe</p>
+                            </div>
+                        </div>
+
+                        <!-- Thumbnail Zoom -->
+                        <a href="img/bg-img/5.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 akame-portfolio-item home mb-30 wow fadeInUp" data-wow-delay="200ms">
+                    <div class="akame-portfolio-single-item">
+                        <img src="img/bg-img/28.jpg" alt="">
+
+                        <!-- Overlay Content -->
+                        <div class="overlay-content d-flex align-items-center justify-content-center">
+                            <div class="overlay-text text-center">
+                                <h4>Hairstyle</h4>
+                                <p>Consectetur adipisicing elit sed doe</p>
+                            </div>
+                        </div>
+
+                        <!-- Thumbnail Zoom -->
+                        <a href="img/bg-img/5.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 akame-portfolio-item seasonals mb-30 wow fadeInUp" data-wow-delay="300ms">
+                    <div class="akame-portfolio-single-item">
+                        <img src="img/bg-img/glasses.jpg" alt="">
+
+                        <!-- Overlay Content -->
+                        <div class="overlay-content d-flex align-items-center justify-content-center">
+                            <div class="overlay-text text-center">
+                                <h4>Hairstyle</h4>
+                                <p>Consectetur adipisicing elit sed doe</p>
+                            </div>
+                        </div>
+
+                        <!-- Thumbnail Zoom -->
+                        <a href="img/bg-img/glasses.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-lg-3 akame-portfolio-item fashion mb-30 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="akame-portfolio-single-item">
+                        <img src="img/bg-img/makeup.jpg" alt="">
+
+                        <!-- Overlay Content -->
+                        <div class="overlay-content d-flex align-items-center justify-content-center">
+                            <div class="overlay-text text-center">
+                                <h4>Hairstyle</h4>
+                                <p>Consectetur adipisicing elit sed doe</p>
+                            </div>
+                        </div>
+
+                        <!-- Thumbnail Zoom -->
+                        <a href="img/bg-img/makeup.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-3 akame-portfolio-item digital mb-30 wow fadeInUp" data-wow-delay="500ms">
+                    <div class="akame-portfolio-single-item">
+                        <img src="img/bg-img/8.jpg" alt="">
+
+                        <!-- Overlay Content -->
+                        <div class="overlay-content d-flex align-items-center justify-content-center">
+                            <div class="overlay-text text-center">
+                                <h4>Hairstyle</h4>
+                                <p>Consectetur adipisicing elit sed doe</p>
+                            </div>
+                        </div>
+
+                        <!-- Thumbnail Zoom -->
+                        <a href="img/bg-img/8.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-3 akame-portfolio-item toys mb-30 wow fadeInUp" data-wow-delay="600ms">
+                    <div class="akame-portfolio-single-item">
+                        <img src="img/bg-img/9.jpg" alt="">
+
+                        <!-- Overlay Content -->
+                        <div class="overlay-content d-flex align-items-center justify-content-center">
+                            <div class="overlay-text text-center">
+                                <h4>Hairstyle</h4>
+                                <p>Consectetur adipisicing elit sed doe</p>
+                            </div>
+                        </div>
+
+                        <!-- Thumbnail Zoom -->
+                        <a href="img/bg-img/9.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-3 akame-portfolio-item bags mb-30 wow fadeInUp" data-wow-delay="600ms">
+                    <div class="akame-portfolio-single-item">
+                        <img src="img/bg-img/bags.jpg" alt="">
+
+                        <!-- Overlay Content -->
+                        <div class="overlay-content d-flex align-items-center justify-content-center">
+                            <div class="overlay-text text-center">
+                                <h4>Hairstyle</h4>
+                                <p>Consectetur adipisicing elit sed doe</p>
+                            </div>
+                        </div>
+
+                        <!-- Thumbnail Zoom -->
+                        <a href="img/bg-img/bags.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Item -->
+                <div class="col-12 col-sm-6 col-lg-3 akame-portfolio-item bags mb-30 wow fadeInUp" data-wow-delay="600ms">
+                    <div class="akame-portfolio-single-item">
+                        <img src="img/bg-img/bags_2.jpg" alt="">
+
+                        <!-- Overlay Content -->
+                        <div class="overlay-content d-flex align-items-center justify-content-center">
+                            <div class="overlay-text text-center">
+                                <h4>Hairstyle</h4>
+                                <p>Consectetur adipisicing elit sed doe</p>
+                            </div>
+                        </div>
+
+                        <!-- Thumbnail Zoom -->
+                        <a href="img/bg-img/bags_2.jpg" class="thumbnail-zoom"><i class="icon_search"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="view-all-btn mt-30 text-center">
+                        <a href="portfolio.html" class="btn akame-btn">View All Work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Area End -->
+
+    <!-- Our Expert Area Start -->
+    <section class="akame-our-expert-area section-padding-80-0">
+
+        <!-- Side Thumbnail -->
+        <div class="side-thumbnail" style="background-image: url(img/bg-img/14.png);"></div>
+
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-12 col-lg-6">
+                    <!-- Section Heading -->
+                    <div class="section-heading">
+                        <h2>Our Experts</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
+                    </div>
+                    <!-- Our Certificate -->
+                    <div class="our-certificate-area mb-60 d-flex align-items-center">
+                        <img src="img/core-img/certificate-1.png" alt="">
+                        <img src="img/core-img/certificate-2.png" alt="">
+                        <img src="img/core-img/certificate-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member mb-80 wow fadeInUp" data-wow-delay="200ms">
+                        <div class="team-member-img">
+                            <img src="img/bg-img/10.jpg" alt="">
+                            <!-- Social Info -->
+                            <div class="team-social-info d-flex align-items-center justify-content-center">
+                                <div class="social-link">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member-info">
+                            <h5>Mila Hartley</h5>
+                            <p>Hairdresser</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member mb-80 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="team-member-img">
+                            <img src="img/bg-img/11.jpg" alt="">
+                            <!-- Social Info -->
+                            <div class="team-social-info d-flex align-items-center justify-content-center">
+                                <div class="social-link">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member-info">
+                            <h5>Teigan Duran</h5>
+                            <p>Stylist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member mb-80 wow fadeInUp" data-wow-delay="600ms">
+                        <div class="team-member-img">
+                            <img src="img/bg-img/12.jpg" alt="">
+                            <!-- Social Info -->
+                            <div class="team-social-info d-flex align-items-center justify-content-center">
+                                <div class="social-link">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member-info">
+                            <h5>Tanya Ramsay</h5>
+                            <p>Hairstylist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-team-member mb-80 wow fadeInUp" data-wow-delay="800ms">
+                        <div class="team-member-img">
+                            <img src="img/bg-img/13.jpg" alt="">
+                            <!-- Social Info -->
+                            <div class="team-social-info d-flex align-items-center justify-content-center">
+                                <div class="social-link">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member-info">
+                            <h5>Donna Carr</h5>
+                            <p>Baber</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Our Expert Area End -->
+
+    <!-- Border -->
+    <div class="container">
+        <div class="border-top mt-3"></div>
+    </div>
+
+    <!-- Blog Area Start -->
+    <section class="akame-blog-area section-padding-80-0 clearfix">
+        <div class="container">
+            <div class="row">
+                <!-- Section Heading -->
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h2>Latest News</h2>
+                        <p>We are thriving and we want you to know about it.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!-- Single Post Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-post-area mb-80 wow fadeInUp" data-wow-delay="200ms">
+                        <div class="post-thumbnail">
+                            <a href="single-blog.html"><img src="img/bg-img/comingSoon.jpg" alt=""></a>
+                        </div>
+                        <div class="post-content">
+                            <a href="#" class="post-title">Ximivouge is reaching top cities in US</a>
+                            <div class="post-meta">
+                                <a href="#" class="post-date"><i class="icon_clock_alt"></i> September 27, 2018</a>
+                                <a href="#" class="post-comments"><i class="icon_chat_alt"></i> 10</a>
+                            </div>
+                            <p>Top brand in a top city. Ximivouge is reaching more cities in US than ever and New York is next!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Post Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-post-area mb-80 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="post-thumbnail">
+                            <a href="single-blog.html"><img src="img/bg-img/dolphinMall.jpg" alt=""></a>
+                        </div>
+                        <div class="post-content">
+                            <a href="#" class="post-title">Finally Ximivouge Dolphin Mall is here!</a>
+                            <div class="post-meta">
+                                <a href="#" class="post-date"><i class="icon_clock_alt"></i> September 27, 2018</a>
+                                <a href="#" class="post-comments"><i class="icon_chat_alt"></i> 10</a>
+                            </div>
+                            <p>Miami we are here! Our first Ximivouge store is open in Dolphin Mall, Miami, FL. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Post Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-post-area mb-80 wow fadeInUp" data-wow-delay="600ms">
+                        <div class="post-thumbnail">
+                            <a href="single-blog.html"><img src="img/bg-img/fastFashion.jpg" alt=""></a>
+                        </div>
+                        <div class="post-content">
+                            <a href="#" class="post-title">USA we are here! Countdown for our first store!</a>
+                            <div class="post-meta">
+                                <a href="#" class="post-date"><i class="icon_clock_alt"></i> September 27, 2018</a>
+                                <a href="#" class="post-comments"><i class="icon_chat_alt"></i> 10</a>
+                            </div>
+                            <p>Introducing Ximivouge US. We are pleased to announce that our first store is about to open!</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Blog Area End -->
+
+    <!-- Call To Action Area Start -->
+<!--     <section class="akame-cta-area bg-gray section-padding-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-10 col-xl-5">
+                    <div class="cta-content">
+                        <h2>Make Stilo Your <br>Number One Choice</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut la.</p>
+                        <div class="akame-btn-group mt-30">
+                            <a href="#" class="btn akame-btn active mr-3 mb-3 mb-sm-0">Book An Appointment</a>
+                            <a href="#" class="btn akame-btn">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-   </body>
+        <div class="cta-thumbnail bg-img" style="background-image: url(img/bg-img/cta.png);"></div>
+    </section> -->
+    <!-- Call To Action Area End -->
+
+    <!-- Border -->
+    <div class="container">
+        <div class="border-top mt-3"></div>
+    </div>
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area section-padding-80-0">
+        <div class="container">
+            <div class="row justify-content-between">
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="single-footer-widget mb-80">
+                        <!-- Footer Logo -->
+                        <a href="#" class="footer-logo"><img src="img/core-img/logo.png" alt=""></a>
+
+                        <p class="mb-30"></p>
+
+                        <!-- Copywrite Text -->
+                        <div class="copywrite-text">
+                            <p> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <div class="single-footer-widget mb-80">
+                        <!-- Widget Title -->
+                        <h4 class="widget-title">Opening times</h4>
+
+                        <!-- Open Times -->
+                        <div class="open-time">
+                            <p>Monday: Friday: 10.00 - 23.00</p>
+                            <p>Saturday: 10.00 - 19.00</p>
+                        </div>
+
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-md-4 col-xl-3">
+                    <div class="single-footer-widget mb-80">
+
+                        <!-- Widget Title -->
+                        <h4 class="widget-title">Contact Us</h4>
+
+                        <!-- Contact Address -->
+                        <div class="contact-address">
+                            <p>Tel: (+12) 345 678 910</p>
+                            <p>E-mail: Hello.colorlib@gmail.com</p>
+                            <p>Address: Iris Watson, P.O. Box 283 8562 Fusce Rd, NY</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!-- All JS Files -->
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="js/akame.bundle.js"></script>
+    <!-- Active -->
+    <script src="js/default-assets/active.js"></script>
+
+</body>
+
 </html>
