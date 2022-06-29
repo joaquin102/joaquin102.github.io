@@ -1,51 +1,219 @@
+<!-- <!doctype html>
 
-<!doctype html>
-<html>
-<head>
-    <title>Example Domain</title>
+  <style>
 
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style type="text/css">
-    body {
-        background-color: #f0f0f2;
-        margin: 0;
-        padding: 0;
-        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    body{
+      font-family: "Avenir Next" !important;
+    }
+
+    .logo {
+      margin: 50 auto;
+      max-width: 200px;
+    }
+
+    .logo img {
+      max-width: 100%;
+    }
+
+
+    .breeds {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      flex-direction: row;
+      /*max-height: 100vh;*/
+      margin: 0 auto;
+    max-width: 90%;
+    }
+
+    .breed {
+
+      margin-bottom: 5vw;
+      width: 100%;
+    }
+
+    .breed h2 {
+
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    font-weight: 600;
+    line-height: 1.2;
         
     }
-    div {
-        width: 600px;
-        margin: 5em auto;
-        padding: 2em;
-        background-color: #fdfdff;
-        border-radius: 0.5em;
-        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+
+    .breed.crop img {
+
+      margin-bottom: -50px; /*Reduce the distance between the code and the dog*/
     }
-    a:link, a:visited {
-        color: #38488f;
-        text-decoration: none;
+
+    .dog {
+      max-width: 20%;
+      float: left;
+      border: none;
     }
-    @media (max-width: 700px) {
-        div {
-            margin: 0 auto;
-            width: auto;
-        }
+
+    .dog p {
+      text-align: center;
+      margin: 0 0 10px;
+    line-height: 30px;
     }
-    </style>    
-</head>
+
+    .dog img {
+      margin: 10px;
+      margin-bottom: 0px;
+      max-width: 100%;
+    }
+
+
+/* iPhone 12 Pro MAX */
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 767px) and (orientation: landscape) { 
+
+}
+
+/* iPhone 12 Pro */
+@media only screen and (min-width: 375px) and (max-width: 767px) { 
+
+}
+
+@media only screen and (min-width: 812px) and (orientation: landscape) { 
+
+}
+
+/* iPhone 12 Mini */
+@media only screen and (min-width: 320px) and (max-width: 767px) { 
+
+    
+        .dog {
+      max-width: 40%;
+    }
+
+        .breed.crop img {
+
+      margin-bottom: -30px; /*Reduce the distance between the code and the dog*/
+    }
+}
+
+  </style>
+
+  <div class="logo">
+    <img src="https://cdn.shopify.com/s/files/1/0509/9424/9897/files/Logo.png?v=1656468362">
+  </div>
+
+  <main class="breeds">
+
+    <div class="breed">
+
+      <h2>Australian Shepper</h2>
+      <div class="dog">
+
+        <img src="https://cdn.shopify.com/s/files/1/0509/9424/9897/files/1A.png" alt="catia creative dog">
+        <p>1A</p>
+      </div>
+      <div class="dog">
+        <img src="https://cdn.shopify.com/s/files/1/0509/9424/9897/files/2A.png" alt="catia creative dog">
+        <p>2A</p>
+      </div>
+      <div class="dog">
+        <img src="https://cdn.shopify.com/s/files/1/0509/9424/9897/files/3A.png" alt="catia creative dog">
+        <p>3A</p>
+      </div>
+      <div class="dog">
+        <img src="https://cdn.shopify.com/s/files/1/0509/9424/9897/files/4A.png" alt="catia creative dog">
+        <p>4A</p>
+      </div>
+      <div class="dog">
+        <img src="https://cdn.shopify.com/s/files/1/0509/9424/9897/files/5A.png" alt="catia creative dog">
+        <p>5A</p>
+      </div>
+            <div class="dog">
+        <img src="https://cdn.shopify.com/s/files/1/0509/9424/9897/files/6A.png" alt="catia creative dog">
+        <p>6A</p>
+      </div>
+            <div class="dog">
+        <img src="https://cdn.shopify.com/s/files/1/0509/9424/9897/files/7A.png" alt="catia creative dog">
+        <p>7A</p>
+      </div>
+            <div class="dog">
+        <img src="https://cdn.shopify.com/s/files/1/0509/9424/9897/files/8A.png" alt="catia creative dog">
+        <p>8A</p>
+      </div>
+
+    </div>
+
+    <div style="clear:both"></div>
+
+    <div class="breed crop">
+
+      <h2>French Bulldog</h2>
+      <div class="dog">
+
+        <img src="https://cdn.shopify.com/s/files/1/0509/9424/9897/files/1B.png" alt="catia creative dog">
+        <p>1A</p>
+      </div>
+      <div class="dog">
+        <img src="https://cdn.shopify.com/s/files/1/0509/9424/9897/files/2B.png" alt="catia creative dog">
+        <p>2A</p>
+      </div>
+      <div class="dog">
+        <img src="https://cdn.shopify.com/s/files/1/0509/9424/9897/files/3B.png" alt="catia creative dog">
+        <p>3A</p>
+      </div>
+      <div class="dog">
+        <img src="https://cdn.shopify.com/s/files/1/0509/9424/9897/files/4B.png" alt="catia creative dog">
+        <p>4A</p>
+      </div>
+      <div class="dog">
+        <img src="https://cdn.shopify.com/s/files/1/0509/9424/9897/files/5B.png" alt="catia creative dog">
+        <p>5A</p>
+      </div>
+            <div class="dog">
+        <img src="https://cdn.shopify.com/s/files/1/0509/9424/9897/files/6B.png" alt="catia creative dog">
+        <p>6A</p>
+      </div>
+            <div class="dog">
+        <img src="https://cdn.shopify.com/s/files/1/0509/9424/9897/files/7B.png" alt="catia creative dog">
+        <p>7A</p>
+      </div>
+            <div class="dog">
+        <img src="https://cdn.shopify.com/s/files/1/0509/9424/9897/files/8B.png" alt="catia creative dog">
+        <p>8A</p>
+      </div>
+            <div class="dog">
+        <img src="https://cdn.shopify.com/s/files/1/0509/9424/9897/files/9B.png" alt="catia creative dog">
+        <p>9A</p>
+      </div>
+            <div class="dog">
+        <img src="https://cdn.shopify.com/s/files/1/0509/9424/9897/files/10B.png" alt="catia creative dog">
+        <p>10A</p>
+      </div>
+
+    </div>
+
+    <div style="clear:both"></div>
+
+
+</main> -->
+
+
+<!DOCTYPE html>
+<html>
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
 
 <body>
-<div>
-    <h1>Example Domain</h1>
-    <p>This domain is for use in illustrative examples in documents. You may use this
-    domain in literature without prior coordination or asking for permission.</p>
-    <p><a href="https://www.iana.org/domains/example">Download</a></p>
 
+<div w3-include-html="https://catiacreative.com/pages/dogs"></div> 
 
-       <h1><a href="itms-services://?action=download-manifest&url=http://joaquin102.github.io/manifest.plist">
-     install </a></h1>
-</div>
+<script>
+w3IncludeHTML();
+</script>
+
 </body>
 </html>
+
+
+
+
